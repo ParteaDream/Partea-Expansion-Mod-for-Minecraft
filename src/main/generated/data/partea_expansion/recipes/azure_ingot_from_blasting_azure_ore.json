@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "group": "azure_ingot",
+  "ingredient": {
+    "item": "partea_expansion:azure_ore"
+  },
+  "result": "partea_expansion:azure_ingot"
+}

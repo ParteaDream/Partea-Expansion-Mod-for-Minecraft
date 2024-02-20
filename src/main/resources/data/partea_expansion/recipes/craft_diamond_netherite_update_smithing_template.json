@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:netherite_scrap"
+    },
+    "b": {
+      "item": "minecraft:diamond"
+    },
+    "c": {
+      "item": "partea_expansion:golden_netherite_upgrade_smithing_template"
+    }
+  },
+  "result": {
+    "item": "partea_expansion:diamond_netherite_upgrade_smithing_template",
+    "count": 1
+  }
+}

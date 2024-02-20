@@ -1,0 +1,24 @@
+{
+	"required": true,
+	"package": "partea.partea_expansion.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"ModMixin",
+		"interacic.ItemEntityAccessor",
+		"interacic.ItemEntityMixin",
+		"interacic.PlayerEntityMixin",
+		"interacic.PlayerInventoryAccessor",
+		"interacic.RecipeManagerMixin",
+		"lapisreserve.PlayerReserve",
+		"lapisreserve.EnchantScreen",
+		"lapisreserve.ServerPlayerReserve"
+	],
+	"client": [
+		"interacic.InGameHudMixin",
+		"interacic.ItemEntityRendererMixin",
+		"interacic.MinecraftClientMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

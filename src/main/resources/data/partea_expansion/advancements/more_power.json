@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "item": "partea_expansion:golden_netherite_ingot"
+    },
+    "title": {
+      "translate": "advancements.more_power.title"
+    },
+    "description": {
+      "translate": "advancements.more_power.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "more_power": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "partea_expansion:golden_netherite_ingot"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 300,
+    "recipes": [
+      "partea_expansion:craft_diamond_netherite_ingot",
+      "partea_expansion:craft_diamond_netherite_update_smithing_template",
+      "partea_expansion:craft_copy_craft_diamond_netherite_update_smithing_template"
+    ]
+  },
+  "parent": "minecraft:nether/netherite_armor"
+}

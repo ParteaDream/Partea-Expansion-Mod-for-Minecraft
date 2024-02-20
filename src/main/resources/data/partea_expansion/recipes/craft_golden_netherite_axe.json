@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "partea_expansion:golden_netherite_upgrade_smithing_template"
+  },
+  "base": {
+    "item": "partea_expansion:golden_netherite_ingot"
+  },
+  "addition": {
+    "item": "minecraft:netherite_axe"
+  },
+  "result": {
+    "item": "partea_expansion:golden_netherite_axe"
+  }
+}

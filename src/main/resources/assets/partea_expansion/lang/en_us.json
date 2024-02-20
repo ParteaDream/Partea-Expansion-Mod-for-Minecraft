@@ -1,0 +1,94 @@
+{
+  "item.partea_expansion.golden_netherite_chestplate": "Golden Netherite Chestplate",
+  "item.partea_expansion.golden_netherite_hoe": "Golden Netherite Hoe",
+  "item.partea_expansion.diamond_netherite_boots": "Diamond Netherite Boots",
+  "item.partea_expansion.golden_netherite_helmet": "Golden Netherite Helmet",
+  "item.partea_expansion.golden_netherite_upgrade_smithing_template": "Golden Netherite Upgrade Smithing Template",
+  "item.partea_expansion.diamond_netherite_upgrade_smithing_template": "Diamond Netherite Upgrade Smithing Template",
+  "item.partea_expansion.golden_netherite_pickaxe": "Golden Netherite Pickaxe",
+  "item.partea_expansion.golden_netherite_axe": "Golden Netherite Axe",
+  "item.partea_expansion.diamond_netherite_sword": "Diamond Netherite Sword",
+  "item.partea_expansion.golden_netherite_leggings": "Golden Netherite Leggings",
+  "item.partea_expansion.diamond_netherite_leggings": "Diamond Netheriter Leggings",
+  "item.partea_expansion.golden_netherite_shovel": "Golden Netherite Shovel",
+  "item.partea_expansion.diamond_netherite_pickaxe": "Diamond Netherite Pickaxe",
+  "item.partea_expansion.diamond_netherite_axe": "Diamond Netherite Axe",
+  "item.partea_expansion.diamond_netherite_chestplate": "Diamond Netherite Chestplate",
+  "item.partea_expansion.diamond_netherite_ingot": "Diamond Netherite Ingot",
+  "item.partea_expansion.diamond_netherite_helmet": "Diamond Netherite Helmet",
+  "item.partea_expansion.diamond_netherite_shovel": "Diamond Netherite Shovel",
+  "item.partea_expansion.magic_stick": "Magic Stick",
+  "item.partea_expansion.golden_netherite_boots": "Golden Netherite Boots",
+  "item.partea_expansion.diamond_netherite_hoe": "Diamond Netherite Hoe",
+  "item.partea_expansion.golden_netherite_ingot": "Golden Netherite Ingot",
+  "item.partea_expansion.golden_netherite_sword": "Golden Netherite Sword",
+  "item.partea_expansion.diamond_prospector": "Diamond Prospector",
+  "item.partea_expansion.safemining_detector": "Safemining Detector",
+  "item.partea_expansion.empty_terminal": "Empty Terminal",
+  "item.partea_expansion.azure_ingot": "Azure Ingot",
+  "item.partea_expansion.shed_a_light_music_disc": "Shed A Light",
+  "item.partea_expansion.shed_a_light_music_disc.desc": "??? - Shed A Light",
+  "item.partea_expansion.silent_time_music_disc": "Silent Time",
+  "item.partea_expansion.silent_time_music_disc.desc": "Partea - Silent Time",
+  "item.partea_expansion.creative_mode_sword": "Creative Mode Sword",
+
+
+
+  "item.partea_expansion.diamond_prospector.tooltip": "detect if there's minecraft ore under the block",
+  "item.partea_expansion.diamond_prospector.tooltip2": "No Ore Found",
+  "item.partea_expansion.safemining_detector.tooltip": "detect if it is safe to dig down vertically here",
+  "item.partea_expansion.safemining_detector.tooltip2": "Identified as Safe",
+  "item.partea_expansion.safemining_detector.tooltip3": "Suspected Hazardous",
+
+
+  "block.partea_expansion.golden_netherite_block": "Golden Netherite Block",
+  "block.partea_expansion.diamond_netherite_block": "Diamond Netherite Block",
+  "block.partea_expansion.azure_block": "Azure Block",
+  "block.partea_expansion.azure_ore": "Azure Ore",
+
+  "item_group.partea_expansion.partea_expansion": "Partea Expansion",
+  "itemgroup.partea_expansion.partea_expansion": "Partea Expansion",
+
+  "advancements.is_it_the_ultimate_power.title": "Is It The Ultimate Power",
+  "advancements.is_it_the_ultimate_power.descr": "get a diamond netherite ingot",
+  "advancements.more_power.title": "More Power",
+  "advancements.more_power.descr": "get a golden netherite ingot",
+
+  "enchantment.partea_expansion.enchant_doomed_death": "Doomed Death",
+  "enchantment.partea_expansion.enchant_sharp_sickle": "Sickle Sharpness",
+
+  "entity.minecraft.villager.partea_expansion.nether_explorer": "Nether Explorer",
+  "entity.minecraft.villager.nether_explorer": "Nether Explorer",
+
+
+
+
+
+
+
+  "item.partea_expansion.item_filter": "Item Filter",
+  "death.attack.thrown_item": "%1$s was pummeled by %2$s using %3$s",
+  "death.attack.thrown_item.sword": "%1$s was executed by %2$s using %3$s",
+  "death.attack.thrown_item.axe": "%1$s felt a trickshot %2$s performed using %3$s",
+  "death.attack.thrown_item.shovel": "%1$s was whacked by %2$s using %3$s",
+  "death.attack.thrown_item.pickaxe": "%1$s was pierced by %2$s using %3$s",
+  "death.attack.thrown_item.hoe": "%1$s was reaped by %2$s using %3$s",
+
+  "key.partea_expansion.pickup_item": "[Interactic] Pick up Item",
+
+  "text.config.partea_expansion.title": "Interactic Configuration",
+  "text.config.partea_expansion.section.global": "Global Options",
+  "text.config.partea_expansion.section.client": "Client-Only Options",
+
+  "text.config.partea_expansion.option.clientOnlyMode": "Client Only Mode",
+  "text.config.partea_expansion.option.rightClickPickup": "Right Click Pickup",
+  "text.config.partea_expansion.option.itemFilterEnabled": "Item Filter",
+  "text.config.partea_expansion.option.autoPickup": "Auto Pickup",
+  "text.config.partea_expansion.option.fancyItemRendering": "Fancy Item Rendering",
+  "text.config.partea_expansion.option.renderItemTooltips": "Render Item Tooltips",
+  "text.config.partea_expansion.option.renderFullTooltip": "Full Tooltips",
+  "text.config.partea_expansion.option.itemThrowing": "Item Throwing",
+  "text.config.partea_expansion.option.itemsActAsProjectiles": "Items act as projectiles",
+  "text.config.partea_expansion.option.swingArm": "Swing arm on drop",
+  "text.config.partea_expansion.option.blocksLayFlat": "Blocks lay flat"
+}

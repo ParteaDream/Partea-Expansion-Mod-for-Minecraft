@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "partea_expansion:diamond_netherite_upgrade_smithing_template"
+  },
+  "base": {
+    "item": "partea_expansion:golden_netherite_pickaxe"
+  },
+  "addition": {
+    "item": "partea_expansion:diamond_netherite_ingot"
+  },
+  "result": {
+    "item": "partea_expansion:diamond_netherite_pickaxe"
+  }
+}

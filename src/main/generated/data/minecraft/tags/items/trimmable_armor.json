@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "partea_expansion:diamond_netherite_helmet",
+    "partea_expansion:diamond_netherite_chestplate",
+    "partea_expansion:diamond_netherite_leggings",
+    "partea_expansion:diamond_netherite_boots",
+    "partea_expansion:golden_netherite_helmet",
+    "partea_expansion:golden_netherite_chestplate",
+    "partea_expansion:golden_netherite_leggings",
+    "partea_expansion:golden_netherite_boots"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "partea_expansion:item/diamond_netherite_hoe"
+  }
+}

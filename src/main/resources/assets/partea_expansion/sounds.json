@@ -1,0 +1,18 @@
+{
+  "shed_a_light": {
+    "sounds": [
+      {
+        "name": "partea_expansion:shed_a_light",
+        "stream": true
+      }
+    ]
+  },
+  "silent_time": {
+    "sounds": [
+      {
+        "name": "partea_expansion:silent_time",
+        "stream": true
+      }
+    ]
+  }
+}

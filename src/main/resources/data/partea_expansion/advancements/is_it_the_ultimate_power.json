@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "partea_expansion:diamond_netherite_ingot"
+    },
+    "title": {
+      "translate": "advancements.is_it_the_ultimate_power.title"
+    },
+    "description": {
+      "translate": "advancements.is_it_the_ultimate_power.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "is_it_the_ultimate_power": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "partea_expansion:diamond_netherite_ingot"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 500
+  },
+  "parent": "partea_expansion:more_power"
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "partea_expansion:block/azure_block"
+    }
+  }
+}
