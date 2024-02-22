@@ -1,12 +1,12 @@
 {
   "parent": "partea_expansion:recipes/root",
   "criteria": {
-    "has_crystallized_lapis": {
+    "has_empty_terminal": {
       "conditions": {
         "items": [
           {
             "items": [
-              "partea_expansion:crystallized_lapis"
+              "partea_expansion:empty_terminal"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "partea_expansion:xp_book"
+        "recipe": "partea_expansion:craft_safemining_detector"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_crystallized_lapis",
+      "has_empty_terminal",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "partea_expansion:xp_book"
+      "partea_expansion:craft_safemining_detector"
     ]
   }
 }

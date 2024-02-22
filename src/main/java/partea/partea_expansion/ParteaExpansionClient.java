@@ -3,6 +3,8 @@ package partea.partea_expansion;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
+import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
+import net.minecraft.client.particle.EndRodParticle;
 import net.minecraft.item.Items;
 import io.wispforest.owo.config.ui.ConfigScreen;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
@@ -18,6 +20,8 @@ import net.minecraft.util.Identifier;
 import partea.partea_expansion.Plugins.interactic.InteracticConfigScreen;
 import partea.partea_expansion.Plugins.interactic.ItemFilterScreen;
 import net.fabricmc.fabric.api.object.builder.v1.client.model.FabricModelPredicateProviderRegistry;
+import partea.partea_expansion.screen.ModScreenHandlers;
+import partea.partea_expansion.screen.QualitativeAnalyzerScreen;
 
 @Environment(EnvType.CLIENT)
 public class ParteaExpansionClient implements ClientModInitializer {
@@ -27,6 +31,9 @@ public class ParteaExpansionClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
+        HandledScreens.register(ModScreenHandlers.QUALITATIVE_ANALYZER_SCREEN_HANDLER, QualitativeAnalyzerScreen::new);
+
+        //ParticleFactoryRegistry.getInstance().register(ModParticles.DOOMED_DEATH_FLAME, EndRodParticle.Factory::new);
 
 
         ModelPredicateProviderRegistry.register(new Identifier("enabled"), (stack, world, entity, seed) -> stack.getOrCreateNbt().getBoolean("Enabled") ? 1 : 0);

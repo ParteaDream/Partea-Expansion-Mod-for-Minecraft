@@ -67,6 +67,7 @@ public class ModDiamondNetheriteArmorItem extends ArmorItem {
     private boolean hasCorrectArmorOn(ArmorMaterial armorMaterial, PlayerEntity player) {
         for (ItemStack armorStack:player.getInventory().armor){
             if(!(armorStack.getItem() instanceof  ArmorItem)){
+                System.out.println(armorStack);
                 return false;
             }
         }

@@ -2,9 +2,11 @@ package partea.partea_expansion;
 
 import net.fabricmc.api.ModInitializer;
 
+import partea.partea_expansion.CustomBlocks.entity.ModBlockEntities;
 import partea.partea_expansion.CustomTrades.NetherExplorer;
 import partea.partea_expansion.mixin.interacic.ItemEntityAccessor;
 import partea.partea_expansion.Plugins.interactic.util.Helpers;
+import partea.partea_expansion.screen.ModScreenHandlers;
 import partea.partea_expansion.sounds.ModSounds;
 import partea.partea_expansion.util.InteracticConfig;
 import partea.partea_expansion.Plugins.interactic.util.InteracticPlayerExtension;
@@ -53,6 +55,9 @@ public class ParteaExpansion implements ModInitializer {
 		NetherExplorer.registerVillagers();
 		ModSounds.registerSounds();
 		ModLootTableModifiers.modifierLootTables();
+		ModBlockEntities.registerBlockEntities();
+		ModScreenHandlers.registerScreenHandlers();
+		ModParticles.registerParticles();
 
 		LOGGER.info("Hello Fabric world!");
 

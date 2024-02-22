@@ -1,6 +1,7 @@
 package partea.partea_expansion;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -13,8 +14,21 @@ import partea.partea_expansion.sounds.ModSounds;
 import static partea.partea_expansion.CustomItems.ModArmorMaterial.GOLDEN_NETHERITE;
 
 public class ModItems {
+    public static Item NIGHT_VISION_GLASSES = registerItem("night_vision_glasses"
+            , new ModNightVisionGlassesItem(ModArmorMaterial.NIGHT_VISION_GLASSES, ArmorItem.Type.HELMET
+                    , new FabricItemSettings().rarity(Rarity.COMMON)));
+    public static Item AMETHYST_SWORD = registerItem("amethyst_sword"
+            , new AmethystSwordItem(ModToolMaterials.AMETHYST , 0, -2.6f
+                    , new FabricItemSettings().rarity(Rarity.UNCOMMON)));
+    public static Item AMETHYST_STILLETO = registerItem("amethyst_stilleto"
+            , new SwordItem(ModToolMaterials.AMETHYST2 , 0, 4.0f
+                    , new FabricItemSettings().rarity(Rarity.UNCOMMON)));
+    public static Item AMETHYST = registerItem("amethyst"
+            , new Item(new FabricItemSettings().rarity(Rarity.COMMON)));
+    public static Item CRUDE_AMETHYST = registerItem("crude_amethyst"
+            , new Item(new FabricItemSettings().rarity(Rarity.COMMON)));
     public static Item CREATIVE_MODE_SWORD = registerItem("creative_mode_sword"
-            , new SwordItem(ModToolMaterials.CREATIVE_MATERIAL , 0, 6.0f
+            , new CreativeSwordItem(ModToolMaterials.CREATIVE_MATERIAL , 0, 6.0f
                     , new FabricItemSettings().rarity(Rarity.EPIC).fireproof()));
     public static Item SHED_A_LIGHT_MUSIC_DISC = registerItem("shed_a_light_music_disc"
             , new MusicDiscItem(7, ModSounds.SHED_A_LIGHT
@@ -101,5 +115,5 @@ public class ModItems {
 
     public static void registerItems(){
 
-        }
+    }
 }

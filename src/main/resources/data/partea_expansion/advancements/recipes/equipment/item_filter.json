@@ -1,12 +1,12 @@
 {
   "parent": "partea_expansion:recipes/root",
   "criteria": {
-    "has_ender_pearl": {
+    "has_copper_ingot": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:ender_pearl"
+              "minecraft:copper_ingot"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_ender_pearl",
+      "has_copper_ingot",
       "has_the_recipe"
     ]
   ],

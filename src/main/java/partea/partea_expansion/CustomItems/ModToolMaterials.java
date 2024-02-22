@@ -20,7 +20,14 @@ public enum ModToolMaterials implements ToolMaterial {
     }),
     CREATIVE_MATERIAL(100, 999999, 30.0F, 999999999.0F, 50, () -> {
         return Ingredient.ofItems(Blocks.GRASS_BLOCK);
+    }),
+    AMETHYST(3, 20, 12.0F, 4.0F, 0, () -> {
+        return Ingredient.ofItems(ModItems.AMETHYST);
+    }),
+    AMETHYST2(3, 1, 12.0F, 21.0F, 0, () -> {
+        return Ingredient.ofItems(ModItems.AMETHYST);
     });
+
     private final int miningLevel;
     private final int itemDurability;
     private final float miningSpeed;
@@ -66,4 +73,5 @@ public enum ModToolMaterials implements ToolMaterial {
     public Ingredient getRepairIngredient() {
         return this.repairIngredient.get();
     }
+
 }

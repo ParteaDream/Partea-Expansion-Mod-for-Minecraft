@@ -1,5 +1,5 @@
-// 1.20.4	2024-02-20T15:06:15.263878	Partea Expansion/Block Loot Tables
+// 1.20.4	2024-02-21T21:52:55.729513	Partea Expansion/Block Loot Tables
 75e3c6b1e6a1cd66eae23c7bad6d0d0c6d65a2bf data/partea_expansion/loot_tables/blocks/azure_ore.json
 c9d086f94602ac396ceffe9312329d70716e94f9 data/partea_expansion/loot_tables/blocks/azure_block.json
-cd31f41c8b6002375bb442066a4cef3eeac1cef3 data/partea_expansion/loot_tables/blocks/golden_netherite_block.json
 a78cd91dd498b564d44e966363ffdbcd7a3d299b data/partea_expansion/loot_tables/blocks/diamond_netherite_block.json
+cd31f41c8b6002375bb442066a4cef3eeac1cef3 data/partea_expansion/loot_tables/blocks/golden_netherite_block.json

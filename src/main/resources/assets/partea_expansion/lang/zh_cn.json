@@ -22,7 +22,7 @@
   "item.partea_expansion.diamond_netherite_hoe": "钻石下界合金锄",
   "item.partea_expansion.golden_netherite_ingot": "黄金下界合金锭",
   "item.partea_expansion.golden_netherite_sword": "黄金下界合金剑",
-  "item.partea_expansion.diamond_prospector": "钻石探矿器",
+  "item.partea_expansion.diamond_prospector": "探矿器",
   "item.partea_expansion.safemining_detector": "安全采矿探测器",
   "item.partea_expansion.empty_terminal": "闲置终端",
   "item.partea_expansion.azure_ingot": "蔚蓝锭",
@@ -31,6 +31,15 @@
   "item.partea_expansion.silent_time_music_disc": "Silent Time",
   "item.partea_expansion.silent_time_music_disc.desc": "Partea - Silent Time",
   "item.partea_expansion.creative_mode_sword": "创造模式神剑",
+  "item.partea_expansion.crude_amethyst": "紫水晶粗制物",
+  "item.partea_expansion.amethyst": "紫晶钻",
+  "item.partea_expansion.amethyst_sword": "紫水晶剑",
+  "item.partea_expansion.amethyst_stilleto": "紫水晶匕首",
+  "item.partea_expansion.night_vision_glasses": "夜视眼镜",
+
+  "block.partea_expansion.qualitative_analyzer.title": "参量质变仪",
+  "block.partea_expansion.qualitative_analyzer": "参量质变仪",
+
 
 
   "item.partea_expansion.diamond_prospector.tooltip": "探测选取方块纵向一格内的minecraft矿石",
@@ -51,6 +60,8 @@
   "advancements.is_it_the_ultimate_power.descr": "得到钻石下界合金锭",
   "advancements.more_power.title": "还有高手！",
   "advancements.more_power.descr": "得到黄金下界合金锭",
+  "advancements.cybertech.title": "赛博科技?!",
+  "advancements.cybertech.descr": "获得一个参量质变仪",
 
   "enchantment.partea_expansion.enchant_doomed_death": "命定之死",
   "enchantment.partea_expansion.enchant_sharp_sickle": "锋利镰刀",
@@ -71,7 +82,7 @@
 
 
 
-  "item.partea_expansion.item_filter": "物品过滤",
+  "item.partea_expansion.item_filter": "物品过滤器",
   "death.attack.thrown_item": "%1$s 被 %2$s 丢掉的 %3$s 击中",
   "death.attack.thrown_item.sword": "%1$s 被 %2$s 使用 %3$s 处决",
   "death.attack.thrown_item.axe": "%1$s 感觉 %2$s 使用 %3$s 进行了欺骗性操作",

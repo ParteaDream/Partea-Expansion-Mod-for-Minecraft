@@ -22,7 +22,7 @@
   "item.partea_expansion.diamond_netherite_hoe": "Diamond Netherite Hoe",
   "item.partea_expansion.golden_netherite_ingot": "Golden Netherite Ingot",
   "item.partea_expansion.golden_netherite_sword": "Golden Netherite Sword",
-  "item.partea_expansion.diamond_prospector": "Diamond Prospector",
+  "item.partea_expansion.diamond_prospector": "Prospector",
   "item.partea_expansion.safemining_detector": "Safemining Detector",
   "item.partea_expansion.empty_terminal": "Empty Terminal",
   "item.partea_expansion.azure_ingot": "Azure Ingot",
@@ -31,7 +31,15 @@
   "item.partea_expansion.silent_time_music_disc": "Silent Time",
   "item.partea_expansion.silent_time_music_disc.desc": "Partea - Silent Time",
   "item.partea_expansion.creative_mode_sword": "Creative Mode Sword",
+  "item.partea_expansion.crude_amethyst": "Crude Amethyst",
+  "item.partea_expansion.amethyst": "Amethyst",
+  "item.partea_expansion.amethyst_sword": "Amethyst Sword",
+  "item.partea_expansion.amethyst_stilleto": "Amethyst Stilleto",
+  "item.partea_expansion.night_vision_glasses": "Night Vision Glasses",
 
+
+  "block.partea_expansion.qualitative_analyzer.title": "Qualitative Analyzer",
+  "block.partea_expansion.qualitative_analyzer": "Qualitative Analyzer",
 
 
   "item.partea_expansion.diamond_prospector.tooltip": "detect if there's minecraft ore under the block",
@@ -53,6 +61,8 @@
   "advancements.is_it_the_ultimate_power.descr": "get a diamond netherite ingot",
   "advancements.more_power.title": "More Power",
   "advancements.more_power.descr": "get a golden netherite ingot",
+  "advancements.cybertech.title": "Cybertech?!",
+  "advancements.cybertech.descr": "get a qualitative analyzer",
 
   "enchantment.partea_expansion.enchant_doomed_death": "Doomed Death",
   "enchantment.partea_expansion.enchant_sharp_sickle": "Sickle Sharpness",

@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "partea_expansion:qualitative_analyzer"
+    },
+    "title": {
+      "translate": "advancements.cybertech.title"
+    },
+    "description": {
+      "translate": "advancements.cybertech.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "more_power": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "partea_expansion:qualitative_analyzer"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 300
+  },
+  "parent": "minecraft:nether/obtain_crying_obsidian"
+}

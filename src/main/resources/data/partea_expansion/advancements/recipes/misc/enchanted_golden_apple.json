@@ -1,0 +1,34 @@
+{
+  "parent": "partea_expansion:recipes/root",
+  "criteria": {
+    "has_gold_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:gold_block"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "partea_expansion:custom_enchanted_golden_apple"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_gold_block",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "partea_expansion:custom_enchanted_golden_apple"
+    ]
+  }
+}

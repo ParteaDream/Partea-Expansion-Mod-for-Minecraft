@@ -1,12 +1,12 @@
 {
   "parent": "partea_expansion:recipes/root",
   "criteria": {
-    "has_xp_book": {
+    "has_diamond_netherite_upgrade_smithing_template": {
       "conditions": {
         "items": [
           {
             "items": [
-              "partea_expansion:xp_book"
+              "partea_expansion:diamond_netherite_upgrade_smithing_template"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "partea_expansion:xp_book2"
+        "recipe": "partea_expansion:craft_copy_diamond_netherite_upgrade_smithing_template"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_xp_book",
+      "has_diamond_netherite_upgrade_smithing_template",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "partea_expansion:xp_book2"
+      "partea_expansion:craft_copy_diamond_netherite_upgrade_smithing_template"
     ]
   }
 }

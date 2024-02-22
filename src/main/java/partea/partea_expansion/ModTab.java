@@ -48,10 +48,16 @@ public class ModTab {
                 entries.add(DIAMOND_NETHERITE_BOOTS);
                 entries.add(DIAMOND_NETHERITE_BLOCK);
 
+                entries.add(CRUDE_AMETHYST);
+                entries.add(AMETHYST);
+                entries.add(AMETHYST_SWORD);
+                entries.add(AMETHYST_STILLETO);
+
                 entries.add(AZURE_INGOT);
                 entries.add(AZURE_ORE);
                 entries.add(AZURE_BLOCK);
 
+                entries.add(NIGHT_VISION_GLASSES);
                 entries.add(EMPTY_TERMINAL);
                 entries.add(DIAMOND_PROSPECTOR);
                 entries.add(SAFEMINING_DETECTOR);
@@ -60,6 +66,8 @@ public class ModTab {
                 entries.add(SILENT_TIME_MUSIC_DISC);
 
                 entries.add(ITEM_FILTER);
+
+                entries.add(QUALITATIVE_ANALYZER);
             })
             .build();
 

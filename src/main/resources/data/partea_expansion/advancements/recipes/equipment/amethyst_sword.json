@@ -1,12 +1,12 @@
 {
   "parent": "partea_expansion:recipes/root",
   "criteria": {
-    "has_xp_book2": {
+    "has_amethyst": {
       "conditions": {
         "items": [
           {
             "items": [
-              "partea_expansion:xp_book2"
+              "partea_expansion:amethyst"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "partea_expansion:xp_book3"
+        "recipe": "partea_expansion:craft_amethyst_sword"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_xp_book2",
+      "has_amethyst",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "partea_expansion:xp_book3"
+      "partea_expansion:craft_amethyst_sword"
     ]
   }
 }

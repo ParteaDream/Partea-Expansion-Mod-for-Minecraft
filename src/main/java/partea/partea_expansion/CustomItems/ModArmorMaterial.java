@@ -2,6 +2,7 @@ package partea.partea_expansion.CustomItems;
 
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
@@ -15,7 +16,10 @@ public enum ModArmorMaterial implements ArmorMaterial {
             ,() -> Ingredient.ofItems(ModItems.GOLDEN_NETHERITE_INGOT)),
     DIAMOND_NETHERITE("diamond_netherite", 54, new int[]{5,12,8,5}, 25,
             SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 4.0f, 0.2f
-            ,() -> Ingredient.ofItems(ModItems.DIAMOND_NETHERITE_INGOT));
+            ,() -> Ingredient.ofItems(ModItems.DIAMOND_NETHERITE_INGOT)),
+    NIGHT_VISION_GLASSES("night_vision_glasses", 25, new int[]{2,2,2,2}, 15,
+            SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 0.0f, 0.0f
+            ,() -> Ingredient.ofItems(Items.IRON_INGOT));
     private final String name;
     private final int durabilityMultiplier;
     private final int[] protectionAmounts;

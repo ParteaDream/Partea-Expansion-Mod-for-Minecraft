@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "b b",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "partea_expansion:amethyst"
+    },
+    "b": {
+      "item": "minecraft:iron_ingot"
+    },
+    "c": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "result": {
+    "item": "partea_expansion:night_vision_glasses",
+    "count": 1
+  }
+}

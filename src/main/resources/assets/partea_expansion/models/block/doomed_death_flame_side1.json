@@ -1,0 +1,7 @@
+{
+  "parent": "partea_expansion:block/doomed_death_flame_side",
+  "textures": {
+    "fire": "partea_expansion:block/doomed_death_flame_1",
+    "particle": "partea_expansion:block/doomed_death_flame_1"
+  }
+}
