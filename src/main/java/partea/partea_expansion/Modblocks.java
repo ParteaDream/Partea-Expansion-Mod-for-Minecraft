@@ -46,7 +46,7 @@ public class Modblocks {
                 , new Identifier("partea_expansion", "azure_ore"), AZURE_ORE);
         Registry.register(Registries.ITEM
                 , new Identifier("partea_expansion", "azure_ore"), new BlockItem(AZURE_ORE
-                        , new FabricItemSettings().rarity(Rarity.EPIC).fireproof()));
+                        , new FabricItemSettings().rarity(Rarity.RARE).fireproof()));
         Registry.register(Registries.BLOCK
                 , new Identifier("partea_expansion", "qualitative_analyzer"), QUALITATIVE_ANALYZER);
         Registry.register(Registries.ITEM

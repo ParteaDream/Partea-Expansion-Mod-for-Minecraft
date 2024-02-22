@@ -16,6 +16,8 @@ public class ModLootTableModifiers {
     private static final Identifier ENDER_CITY_ID = new Identifier("minecraft", "chests/end_city_treasure");
     private static final Identifier BURIED_TREASURE_ID = new Identifier("minecraft", "chests/buried_treasure");
     private static final Identifier SUS_SAND_ID = new Identifier("minecraft", "archaeology/desert_pyramid");
+    private static final Identifier SQUID_ID = new Identifier("minecraft", "entities/squid");
+    private static final Identifier GLOW_SQUID_ID = new Identifier("minecraft", "entities/glow_squid");
 
     public static void modifierLootTables() {
         LootTableEvents.MODIFY.register(((resourceManager, lootManager, id, tableBuilder, source) -> {
@@ -55,6 +57,28 @@ public class ModLootTableModifiers {
                 return LootTable.builder().pool(pool).build();
             }
             return null;
+        }));
+
+        LootTableEvents.MODIFY.register(((resourceManager, lootManager, id, tableBuilder, source) -> {
+            if(SQUID_ID.equals(id)){
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.4f))
+                        .with(ItemEntry.builder(Items.SLIME_BALL))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f,1.0f)));
+                tableBuilder.pool(poolBuilder.build());
+            }
+        }));
+
+        LootTableEvents.MODIFY.register(((resourceManager, lootManager, id, tableBuilder, source) -> {
+            if(GLOW_SQUID_ID.equals(id)){
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.4f))
+                        .with(ItemEntry.builder(Items.SLIME_BALL))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f,1.0f)));
+                tableBuilder.pool(poolBuilder.build());
+            }
         }));
     }
 }

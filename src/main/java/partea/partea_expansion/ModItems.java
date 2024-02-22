@@ -14,6 +14,8 @@ import partea.partea_expansion.sounds.ModSounds;
 import static partea.partea_expansion.CustomItems.ModArmorMaterial.GOLDEN_NETHERITE;
 
 public class ModItems {
+    public static Item RAE_AZURE = registerItem("raw_azure"
+            , new Item(new FabricItemSettings().rarity(Rarity.RARE).fireproof()));
     public static Item NIGHT_VISION_GLASSES = registerItem("night_vision_glasses"
             , new ModNightVisionGlassesItem(ModArmorMaterial.NIGHT_VISION_GLASSES, ArmorItem.Type.HELMET
                     , new FabricItemSettings().rarity(Rarity.COMMON)));

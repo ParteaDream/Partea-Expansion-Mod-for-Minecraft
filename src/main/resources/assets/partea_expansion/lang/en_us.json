@@ -36,6 +36,7 @@
   "item.partea_expansion.amethyst_sword": "Amethyst Sword",
   "item.partea_expansion.amethyst_stilleto": "Amethyst Stilleto",
   "item.partea_expansion.night_vision_glasses": "Night Vision Glasses",
+  "item.partea_expansion.raw_azure": "Raw Azure",
 
 
   "block.partea_expansion.qualitative_analyzer.title": "Qualitative Analyzer",
@@ -47,6 +48,7 @@
   "item.partea_expansion.safemining_detector.tooltip": "detect if it is safe to dig down vertically here",
   "item.partea_expansion.safemining_detector.tooltip2": "Identified as Safe",
   "item.partea_expansion.safemining_detector.tooltip3": "Suspected Hazardous",
+  "item.partea_expansion.amethyst_sword.tooltip": "The lower the durability, the higher the damage",
 
 
   "block.partea_expansion.golden_netherite_block": "Golden Netherite Block",

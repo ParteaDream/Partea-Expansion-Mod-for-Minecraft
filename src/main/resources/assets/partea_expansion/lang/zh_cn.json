@@ -36,6 +36,7 @@
   "item.partea_expansion.amethyst_sword": "紫水晶剑",
   "item.partea_expansion.amethyst_stilleto": "紫水晶匕首",
   "item.partea_expansion.night_vision_glasses": "夜视眼镜",
+  "item.partea_expansion.raw_azure": "蔚蓝结晶",
 
   "block.partea_expansion.qualitative_analyzer.title": "参量质变仪",
   "block.partea_expansion.qualitative_analyzer": "参量质变仪",
@@ -47,6 +48,8 @@
   "item.partea_expansion.safemining_detector.tooltip": "探测选取方块一格内有无危险因素影响垂直下挖的安全",
   "item.partea_expansion.safemining_detector.tooltip2": "鉴定为安全",
   "item.partea_expansion.safemining_detector.tooltip3": "疑似危险",
+  "item.partea_expansion.amethyst_sword.tooltip": "耐久越低，伤害越高",
+
 
   "block.partea_expansion.golden_netherite_block": "黄金下界合金块",
   "block.partea_expansion.diamond_netherite_block": "钻石下界合金块",

@@ -53,8 +53,9 @@ public class ModTab {
                 entries.add(AMETHYST_SWORD);
                 entries.add(AMETHYST_STILLETO);
 
-                entries.add(AZURE_INGOT);
                 entries.add(AZURE_ORE);
+                entries.add(RAE_AZURE);
+                entries.add(AZURE_INGOT);
                 entries.add(AZURE_BLOCK);
 
                 entries.add(NIGHT_VISION_GLASSES);

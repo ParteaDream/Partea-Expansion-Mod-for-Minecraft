@@ -27,7 +27,7 @@ public class ModLootTablesProvider extends FabricBlockLootTableProvider {
         addDrop(Modblocks.DIAMOND_NETHERITE_BLOCK);
         addDrop(Modblocks.AZURE_BLOCK);
 
-        addDrop(Modblocks.AZURE_ORE,oreDrops(Modblocks.AZURE_ORE, ModItems.AZURE_INGOT));
+        addDrop(Modblocks.AZURE_ORE,copperOreLikeDrops(Modblocks.AZURE_ORE, ModItems.RAE_AZURE));
     }
 
     public LootTable.Builder copperOreLikeDrops(Block drop, Item item){
