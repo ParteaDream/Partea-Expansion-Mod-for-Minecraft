@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 400,
+  "experience": 1.0,
+  "group": "raw_azure",
+  "ingredient": {
+    "item": "partea_expansion:azure_ore"
+  },
+  "result": "partea_expansion:raw_azure"
+}

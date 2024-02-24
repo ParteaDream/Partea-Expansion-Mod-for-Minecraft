@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "partea_expansion:enderbloom_grove",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 367086004,
+    "spacing": 6,
+    "separation": 2,
+    "type": "minecraft:random_spread"
+  }
+}

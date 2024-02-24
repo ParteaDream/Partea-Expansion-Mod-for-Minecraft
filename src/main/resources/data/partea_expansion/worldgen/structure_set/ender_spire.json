@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "partea_expansion:ender_spire",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 367086008,
+    "spacing": 15,
+    "separation": 5,
+    "type": "minecraft:random_spread"
+  }
+}

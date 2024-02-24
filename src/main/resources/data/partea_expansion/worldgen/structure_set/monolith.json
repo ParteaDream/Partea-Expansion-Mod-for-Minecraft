@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "partea_expansion:monolith",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 367086009,
+    "spacing": 20,
+    "separation": 8,
+    "type": "minecraft:random_spread"
+  }
+}

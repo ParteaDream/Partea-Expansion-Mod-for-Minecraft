@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "partea_expansion:placid_prairie",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 367086010,
+    "spacing": 10,
+    "separation": 2,
+    "type": "minecraft:random_spread"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "partea_expansion:manuscript_shrine",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 367086002,
+    "spacing": 25,
+    "separation": 9,
+    "type": "minecraft:random_spread"
+  }
+}

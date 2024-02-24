@@ -1,20 +1,35 @@
 package partea.partea_expansion;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.ModStatus;
 import net.minecraft.util.Rarity;
 import partea.partea_expansion.CustomItems.*;
+import partea.partea_expansion.CustomItems.CustomMaskItems.CustomFoolsMaskItem;
+import partea.partea_expansion.CustomItems.ToolItems.AmethystSwordItem;
+import partea.partea_expansion.CustomItems.ToolItems.CreativeSwordItem;
+import partea.partea_expansion.CustomItems.ToolItems.ModToolMaterials;
 import partea.partea_expansion.sounds.ModSounds;
 
 import static partea.partea_expansion.CustomItems.ModArmorMaterial.GOLDEN_NETHERITE;
 
 public class ModItems {
-    public static Item RAE_AZURE = registerItem("raw_azure"
+    public static Item FABRIC = registerItem("fabric"
+            , new Item(new FabricItemSettings().rarity(Rarity.COMMON)));
+    public static Item QUARTZ_DUST = registerItem("quartz_dust"
+            , new Item(new FabricItemSettings().rarity(Rarity.COMMON)));
+    public static Item CRYING_OBSIDIAN_DUST = registerItem("crying_obsidian_dust"
+            , new Item(new FabricItemSettings().rarity(Rarity.COMMON)));
+    public static Item CRYSTALLIZED_LAPIS_DUST = registerItem("crystallized_lapis_dust"
+            , new Item(new FabricItemSettings().rarity(Rarity.COMMON)));
+    public static Item CRYSTALLIZED_LAPIS = registerItem("crystallized_lapis"
+            , new Item(new FabricItemSettings().rarity(Rarity.COMMON)));
+    public static Item FOOLS_MASK = registerItem("fools_mask"
+            , new CustomFoolsMaskItem(ModArmorMaterial.FOOLS_MASK, ArmorItem.Type.HELMET
+                    , new FabricItemSettings().rarity(Rarity.UNCOMMON)));
+    public static Item RAW_AZURE = registerItem("raw_azure"
             , new Item(new FabricItemSettings().rarity(Rarity.RARE).fireproof()));
     public static Item NIGHT_VISION_GLASSES = registerItem("night_vision_glasses"
             , new ModNightVisionGlassesItem(ModArmorMaterial.NIGHT_VISION_GLASSES, ArmorItem.Type.HELMET

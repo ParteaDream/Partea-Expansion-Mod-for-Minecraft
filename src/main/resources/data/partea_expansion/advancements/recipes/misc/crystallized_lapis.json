@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "partea_expansion:crystallized_lapis"
+        "recipe": "partea_expansion:craft_crystallized_lapis"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "partea_expansion:crystallized_lapis"
+      "partea_expansion:craft_crystallized_lapis"
     ]
   }
 }

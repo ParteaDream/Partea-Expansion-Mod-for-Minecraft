@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "partea_expansion:enderpin_spikes",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 367086006,
+    "spacing": 10,
+    "separation": 3,
+    "type": "minecraft:random_spread"
+  }
+}

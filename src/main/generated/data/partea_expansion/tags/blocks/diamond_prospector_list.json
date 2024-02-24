@@ -10,6 +10,10 @@
     "#minecraft:diamond_ores",
     "#minecraft:emerald_ores",
     "minecraft:raw_copper_block",
-    "minecraft:raw_iron_block"
+    "minecraft:raw_iron_block",
+    "partea_expansion:azure_ore",
+    "minecraft:nether_quartz_ore",
+    "minecraft:nether_gold_ore",
+    "minecraft:ancient_debris"
   ]
 }

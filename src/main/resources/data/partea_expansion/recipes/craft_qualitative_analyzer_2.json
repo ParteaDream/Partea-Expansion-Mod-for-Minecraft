@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aba",
+    "cfd",
+    "aea"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_block"
+    },
+    "b": {
+      "item": "minecraft:blue_ice"
+    },
+    "c": {
+      "item": "minecraft:soul_soil"
+    },
+    "d": {
+      "item": "minecraft:lava_bucket"
+    },
+    "e": {
+      "item": "minecraft:water_bucket"
+    },
+    "f": {
+      "item": "minecraft:cauldron"
+    }
+  },
+  "result": {
+    "item": "partea_expansion:qualitative_analyzer",
+    "count": 1
+  }
+}

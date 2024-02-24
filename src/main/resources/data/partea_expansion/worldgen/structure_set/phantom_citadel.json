@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "partea_expansion:phantom_citadel",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 367086001,
+    "spacing": 30,
+    "separation": 6,
+    "type": "minecraft:random_spread"
+  }
+}

@@ -19,7 +19,6 @@ public class ModModelsProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(Modblocks.GOLDEN_NETHERITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(Modblocks.AZURE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(Modblocks.AZURE_ORE);
-        blockStateModelGenerator.registerSimpleState(Modblocks.QUALITATIVE_ANALYZER);
     }
     public void generateItemModels(ItemModelGenerator itemModelGenerator){
         itemModelGenerator.register(ModItems.CREATIVE_MODE_SWORD, Models.HANDHELD);
@@ -47,8 +46,14 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.AMETHYST, Models.GENERATED);
         itemModelGenerator.register(ModItems.AMETHYST_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.AMETHYST_STILLETO, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.RAE_AZURE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_AZURE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CRYSTALLIZED_LAPIS_DUST, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CRYSTALLIZED_LAPIS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CRYING_OBSIDIAN_DUST, Models.GENERATED);
+        itemModelGenerator.register(ModItems.QUARTZ_DUST, Models.GENERATED);
+        itemModelGenerator.register(ModItems.FABRIC, Models.GENERATED);
 
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.FOOLS_MASK);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.DIAMOND_NETHERITE_HELMET);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.DIAMOND_NETHERITE_CHESTPLATE);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.DIAMOND_NETHERITE_LEGGINGS);

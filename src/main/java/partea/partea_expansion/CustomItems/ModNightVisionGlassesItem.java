@@ -54,11 +54,9 @@ public class ModNightVisionGlassesItem extends ArmorItem {
         ItemStack a = player.getEquippedStack(EquipmentSlot.HEAD);
         for (ItemStack armorStack:player.getInventory().armor){
             if(!(a.getItem().getMaxDamage() == 275)){
-                System.out.println(2);
                 return false;
             }
         }
-        System.out.println(1);
         ArmorItem helmet = ((ArmorItem)player.getInventory().getArmorStack(3).getItem());
         return helmet.getMaterial() == material;
     }

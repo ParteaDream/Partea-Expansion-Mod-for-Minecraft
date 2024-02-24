@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "partea_expansion:astral_meteorite",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 367086007,
+    "spacing": 25,
+    "separation": 12,
+    "type": "minecraft:random_spread"
+  }
+}

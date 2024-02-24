@@ -4,6 +4,7 @@
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
 		"ModMixin",
+		"EndermanMixin",
 		"interacic.ItemEntityAccessor",
 		"interacic.ItemEntityMixin",
 		"interacic.PlayerEntityMixin",

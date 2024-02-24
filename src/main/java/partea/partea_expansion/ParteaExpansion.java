@@ -2,6 +2,7 @@ package partea.partea_expansion;
 
 import net.fabricmc.api.ModInitializer;
 
+import partea.partea_expansion.CustomBlocks.GenOres;
 import partea.partea_expansion.CustomBlocks.entity.ModBlockEntities;
 import partea.partea_expansion.CustomTrades.NetherExplorer;
 import partea.partea_expansion.mixin.interacic.ItemEntityAccessor;
@@ -58,6 +59,7 @@ public class ParteaExpansion implements ModInitializer {
 		ModBlockEntities.registerBlockEntities();
 		ModScreenHandlers.registerScreenHandlers();
 		ModParticles.registerParticles();
+		GenOres.registerGenOres();
 
 		LOGGER.info("Hello Fabric world!");
 

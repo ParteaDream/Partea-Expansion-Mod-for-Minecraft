@@ -18,13 +18,50 @@ public class ModLootTableModifiers {
     private static final Identifier SUS_SAND_ID = new Identifier("minecraft", "archaeology/desert_pyramid");
     private static final Identifier SQUID_ID = new Identifier("minecraft", "entities/squid");
     private static final Identifier GLOW_SQUID_ID = new Identifier("minecraft", "entities/glow_squid");
+    private static final Identifier SH_LIB_ID = new Identifier("minecraft", "chests/stronghold_library");
+    private static final Identifier SH_COR_ID = new Identifier("minecraft", "chests/stronghold_corridor");
+    private static final Identifier WOODLAND_ID = new Identifier("minecraft", "chests/woodland_mansion");
+
 
     public static void modifierLootTables() {
+        LootTableEvents.MODIFY.register(((resourceManager, lootManager, id, tableBuilder, source) -> {
+            if(WOODLAND_ID.equals(id)){
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.25f))
+                        .with(ItemEntry.builder(ModItems.FOOLS_MASK))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f,1.0f)));
+                tableBuilder.pool(poolBuilder.build());
+            }
+        }));
+
+        LootTableEvents.MODIFY.register(((resourceManager, lootManager, id, tableBuilder, source) -> {
+            if(SH_COR_ID.equals(id)){
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.05f))
+                        .with(ItemEntry.builder(ModItems.FOOLS_MASK))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f,1.0f)));
+                tableBuilder.pool(poolBuilder.build());
+            }
+        }));
+
+        LootTableEvents.MODIFY.register(((resourceManager, lootManager, id, tableBuilder, source) -> {
+            if(SH_LIB_ID.equals(id)){
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.1f))
+                        .with(ItemEntry.builder(ModItems.FOOLS_MASK))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f,1.0f)));
+                tableBuilder.pool(poolBuilder.build());
+            }
+        }));
+
         LootTableEvents.MODIFY.register(((resourceManager, lootManager, id, tableBuilder, source) -> {
             if(ENDER_CITY_ID.equals(id)){
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.3f))
+                        .conditionally(RandomChanceLootCondition.builder(0.05f))
                         .with(ItemEntry.builder(ModItems.SHED_A_LIGHT_MUSIC_DISC))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f,1.0f)));
                 tableBuilder.pool(poolBuilder.build());

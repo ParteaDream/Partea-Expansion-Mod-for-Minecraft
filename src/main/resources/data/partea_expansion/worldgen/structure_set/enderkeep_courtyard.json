@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "partea_expansion:enderkeep_courtyard",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 367086003,
+    "spacing": 30,
+    "separation": 14,
+    "type": "minecraft:random_spread"
+  }
+}

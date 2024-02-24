@@ -31,12 +31,17 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .forceAddTag(BlockTags.DIAMOND_ORES)
                 .forceAddTag(BlockTags.EMERALD_ORES)
                 .add(Blocks.RAW_COPPER_BLOCK)
-                .add(Blocks.RAW_IRON_BLOCK);
+                .add(Blocks.RAW_IRON_BLOCK)
+                .add(Modblocks.AZURE_ORE)
+                .add(Blocks.NETHER_QUARTZ_ORE)
+                .add(Blocks.NETHER_GOLD_ORE)
+                .add(Blocks.ANCIENT_DEBRIS);
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(Modblocks.DIAMOND_NETHERITE_BLOCK)
                 .add(Modblocks.GOLDEN_NETHERITE_BLOCK)
                 .add(Modblocks.AZURE_BLOCK)
-                .add(Modblocks.AZURE_ORE);
+                .add(Modblocks.AZURE_ORE)
+                .add(Modblocks.QUALITATIVE_ANALYZER);
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_4")))
                 .add(Modblocks.GOLDEN_NETHERITE_BLOCK)
                 .add(Modblocks.DIAMOND_NETHERITE_BLOCK);

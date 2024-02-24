@@ -29,9 +29,9 @@ public class ModRecipesProvider extends FabricRecipeProvider {
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.AZURE_INGOT,
                 RecipeCategory.BUILDING_BLOCKS, Modblocks.AZURE_BLOCK);
 
-        offerSmelting(exporter,AZURE_LIST,RecipeCategory.MISC,ModItems.RAE_AZURE
+        offerSmelting(exporter,AZURE_LIST,RecipeCategory.MISC,ModItems.RAW_AZURE
                 ,1.0f,400,"raw_azure");
-        offerBlasting(exporter,AZURE_LIST,RecipeCategory.MISC,ModItems.RAE_AZURE
+        offerBlasting(exporter,AZURE_LIST,RecipeCategory.MISC,ModItems.RAW_AZURE
                 ,1.0f,200,"raw_azure");
 
     }

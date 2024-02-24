@@ -48,13 +48,19 @@ public class ModTab {
                 entries.add(DIAMOND_NETHERITE_BOOTS);
                 entries.add(DIAMOND_NETHERITE_BLOCK);
 
+                entries.add(FABRIC);
+                entries.add(CRYSTALLIZED_LAPIS);
+                entries.add(QUARTZ_DUST);
+                entries.add(CRYSTALLIZED_LAPIS_DUST);
+                entries.add(CRYING_OBSIDIAN_DUST);
+
                 entries.add(CRUDE_AMETHYST);
                 entries.add(AMETHYST);
                 entries.add(AMETHYST_SWORD);
                 entries.add(AMETHYST_STILLETO);
 
                 entries.add(AZURE_ORE);
-                entries.add(RAE_AZURE);
+                entries.add(RAW_AZURE);
                 entries.add(AZURE_INGOT);
                 entries.add(AZURE_BLOCK);
 
@@ -69,6 +75,8 @@ public class ModTab {
                 entries.add(ITEM_FILTER);
 
                 entries.add(QUALITATIVE_ANALYZER);
+
+                entries.add(FOOLS_MASK);
             })
             .build();
 

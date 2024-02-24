@@ -3,18 +3,27 @@
   "category": "building",
   "pattern": [
     "aba",
-    "bcb",
-    "aba"
+    "cfd",
+    "aea"
   ],
   "key": {
     "a": {
       "item": "minecraft:iron_block"
     },
     "b": {
-      "item": "minecraft:emerald"
+      "item": "minecraft:blue_ice"
     },
     "c": {
-      "item": "minecraft:crying_obsidian"
+      "item": "minecraft:soul_sand"
+    },
+    "d": {
+      "item": "minecraft:lava_bucket"
+    },
+    "e": {
+      "item": "minecraft:water_bucket"
+    },
+    "f": {
+      "item": "minecraft:cauldron"
     }
   },
   "result": {

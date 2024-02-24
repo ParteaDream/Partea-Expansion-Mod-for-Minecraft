@@ -25,8 +25,10 @@ public class Modblocks {
             .create().strength(100.0f, 4000).luminance(15).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK));
     public static final Block AZURE_ORE = new ExperienceDroppingBlock(UniformIntProvider.create(5, 10), FabricBlockSettings
             .create().strength(50.0f, 4000).luminance(8).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK));
-    public static final Block QUALITATIVE_ANALYZER = new QualitativeAnalyzer(FabricBlockSettings.create().strength(5.0f, 1200));
+    public static final Block QUALITATIVE_ANALYZER = new QualitativeAnalyzer(FabricBlockSettings.create()
+            .strength(3.5f, 3.5f).requiresTool().sounds(BlockSoundGroup.ANVIL).luminance(15));
     public static void registerBlocks(){
+
         Registry.register(Registries.BLOCK
                 , new Identifier("partea_expansion", "golden_netherite_block"), GOLDEN_NETHERITE_BLOCK);
         Registry.register(Registries.ITEM, new Identifier("partea_expansion", "golden_netherite_block")
@@ -51,7 +53,7 @@ public class Modblocks {
                 , new Identifier("partea_expansion", "qualitative_analyzer"), QUALITATIVE_ANALYZER);
         Registry.register(Registries.ITEM
                 , new Identifier("partea_expansion", "qualitative_analyzer"), new BlockItem(QUALITATIVE_ANALYZER
-                        , new FabricItemSettings().rarity(Rarity.UNCOMMON).fireproof()));
+                        , new FabricItemSettings().rarity(Rarity.COMMON).fireproof()));
 
         Registry.register(Registries.BLOCK
                 , new Identifier("partea_expansion", "doomed_death_flame"), DOOMED_DEATH_FLAME);

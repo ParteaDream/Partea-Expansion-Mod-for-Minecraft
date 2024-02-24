@@ -1,6 +1,12 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube",
   "textures": {
-    "all": "partea_expansion:block/qualitative_analyzer"
+    "down": "partea_expansion:block/qualitative_analyzer_bottom",
+    "east": "partea_expansion:block/qualitative_analyzer_side_lava",
+    "north": "partea_expansion:block/qualitative_analyzer_side_blueice",
+    "south": "partea_expansion:block/qualitative_analyzer_side_water",
+    "particle": "minecraft:block/smooth_stone",
+    "up": "partea_expansion:block/qualitative_analyzer",
+    "west": "partea_expansion:block/qualitative_analyzer_side_soulsand"
   }
 }

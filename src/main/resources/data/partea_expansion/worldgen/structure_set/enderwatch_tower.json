@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "partea_expansion:enderwatch_tower",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 367086005,
+    "spacing": 40,
+    "separation": 20,
+    "type": "minecraft:random_spread"
+  }
+}

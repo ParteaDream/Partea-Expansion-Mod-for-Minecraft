@@ -26,14 +26,15 @@ public class ModLootTablesProvider extends FabricBlockLootTableProvider {
         addDrop(Modblocks.GOLDEN_NETHERITE_BLOCK);
         addDrop(Modblocks.DIAMOND_NETHERITE_BLOCK);
         addDrop(Modblocks.AZURE_BLOCK);
+        addDrop(Modblocks.QUALITATIVE_ANALYZER);
 
-        addDrop(Modblocks.AZURE_ORE,copperOreLikeDrops(Modblocks.AZURE_ORE, ModItems.RAE_AZURE));
+        addDrop(Modblocks.AZURE_ORE,copperOreLikeDrops(Modblocks.AZURE_ORE, ModItems.RAW_AZURE));
     }
 
     public LootTable.Builder copperOreLikeDrops(Block drop, Item item){
         return dropsWithSilkTouch(drop, (LootPoolEntry.Builder)this.applyExplosionDecay(drop
                 , ItemEntry.builder(item)
-                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f,1.0f)))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0.0f,1.0f)))
                         .apply(ApplyBonusLootFunction.oreDrops(Enchantments.FORTUNE))));
     }
 }

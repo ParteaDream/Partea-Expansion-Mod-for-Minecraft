@@ -17,6 +17,7 @@ public class QualitativeAnalyzerScreen extends HandledScreen<QualitativeAnalyzer
     @Override
     protected void init() {
         super.init();
+        this.titleX = (this.backgroundWidth - this.textRenderer.getWidth(this.title)) / 2;
         titleY = 1000;
         playerInventoryTitleY = 1000;
     }
@@ -28,6 +29,7 @@ public class QualitativeAnalyzerScreen extends HandledScreen<QualitativeAnalyzer
         RenderSystem.setShaderTexture(0,TEXTURE);
         int x = (width - backgroundWidth) / 2;
         int y = (height - backgroundHeight) / 2;
+
 
         context.drawTexture(TEXTURE,x,y,0,0,backgroundWidth,backgroundHeight);
 
@@ -44,6 +46,8 @@ public class QualitativeAnalyzerScreen extends HandledScreen<QualitativeAnalyzer
     public void render(DrawContext context, int mouseX, int mouseY, float delta) {
         renderBackground(context, mouseX, mouseY, delta);
         super.render(context, mouseX, mouseY, delta);
+        context.drawText(this.client.textRenderer, Text.translatable("block.partea_expansion.qualitative_analyzer.title")
+                , this.x + 20, this.y + 8, 0x404040, false);
         drawMouseoverTooltip(context,mouseX,mouseY);
     }
 }
