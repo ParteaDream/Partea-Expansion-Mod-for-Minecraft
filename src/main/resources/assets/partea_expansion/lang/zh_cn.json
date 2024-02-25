@@ -45,10 +45,6 @@
   "item.partea_expansion.fabric": "织物",
 
 
-  "block.partea_expansion.qualitative_analyzer.title": "参量质变仪",
-  "block.partea_expansion.qualitative_analyzer": "参量质变仪",
-
-
 
   "item.partea_expansion.diamond_prospector.tooltip": "探测选取方块纵向一格内的minecraft矿石",
   "item.partea_expansion.diamond_prospector.tooltip2": "未检测出矿石存在",
@@ -62,6 +58,9 @@
   "block.partea_expansion.diamond_netherite_block": "钻石下界合金块",
   "block.partea_expansion.azure_block": "蔚蓝块",
   "block.partea_expansion.azure_ore": "蔚蓝矿",
+  "block.partea_expansion.doomed_death_flame": "命定之死",
+  "block.partea_expansion.qualitative_analyzer.title": "参量质变仪",
+  "block.partea_expansion.qualitative_analyzer": "参量质变仪",
 
   "item_group.partea_expansion.partea_expansion": "Partea的扩展",
   "itemgroup.partea_expansion.partea_expansion": "Partea的扩展",
@@ -75,10 +74,25 @@
 
   "enchantment.partea_expansion.enchant_doomed_death": "命定之死",
   "enchantment.partea_expansion.enchant_sharp_sickle": "锋利镰刀",
+  "enchantment.partea_expansion.ice_aspect": "冰霜附加",
+  "enchantment.partea_expansion.auto_smelt": "自动熔炼",
+  "enchantment.partea_expansion.beheading": "斩首",
+  "enchantment.partea_expansion.experience": "教育",
+  "enchantment.partea_expansion.glimmering": "金光闪闪",
+  "enchantment.partea_expansion.consumer": "饱食",
+  "enchantment.partea_expansion.god_of_the_sea": "海神垂怜",
+  "enchantment.partea_expansion.nocturnal": "夜隐无形",
+  "enchantment.partea_expansion.pulse": "深暗脉冲",
+  "enchantment.partea_expansion.rise": "飞升",
+  "enchantment.partea_expansion.pyramania": "逐火者",
+  "enchantment.partea_expansion.soul_seeker": "罗蕾塔的绝活",
+  "enchantment.partea_expansion.vigour": "活力",
+
 
   "entity.minecraft.villager.partea_expansion.nether_explorer": "下界探险家",
   "entity.minecraft.villager.nether_explorer": "下界探险家",
 
+  "effect.partea_expansion.doomed_death": "命定之死",
 
 
 

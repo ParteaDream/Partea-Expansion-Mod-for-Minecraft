@@ -23,7 +23,9 @@ public class ModLootTableModifiers {
     private static final Identifier WOODLAND_ID = new Identifier("minecraft", "chests/woodland_mansion");
 
 
+
     public static void modifierLootTables() {
+
         LootTableEvents.MODIFY.register(((resourceManager, lootManager, id, tableBuilder, source) -> {
             if(WOODLAND_ID.equals(id)){
                 LootPool.Builder poolBuilder = LootPool.builder()

@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.item.ItemStack;
+import net.minecraft.potion.Potions;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
@@ -76,7 +77,8 @@ public class ModTab {
 
                 entries.add(QUALITATIVE_ANALYZER);
 
-                entries.add(FOOLS_MASK);
+                entries.add(FOOLS_MASK);;
+
             })
             .build();
 

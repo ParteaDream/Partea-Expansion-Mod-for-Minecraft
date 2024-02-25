@@ -18,7 +18,7 @@ public enum ModArmorMaterial implements ArmorMaterial {
     DIAMOND_NETHERITE("diamond_netherite", 54, new int[]{4,10,8,4}, 25,
             SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 4.0f, 0.2f
             ,() -> Ingredient.ofItems(ModItems.DIAMOND_NETHERITE_INGOT)),
-    NIGHT_VISION_GLASSES("night_vision_glasses", 25, new int[]{2,2,2,2}, 15,
+    NIGHT_VISION_GLASSES("night_vision_glasses", 25, new int[]{1,2,2,2}, 15,
             SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0f, 0.0f
             ,() -> Ingredient.ofItems(Items.COPPER_INGOT)),
     FOOLS_MASK("fools_mask", 7, new int[]{1,3,2,1}, 15,
