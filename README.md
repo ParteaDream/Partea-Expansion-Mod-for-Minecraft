@@ -1,6 +1,8 @@
 # [1.20.4]Partea Expansion-beta6模组项目文档
 ## 描述
 本模组旨在优化与拓展原版玩法，增强探索体验，同时维持游戏的平衡
+## 前置模组
+1.owo-lib https://maven.wispforest.io/io/wispforest/owo-lib/
 
 ## 新增物品
 
