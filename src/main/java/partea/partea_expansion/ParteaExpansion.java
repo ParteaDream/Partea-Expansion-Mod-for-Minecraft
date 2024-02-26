@@ -1,19 +1,6 @@
 package partea.partea_expansion;
 
 import net.fabricmc.api.ModInitializer;
-
-import partea.partea_expansion.CustomBlocks.GenOres;
-import partea.partea_expansion.CustomBlocks.entity.ModBlockEntities;
-import partea.partea_expansion.CustomTrades.NetherExplorer;
-import partea.partea_expansion.Enchantments.EnchantDoomedDeath;
-import partea.partea_expansion.Enchantments.EnchantRegister;
-import partea.partea_expansion.mixin.interacic.ItemEntityAccessor;
-import partea.partea_expansion.Plugins.interactic.util.Helpers;
-import partea.partea_expansion.potion.PotionRegister;
-import partea.partea_expansion.screen.ModScreenHandlers;
-import partea.partea_expansion.sounds.ModSounds;
-import partea.partea_expansion.util.InteracticConfig;
-import partea.partea_expansion.Plugins.interactic.util.InteracticPlayerExtension;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.entity.player.PlayerEntity;
@@ -25,8 +12,19 @@ import net.minecraft.screen.ScreenHandlerType;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import partea.partea_expansion.CustomBlocks.GenOres;
+import partea.partea_expansion.CustomBlocks.entity.ModBlockEntities;
+import partea.partea_expansion.CustomTrades.NetherExplorer;
+import partea.partea_expansion.Enchantments.EnchantRegister;
 import partea.partea_expansion.Plugins.interactic.ItemFilterItem;
 import partea.partea_expansion.Plugins.interactic.ItemFilterScreenHandler;
+import partea.partea_expansion.Plugins.interactic.util.Helpers;
+import partea.partea_expansion.Plugins.interactic.util.InteracticPlayerExtension;
+import partea.partea_expansion.mixin.interacic.ItemEntityAccessor;
+import partea.partea_expansion.potion.PotionRegister;
+import partea.partea_expansion.screen.ModScreenHandlers;
+import partea.partea_expansion.sounds.ModSounds;
+import partea.partea_expansion.util.InteracticConfig;
 import partea.partea_expansion.util.ModLootTableModifiers;
 import partea.partea_expansion.util.ModTraders;
 

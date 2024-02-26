@@ -1,7 +1,5 @@
 package partea.partea_expansion.CustomBlocks;
 
-import partea.partea_expansion.CustomBlocks.entity.QualitativeAnalyzerBlockEntity;
-import partea.partea_expansion.CustomBlocks.entity.ModBlockEntities;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
@@ -18,6 +16,8 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
+import partea.partea_expansion.CustomBlocks.entity.ModBlockEntities;
+import partea.partea_expansion.CustomBlocks.entity.QualitativeAnalyzerBlockEntity;
 
 public class QualitativeAnalyzer extends BlockWithEntity implements BlockEntityProvider {
 

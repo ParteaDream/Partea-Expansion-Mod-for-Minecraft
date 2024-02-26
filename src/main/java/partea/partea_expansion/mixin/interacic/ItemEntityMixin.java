@@ -1,9 +1,5 @@
 package partea.partea_expansion.mixin.interacic;
 
-import partea.partea_expansion.ParteaExpansion;
-import partea.partea_expansion.Plugins.interactic.util.Helpers;
-import partea.partea_expansion.Plugins.interactic.util.InteracticItemExtensions;
-import partea.partea_expansion.Plugins.interactic.util.ItemDamageSource;
 import net.minecraft.entity.*;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
@@ -17,6 +13,10 @@ import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import partea.partea_expansion.ParteaExpansion;
+import partea.partea_expansion.Plugins.interactic.util.Helpers;
+import partea.partea_expansion.Plugins.interactic.util.InteracticItemExtensions;
+import partea.partea_expansion.Plugins.interactic.util.ItemDamageSource;
 
 @Mixin(ItemEntity.class)
 public abstract class ItemEntityMixin extends Entity implements InteracticItemExtensions {

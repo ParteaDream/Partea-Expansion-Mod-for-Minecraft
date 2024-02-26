@@ -1,8 +1,5 @@
 package partea.partea_expansion.Plugins.interactic.util;
 
-import partea.partea_expansion.ParteaExpansion;
-import partea.partea_expansion.Plugins.interactic.ItemFilterItem;
-import partea.partea_expansion.mixin.interacic.PlayerInventoryAccessor;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.ItemEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -12,6 +9,9 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.hit.EntityHitResult;
 import net.minecraft.util.math.Vec3d;
+import partea.partea_expansion.ParteaExpansion;
+import partea.partea_expansion.Plugins.interactic.ItemFilterItem;
+import partea.partea_expansion.mixin.interacic.PlayerInventoryAccessor;
 
 import java.util.Collection;
 import java.util.List;

@@ -1,13 +1,9 @@
 package partea.partea_expansion.CustomItems.ToolItems;
 
 import net.minecraft.block.Blocks;
-import net.minecraft.item.ItemConvertible;
-import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
-import net.minecraft.util.Lazy;
 import partea.partea_expansion.ModItems;
-import partea.partea_expansion.util.ModTags;
 
 import java.util.function.Supplier;
 

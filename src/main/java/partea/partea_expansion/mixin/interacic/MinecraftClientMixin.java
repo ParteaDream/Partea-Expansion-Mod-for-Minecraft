@@ -1,8 +1,5 @@
 package partea.partea_expansion.mixin.interacic;
 
-import partea.partea_expansion.ParteaExpansionClient;
-import partea.partea_expansion.ParteaExpansion;
-import partea.partea_expansion.Plugins.interactic.util.Helpers;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.fabricmc.fabric.api.networking.v1.PacketByteBufs;
@@ -25,6 +22,9 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.Redirect;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import partea.partea_expansion.ParteaExpansion;
+import partea.partea_expansion.ParteaExpansionClient;
+import partea.partea_expansion.Plugins.interactic.util.Helpers;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;

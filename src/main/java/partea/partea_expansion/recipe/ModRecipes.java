@@ -1,10 +1,8 @@
 package partea.partea_expansion.recipe;
 
-import net.minecraft.recipe.Recipe;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import partea.partea_expansion.CustomBlocks.QualitativeAnalyzer;
 
 public class ModRecipes {
     public static void registerRecipes(){

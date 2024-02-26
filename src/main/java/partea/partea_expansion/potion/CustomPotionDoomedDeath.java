@@ -1,12 +1,8 @@
 package partea.partea_expansion.potion;
 
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.damage.DamageSource;
-import net.minecraft.entity.damage.DamageTypes;
 import net.minecraft.entity.effect.StatusEffect;
-import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.effect.StatusEffectCategory;
-import net.minecraft.world.World;
 
 public class CustomPotionDoomedDeath extends StatusEffect {
     public static StatusEffect PotionDoomedDeath = new CustomPotionDoomedDeath();

@@ -1,6 +1,5 @@
 package partea.partea_expansion.CustomItems;
 
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.item.TooltipContext;

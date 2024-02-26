@@ -1,6 +1,5 @@
 package partea.partea_expansion.mixin.enchantments;
 
-import net.minecraft.enchantment.EnchantmentLevelEntry;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
