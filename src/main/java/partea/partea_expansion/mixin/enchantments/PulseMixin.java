@@ -10,6 +10,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.predicate.entity.EntityPredicates;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.MathHelper;
@@ -46,7 +47,10 @@ public abstract class PulseMixin {
 
                     for(int i = 1; i < MathHelper.floor(vec3d2.length()) + 7; ++i) {
                         Vec3d vec3d4 = vec3d.add(vec3d3.multiply(i));
-                        if (world instanceof ServerWorld sw) sw.spawnParticles(ParticleTypes.SONIC_BOOM, vec3d4.x, vec3d4.y, vec3d4.z, 1, 0.0D, 0.0D, 0.0D, 0.0D);
+                        if (world instanceof ServerWorld sw) {
+                            sw.spawnParticles(ParticleTypes.SONIC_BOOM, vec3d4.x, vec3d4.y, vec3d4.z, 1, 0.0D, 0.0D, 0.0D, 0.0D);
+                            world.playSound(null, entity.getBlockPos(), SoundEvents.ENTITY_WARDEN_SONIC_BOOM, SoundCategory.PLAYERS, 1.0f, 1f);
+                        }
                     }
 
                     entity.playSound(SoundEvents.ENTITY_WARDEN_SONIC_BOOM, 3.0F, 1.0F);

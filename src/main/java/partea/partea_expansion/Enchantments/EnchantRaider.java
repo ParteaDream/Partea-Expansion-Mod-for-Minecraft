@@ -41,7 +41,7 @@ public class EnchantRaider extends Enchantment {
         World world = user.getEntityWorld();
         if (target instanceof LivingEntity livingEntity) {
             if (livingEntity.getGroup() == EntityGroup.ILLAGER) {
-                target.damage(world.getDamageSources().generic(), (float) level * 1.5F);
+                target.damage(world.getDamageSources().generic(), (float) level * 3F);
             }
         } else {
             super.onTargetDamaged(user, target, level);

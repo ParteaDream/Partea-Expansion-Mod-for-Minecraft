@@ -27,7 +27,7 @@ public class EnchantRegister {
         Registry.register(Registries.ENCHANTMENT
                 , new Identifier("partea_expansion", "nocturnal"), EnchantNocturnal.NOCTURNAL);
         Registry.register(Registries.ENCHANTMENT
-                , new Identifier("partea_expansion", "pulse"), EnchantPulse.PULSE);
+                , new Identifier("partea_expansion", "deep_dark_fantasy"), EnchantPulse.PULSE);
         Registry.register(Registries.ENCHANTMENT
                 , new Identifier("partea_expansion", "rise"), EnchantRise.RISE);
         Registry.register(Registries.ENCHANTMENT
@@ -41,6 +41,6 @@ public class EnchantRegister {
         Registry.register(Registries.ENCHANTMENT
                 , new Identifier("partea_expansion", "raider"), EnchantRaider.RAIDER);
         Registry.register(Registries.ENCHANTMENT
-                , new Identifier("partea_expansion", "dual_leap"), EnchantDualLeap.DUAKLEAP);
+                , new Identifier("partea_expansion", "dual_leap"), EnchantDualLeap.DUAL_LEAP);
     }
 }

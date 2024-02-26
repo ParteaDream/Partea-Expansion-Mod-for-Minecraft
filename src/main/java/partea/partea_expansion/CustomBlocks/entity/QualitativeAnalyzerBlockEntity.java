@@ -19,7 +19,6 @@ import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
-import partea.partea_expansion.CustomItems.ModArmorMaterial;
 import partea.partea_expansion.ModItems;
 import partea.partea_expansion.screen.QualitativeAnalyzerScreenHandler;
 
@@ -170,6 +169,10 @@ public class QualitativeAnalyzerBlockEntity extends BlockEntity implements Exten
                 || getStack(INPUT_SLOT).getItem() == Items.CHARCOAL){
             result = new ItemStack(Items.GLOWSTONE_DUST);
         }
+        if (getStack(INPUT_SLOT).getItem() == Items.ENDER_EYE
+                || getStack(INPUT_SLOT).getItem() == Items.ENDER_PEARL){
+            result = new ItemStack(ModItems.ANCIENT_PEARL);
+        }
         this.removeStack(INPUT_SLOT,1);
         this.removeStack(E_SLOT,1);
         this.setStack(OUTPUT_SLOT, new ItemStack(result.getItem(), getStack(OUTPUT_SLOT).getCount() + result.getCount()));
@@ -238,6 +241,11 @@ public class QualitativeAnalyzerBlockEntity extends BlockEntity implements Exten
                 || getStack(INPUT_SLOT).getItem() == Items.CHARCOAL){
             result = new ItemStack(Items.GLOWSTONE_DUST);
             return EhasQD() && canInsertAmountIntoOutputSlot(result) && canInsertItemIntoOutputSlot(result.getItem());
+        }
+        if (getStack(INPUT_SLOT).getItem() == Items.ENDER_EYE
+                || getStack(INPUT_SLOT).getItem() == Items.ENDER_PEARL){
+            result = new ItemStack(ModItems.ANCIENT_PEARL);
+            return EhasCOD() && canInsertAmountIntoOutputSlot(result) && canInsertItemIntoOutputSlot(result.getItem());
         }
 
 

@@ -43,6 +43,7 @@
   "item.partea_expansion.crying_obsidian_dust": "Crying Obsidian Dust",
   "item.partea_expansion.quartz_dust": "Quartz Dust",
   "item.partea_expansion.fabric": "Fabric",
+  "item.partea_expansion.ancient_pearl": "Ancient Pearl",
 
 
   "item.partea_expansion.diamond_prospector.tooltip": "detect if there's minecraft ore under the block",
@@ -81,7 +82,7 @@
   "enchantment.partea_expansion.consumer": "Consumer",
   "enchantment.partea_expansion.god_of_the_sea": "God Of The Sea",
   "enchantment.partea_expansion.nocturnal": "Nocturnal",
-  "enchantment.partea_expansion.pulse": "Pulse",
+  "enchantment.partea_expansion.deep_dark_fantasy": "Deep♂Dark♂Fantasy",
   "enchantment.partea_expansion.rise": "Rise",
   "enchantment.partea_expansion.pyramania": "Pyramania",
   "enchantment.partea_expansion.soul_seeker": "Soul Seeker",
@@ -89,6 +90,8 @@
   "enchantment.partea_expansion.life_steal": "Life Steal",
   "enchantment.partea_expansion.raider": "Raider",
   "enchantment.partea_expansion.dual_leap": "Dual Leap",
+
+
 
 
   "entity.minecraft.villager.partea_expansion.nether_explorer": "Nether Explorer",

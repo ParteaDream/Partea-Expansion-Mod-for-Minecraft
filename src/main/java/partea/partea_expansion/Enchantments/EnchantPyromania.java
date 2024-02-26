@@ -2,7 +2,6 @@ package partea.partea_expansion.Enchantments;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
-import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
@@ -22,7 +21,7 @@ public class EnchantPyromania extends Enchantment {
     }
 
     public int getMaxLevel() {
-        return 2;
+        return 3;
     }
     public boolean isTreasure() {
         return true;
@@ -36,7 +35,7 @@ public class EnchantPyromania extends Enchantment {
     @Override
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
         if(target instanceof LivingEntity && target.isOnFire()) {
-            target.damage(user.getDamageSources().mobAttack(user), level*2 + 1);
+            target.damage(user.getDamageSources().mobAttack(user), level*4 + 2);
         }
 
         super.onTargetDamaged(user, target, level);

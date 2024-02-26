@@ -1,21 +1,16 @@
 package partea.partea_expansion;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemGroups;
 import net.minecraft.item.ItemStack;
-import net.minecraft.potion.Potions;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
-import partea.partea_expansion.CustomItems.SafeminingDetectorItem;
-import partea.partea_expansion.Plugins.interactic.ItemFilterItem;
 
 import static partea.partea_expansion.ModItems.*;
 import static partea.partea_expansion.Modblocks.*;
-import static partea.partea_expansion.ParteaExpansion.*;
+import static partea.partea_expansion.ParteaExpansion.ITEM_FILTER;
 
 public class ModTab {
     public static final ItemGroup PARTEA_EXPANSION = FabricItemGroup.builder()
@@ -78,6 +73,7 @@ public class ModTab {
                 entries.add(QUALITATIVE_ANALYZER);
 
                 entries.add(FOOLS_MASK);;
+                entries.add(ANCIENT_PEARL);;
 
             })
             .build();

@@ -1,5 +1,5 @@
-// 1.20.4	2024-02-24T22:26:03.465518	Partea Expansion/Tags for minecraft:block
+// 1.20.4	2024-02-26T15:32:09.061159	Partea Expansion/Tags for minecraft:block
 ee39432dc1bcce2f37fd26734edb17e61dc7ca5b data/partea_expansion/tags/blocks/diamond_prospector_list.json
 5889a34f2302c93ece484811f3ec2a9baf8261f2 data/fabric/tags/blocks/needs_tool_level_4.json
-a8068d22bfe0ec4b8d4a27b5adf7994c56d11682 data/fabric/tags/blocks/needs_tool_level_5.json
 a6fd2cdc2a882f866e292c9bb279b368d09a9572 data/minecraft/tags/blocks/mineable/pickaxe.json
+a8068d22bfe0ec4b8d4a27b5adf7994c56d11682 data/fabric/tags/blocks/needs_tool_level_5.json

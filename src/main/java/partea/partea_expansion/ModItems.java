@@ -16,6 +16,8 @@ import partea.partea_expansion.sounds.ModSounds;
 import static partea.partea_expansion.CustomItems.ModArmorMaterial.GOLDEN_NETHERITE;
 
 public class ModItems {
+    public static Item ANCIENT_PEARL = registerItem("ancient_pearl"
+            , new AncientPearl(new FabricItemSettings().rarity(Rarity.UNCOMMON).maxCount(16)));
     public static Item FABRIC = registerItem("fabric"
             , new Item(new FabricItemSettings().rarity(Rarity.COMMON)));
     public static Item QUARTZ_DUST = registerItem("quartz_dust"
@@ -122,7 +124,7 @@ public class ModItems {
     public static Item DIAMOND_PROSPECTOR = registerItem("diamond_prospector"
             , new DiamondProspectorItem(new FabricItemSettings().maxDamage(96)));
     public static Item SAFEMINING_DETECTOR = registerItem("safemining_detector"
-            , new SafeminingDetectorItem(new FabricItemSettings().maxDamage(96)));
+            , new SafeminingDetectorItem(new FabricItemSettings().maxDamage(198)));
     public static Item EMPTY_TERMINAL = registerItem("empty_terminal"
             , new Item(new FabricItemSettings()));
 

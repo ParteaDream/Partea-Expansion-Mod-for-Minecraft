@@ -5,7 +5,7 @@ import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.entity.EquipmentSlot;
 
 public class EnchantDualLeap extends Enchantment {
-    public static Enchantment DUAKLEAP = new EnchantDualLeap();
+    public static Enchantment DUAL_LEAP = new EnchantDualLeap();
     public EnchantDualLeap() {
         super(Enchantment.Rarity.RARE, EnchantmentTarget.ARMOR_FEET, new EquipmentSlot[]{EquipmentSlot.FEET});
     }
@@ -19,12 +19,13 @@ public class EnchantDualLeap extends Enchantment {
     public int getMaxLevel() {
         return 1;
     }
-    public boolean isTreasure(){
-        return true;
-    }
 
     @Override
     protected boolean canAccept(Enchantment other) {
         return super.canAccept(other);
+    }
+
+    public boolean isTreasure(){
+        return true;
     }
 }

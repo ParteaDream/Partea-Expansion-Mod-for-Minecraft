@@ -24,10 +24,10 @@ public class ClientPlayerEntityMixin {
     @Inject(method = "tickMovement", at = @At("HEAD"))
     private void tickMovement(CallbackInfo info) {
         ClientPlayerEntity player = (ClientPlayerEntity) (Object) this;
-
+        
         // Dual Leap
         if (player.isOnGround() || player.isClimbing()) {
-            jumpCount = EnchantmentHelper.getEquipmentLevel(EnchantDualLeap.DUAKLEAP, player);
+            jumpCount = EnchantmentHelper.getEquipmentLevel(EnchantDualLeap.DUAL_LEAP, player);
         } else if (!jumpedLastTick && jumpCount > 0 && player.getVelocity().y < 0) {
             if (player.input.jumping && canJump(player)) {
                 jumpCount--;

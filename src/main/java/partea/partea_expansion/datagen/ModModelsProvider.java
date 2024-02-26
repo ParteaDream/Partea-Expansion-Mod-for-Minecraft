@@ -2,7 +2,6 @@ package partea.partea_expansion.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.minecraft.block.Blocks;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
@@ -52,6 +51,7 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.CRYING_OBSIDIAN_DUST, Models.GENERATED);
         itemModelGenerator.register(ModItems.QUARTZ_DUST, Models.GENERATED);
         itemModelGenerator.register(ModItems.FABRIC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ANCIENT_PEARL, Models.GENERATED);
 
         itemModelGenerator.registerArmor((ArmorItem) ModItems.FOOLS_MASK);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.DIAMOND_NETHERITE_HELMET);
