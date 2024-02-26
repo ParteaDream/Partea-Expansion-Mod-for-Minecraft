@@ -25,6 +25,7 @@
     "lapisreserve.ServerPlayerReserve"
   ],
   "client": [
+    "ClientPlayerEntityMixin",
     "interacic.InGameHudMixin",
     "interacic.ItemEntityRendererMixin",
     "interacic.MinecraftClientMixin"

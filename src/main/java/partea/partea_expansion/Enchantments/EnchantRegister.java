@@ -1,6 +1,5 @@
 package partea.partea_expansion.Enchantments;
 
-import net.minecraft.client.gui.screen.ingame.EnchantmentScreen;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -37,5 +36,11 @@ public class EnchantRegister {
                 , new Identifier("partea_expansion", "soul_seeker"), EnchantSoulSeeker.SOUL_SEEKER);
         Registry.register(Registries.ENCHANTMENT
                 , new Identifier("partea_expansion", "vigour"), EnchantVigour.VIGOUR);
+        Registry.register(Registries.ENCHANTMENT
+                , new Identifier("partea_expansion", "life_steal"), EnchantLifeSteal.LIFE_STEAL);
+        Registry.register(Registries.ENCHANTMENT
+                , new Identifier("partea_expansion", "raider"), EnchantRaider.RAIDER);
+        Registry.register(Registries.ENCHANTMENT
+                , new Identifier("partea_expansion", "dual_leap"), EnchantDualLeap.DUAKLEAP);
     }
 }
