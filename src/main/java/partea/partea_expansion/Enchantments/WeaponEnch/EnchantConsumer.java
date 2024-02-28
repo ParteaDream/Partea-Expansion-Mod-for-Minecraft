@@ -1,12 +1,11 @@
-package partea.partea_expansion.Enchantments;
+package partea.partea_expansion.Enchantments.WeaponEnch;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.entity.EquipmentSlot;
-
-public class EnchantExperience extends Enchantment {
-    public static Enchantment EXPERIENCE = new EnchantExperience();
-    public EnchantExperience() {
+public class EnchantConsumer extends Enchantment {
+    public static Enchantment CONSUMER = new EnchantConsumer();
+    public EnchantConsumer() {
         super(Enchantment.Rarity.RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND, EquipmentSlot.OFFHAND});
     }
 
@@ -17,6 +16,6 @@ public class EnchantExperience extends Enchantment {
 
     @Override
     public int getMaxLevel() {
-        return 2;
+        return 3;
     }
 }

@@ -11,7 +11,7 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import partea.partea_expansion.Enchantments.EnchantExperience;
+import partea.partea_expansion.Enchantments.WeaponEnch.EnchantExperience;
 import partea.partea_expansion.util.FEUtil;
 
 @Mixin(LivingEntity.class)
@@ -29,7 +29,7 @@ public abstract class ExperienceMixin extends Entity {
         if (source.getAttacker() instanceof PlayerEntity player && this.getXpToDrop() > 0) {
             if (FEUtil.hasEnchantment(player, EnchantExperience.EXPERIENCE)) {
                 int level = FEUtil.getLevel(player, EnchantExperience.EXPERIENCE);
-                player.addExperience(level * 4);
+                player.addExperience(level * 8);
             }
         }
     }

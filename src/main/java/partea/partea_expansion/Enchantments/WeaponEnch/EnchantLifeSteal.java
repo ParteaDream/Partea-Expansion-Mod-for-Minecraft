@@ -1,4 +1,4 @@
-package partea.partea_expansion.Enchantments;
+package partea.partea_expansion.Enchantments.WeaponEnch;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
@@ -17,12 +17,12 @@ public class EnchantLifeSteal extends Enchantment {
 
     @Override
     public int getMinPower(int level) {
-        return 5 + (7 * level);
+        return 15 + (10 * level);
     }
 
     @Override
     public int getMaxLevel() {
-        return 4;
+        return 2;
     }
     @Override
     protected boolean canAccept(Enchantment other) {
@@ -33,11 +33,11 @@ public class EnchantLifeSteal extends Enchantment {
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
         World world = user.getWorld();
         if (!world.isClient()) {
-            if (user.getHealth() < user.getMaxHealth() && (Math.random() < 0.10 + (level * 0.05)) && target instanceof LivingEntity) {
+            if (user.getHealth() < user.getMaxHealth() && (Math.random() < 0.10) && target instanceof LivingEntity) {
                 float targetHealth = ((LivingEntity) target).getHealth();
                 if (targetHealth > 0) {
                     world.playSound(null, user.getBlockPos(), ModSounds.BLURP, SoundCategory.PLAYERS, 1.0f, 1f);
-                    user.heal(user.getMaxHealth() * 0.15f);
+                    user.heal(user.getMaxHealth() * (0.05f + level * 0.05f));
                 }
             }
         }

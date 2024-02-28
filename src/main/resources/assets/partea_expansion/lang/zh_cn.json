@@ -44,6 +44,7 @@
   "item.partea_expansion.quartz_dust": "石英粉",
   "item.partea_expansion.fabric": "织物",
   "item.partea_expansion.ancient_pearl": "远古珍珠",
+  "item.partea_expansion.thriller_mask": "惊悚假面",
 
 
   "item.partea_expansion.diamond_prospector.tooltip": "探测选取方块纵向一格内的minecraft矿石",
@@ -52,7 +53,7 @@
   "item.partea_expansion.safemining_detector.tooltip2": "鉴定为安全",
   "item.partea_expansion.safemining_detector.tooltip3": "疑似危险",
   "item.partea_expansion.amethyst_sword.tooltip": "耐久越低，伤害越高",
-
+  "item.partea_expansion.clock_tricks": "钟表把戏",
 
   "block.partea_expansion.golden_netherite_block": "黄金下界合金块",
   "block.partea_expansion.diamond_netherite_block": "钻石下界合金块",
@@ -61,9 +62,14 @@
   "block.partea_expansion.doomed_death_flame": "命定之死",
   "block.partea_expansion.qualitative_analyzer.title": "参量质变仪",
   "block.partea_expansion.qualitative_analyzer": "参量质变仪",
+  "block.partea_expansion.fake_obsidian": "伪黑曜石",
 
-  "item_group.partea_expansion.partea_expansion": "Partea的扩展",
-  "itemgroup.partea_expansion.partea_expansion": "Partea的扩展",
+  "itemgroup.partea_expansion.1partea_expansion": "Partea的扩展",
+  "itemgroup.partea_expansion.2blocks": "方块",
+  "itemgroup.partea_expansion.3tools": "工具",
+  "itemgroup.partea_expansion.4combat": "战斗",
+  "itemgroup.partea_expansion.5ingredients": "杂项",
+
 
   "advancements.is_it_the_ultimate_power.title": "这就是洪荒之力？",
   "advancements.is_it_the_ultimate_power.descr": "得到钻石下界合金锭",
@@ -90,11 +96,18 @@
   "enchantment.partea_expansion.life_steal": "吸血",
   "enchantment.partea_expansion.raider": "灾厄杀手",
   "enchantment.partea_expansion.dual_leap": "二段跳",
+  "enchantment.partea_expansion.blaze_walker": "熔岩漫步",
+  "enchantment.partea_expansion.harmful_afterglow": "危害性余光",
+  "enchantment.partea_expansion.precept_flickering": "戒律性闪变",
+  "enchantment.partea_expansion.destructive_flare": "破坏性耀发",
+  "enchantment.partea_expansion.blood_therapy": "景星助狩月",
+  "enchantment.partea_expansion.predictive_depth_of_field": "预兆性景深",
+  "enchantment.partea_expansion.antimatter_noninverse_equation": "反物质非逆方程",
 
   "entity.minecraft.villager.partea_expansion.nether_explorer": "下界探险家",
   "entity.minecraft.villager.nether_explorer": "下界探险家",
 
-  "effect.partea_expansion.doomed_death": "命定之死",
+  "effect.partea_expansion.doomed_death": "命a定之死",
 
 
 

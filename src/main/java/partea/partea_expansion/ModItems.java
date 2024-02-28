@@ -8,6 +8,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import partea.partea_expansion.CustomItems.*;
 import partea.partea_expansion.CustomItems.CustomMaskItems.CustomFoolsMaskItem;
+import partea.partea_expansion.CustomItems.CustomMaskItems.CustomThrillerMaskItem;
 import partea.partea_expansion.CustomItems.ToolItems.AmethystSwordItem;
 import partea.partea_expansion.CustomItems.ToolItems.CreativeSwordItem;
 import partea.partea_expansion.CustomItems.ToolItems.ModToolMaterials;
@@ -16,6 +17,9 @@ import partea.partea_expansion.sounds.ModSounds;
 import static partea.partea_expansion.CustomItems.ModArmorMaterial.GOLDEN_NETHERITE;
 
 public class ModItems {
+    public static Item THRILLER_MASK = registerItem("thriller_mask"
+            , new CustomThrillerMaskItem(ModArmorMaterial.THRILLER_MASK, ArmorItem.Type.HELMET
+                    , new FabricItemSettings().rarity(Rarity.UNCOMMON)));
     public static Item ANCIENT_PEARL = registerItem("ancient_pearl"
             , new AncientPearl(new FabricItemSettings().rarity(Rarity.UNCOMMON).maxCount(16)));
     public static Item FABRIC = registerItem("fabric"

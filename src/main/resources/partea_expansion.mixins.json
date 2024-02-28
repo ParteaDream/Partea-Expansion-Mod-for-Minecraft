@@ -4,9 +4,11 @@
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "EndermanMixin",
+    "LivingEntityMixin",
     "ModMixin",
     "enchantments.AutoSmeltMixin",
     "enchantments.BeheadingMixin",
+    "enchantments.BloodTherapyMixin",
     "enchantments.ConsumerMixin",
     "enchantments.ExperienceMixin",
     "enchantments.GlimmeringMixin",
@@ -22,7 +24,11 @@
     "interacic.RecipeManagerMixin",
     "lapisreserve.EnchantScreen",
     "lapisreserve.PlayerReserve",
-    "lapisreserve.ServerPlayerReserve"
+    "lapisreserve.ServerPlayerReserve",
+    "VanillaEnchantmentMixin.ProtectionMixin",
+    "VanillaEnchantmentMixin.SharpnessMixin",
+    "VanillaEnchantmentMixin.SweepingMixin",
+    "VanillaEnchantmentMixin.UnbreakingMixin"
   ],
   "client": [
     "ClientPlayerEntityMixin",

@@ -24,7 +24,6 @@ public class ClientPlayerEntityMixin {
     @Inject(method = "tickMovement", at = @At("HEAD"))
     private void tickMovement(CallbackInfo info) {
         ClientPlayerEntity player = (ClientPlayerEntity) (Object) this;
-        
         // Dual Leap
         if (player.isOnGround() || player.isClimbing()) {
             jumpCount = EnchantmentHelper.getEquipmentLevel(EnchantDualLeap.DUAL_LEAP, player);
@@ -34,7 +33,6 @@ public class ClientPlayerEntityMixin {
                 player.jump();
             }
         }
-
         jumpedLastTick = player.input.jumping;
     }
 

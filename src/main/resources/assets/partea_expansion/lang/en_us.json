@@ -44,6 +44,8 @@
   "item.partea_expansion.quartz_dust": "Quartz Dust",
   "item.partea_expansion.fabric": "Fabric",
   "item.partea_expansion.ancient_pearl": "Ancient Pearl",
+  "item.partea_expansion.clock_tricks": "Clock Tricks",
+  "item.partea_expansion.thriller_mask": "Thriller Mask",
 
 
   "item.partea_expansion.diamond_prospector.tooltip": "detect if there's minecraft ore under the block",
@@ -61,9 +63,13 @@
   "block.partea_expansion.qualitative_analyzer.title": "Qualitative Analyzer",
   "block.partea_expansion.qualitative_analyzer": "Qualitative Analyzer",
   "block.partea_expansion.doomed_death_flame": "Doomed Death Flame",
+  "block.partea_expansion.fake_obsidian": "Fake Obsidian",
 
-  "item_group.partea_expansion.partea_expansion": "Partea Expansion",
-  "itemgroup.partea_expansion.partea_expansion": "Partea Expansion",
+  "itemgroup.partea_expansion.2blocks": "Blocks",
+  "itemgroup.partea_expansion.1partea_expansion": "Partea Expansion",
+  "itemgroup.partea_expansion.3tools": "Tools",
+  "itemgroup.partea_expansion.4combat": "Combat",
+  "itemgroup.partea_expansion.5ingredients": "Ingredients",
 
   "advancements.is_it_the_ultimate_power.title": "Is It The Ultimate Power",
   "advancements.is_it_the_ultimate_power.descr": "get a diamond netherite ingot",
@@ -90,8 +96,13 @@
   "enchantment.partea_expansion.life_steal": "Life Steal",
   "enchantment.partea_expansion.raider": "Raider",
   "enchantment.partea_expansion.dual_leap": "Dual Leap",
-
-
+  "enchantment.partea_expansion.blaze_walker": "Blaze Walker",
+  "enchantment.partea_expansion.harmful_afterglow": "Harmful Afterglow",
+  "enchantment.partea_expansion.precept_flickering": "Precept Flickering",
+  "enchantment.partea_expansion.destructive_flare": "Destructive Flare",
+  "enchantment.partea_expansion.blood_therapy": "Blood Therapy",
+  "enchantment.partea_expansion.predictive_depth_of_field": "Predictive Depth Of Field",
+  "enchantment.partea_expansion.antimatter_noninverse_equation": "Antimatter Noninverse Equation",
 
 
   "entity.minecraft.villager.partea_expansion.nether_explorer": "Nether Explorer",

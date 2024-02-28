@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "partea_expansion:golden_netherite_block",
-    "partea_expansion:diamond_netherite_block"
+    "partea_expansion:diamond_netherite_block",
+    "partea_expansion:fake_obsidian"
   ]
 }

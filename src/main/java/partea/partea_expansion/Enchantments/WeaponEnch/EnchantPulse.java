@@ -1,31 +1,32 @@
-package partea.partea_expansion.Enchantments;
+package partea.partea_expansion.Enchantments.WeaponEnch;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.entity.EquipmentSlot;
 
-public class EnchantSoulSeeker extends Enchantment {
-    public static Enchantment SOUL_SEEKER = new EnchantSoulSeeker();
-    public EnchantSoulSeeker() {
+public class EnchantPulse extends Enchantment {
+    public static Enchantment PULSE = new EnchantPulse();
+    public EnchantPulse() {
         super(Rarity.VERY_RARE, EnchantmentTarget.CROSSBOW, new EquipmentSlot[]{EquipmentSlot.MAINHAND, EquipmentSlot.OFFHAND});
     }
 
     public int getMinPower(int level) {
-        return 12 + (level - 1) * 20;
+        return level * 25;
     }
 
     public int getMaxPower(int level) {
-        return 50;
+        return this.getMinPower(level) + 50;
     }
 
-    public boolean isTreasure(){
+    public boolean isTreasure() {
         return true;
     }
-    @Override
-    public int getMaxLevel() { return 1; }
+    public int getMaxLevel() {
+        return 1;
+    }
 
     @Override
     public boolean canAccept(Enchantment other) {
-        return super.canAccept(other);
+        return super.canAccept(other) && other.target != EnchantmentTarget.CROSSBOW;
     }
 }

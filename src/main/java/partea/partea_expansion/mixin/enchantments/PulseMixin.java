@@ -24,7 +24,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-import partea.partea_expansion.Enchantments.EnchantPulse;
+import partea.partea_expansion.Enchantments.WeaponEnch.EnchantPulse;
 
 import java.util.List;
 
@@ -54,7 +54,7 @@ public abstract class PulseMixin {
                     }
 
                     entity.playSound(SoundEvents.ENTITY_WARDEN_SONIC_BOOM, 3.0F, 1.0F);
-                    target.damage(world.getDamageSources().sonicBoom(entity), (float)10);
+                    target.damage(world.getDamageSources().sonicBoom(entity), (float)15);
                     double d = 0.5D * (1.0D - target.getAttributeValue(EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE));
                     double e = 2.5D * (1.0D - target.getAttributeValue(EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE));
                     target.addVelocity(vec3d3.getX() * e, vec3d3.getY() * d, vec3d3.getZ() * e);

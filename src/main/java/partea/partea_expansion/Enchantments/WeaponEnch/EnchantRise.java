@@ -1,4 +1,4 @@
-package partea.partea_expansion.Enchantments;
+package partea.partea_expansion.Enchantments.WeaponEnch;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
@@ -13,7 +13,7 @@ import net.minecraft.item.Items;
 public class EnchantRise extends Enchantment {
     public static Enchantment RISE = new EnchantRise();
     public EnchantRise() {
-        super(Rarity.UNCOMMON, EnchantmentTarget.BOW, new EquipmentSlot[]{EquipmentSlot.MAINHAND, EquipmentSlot.OFFHAND});
+        super(Rarity.RARE, EnchantmentTarget.BOW, new EquipmentSlot[]{EquipmentSlot.MAINHAND, EquipmentSlot.OFFHAND});
     }
 
     @Override

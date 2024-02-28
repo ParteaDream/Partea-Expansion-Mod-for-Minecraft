@@ -13,7 +13,6 @@ import partea.partea_expansion.util.FEUtil;
 
 @Mixin(LivingEntity.class)
 public class GodOfTheSeaMixin {
-
     @Inject(at = @At("HEAD"), method = "baseTick")
     public void godOfTheSea(CallbackInfo ci) {
         LivingEntity user = (LivingEntity) (Object) this;

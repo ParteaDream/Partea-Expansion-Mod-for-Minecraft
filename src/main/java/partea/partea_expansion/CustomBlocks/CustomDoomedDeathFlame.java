@@ -6,5 +6,4 @@ public class CustomDoomedDeathFlame extends FireBlock {
     public CustomDoomedDeathFlame(Settings settings) {
         super(settings);
     }
-
 }

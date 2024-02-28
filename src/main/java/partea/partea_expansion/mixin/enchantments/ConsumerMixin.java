@@ -9,7 +9,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import partea.partea_expansion.Enchantments.EnchantConsumer;
+import partea.partea_expansion.Enchantments.WeaponEnch.EnchantConsumer;
 import partea.partea_expansion.util.FEUtil;
 
 @Mixin(LivingEntity.class)

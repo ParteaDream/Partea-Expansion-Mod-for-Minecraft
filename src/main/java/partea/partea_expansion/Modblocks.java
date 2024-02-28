@@ -12,9 +12,12 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import partea.partea_expansion.CustomBlocks.CustomDoomedDeathFlameBlock;
+import partea.partea_expansion.CustomBlocks.CustomFakeObsidian;
 import partea.partea_expansion.CustomBlocks.QualitativeAnalyzer;
 
 public class Modblocks {
+    public static final Block FAKE_OBSIDIAN = new CustomFakeObsidian(FabricBlockSettings
+            .create().strength(20f,5f).requiresTool().sounds(BlockSoundGroup.STONE));
     public static final Block DOOMED_DEATH_FLAME = new CustomDoomedDeathFlameBlock(FabricBlockSettings.create());
     public static final Block GOLDEN_NETHERITE_BLOCK = new Block(FabricBlockSettings
             .create().strength(60.0f, 1500).luminance(8).requiresTool().sounds(BlockSoundGroup.NETHERITE));
@@ -27,7 +30,11 @@ public class Modblocks {
     public static final Block QUALITATIVE_ANALYZER = new QualitativeAnalyzer(FabricBlockSettings.create()
             .strength(3.5f, 3.5f).requiresTool().sounds(BlockSoundGroup.ANVIL).luminance(15));
     public static void registerBlocks(){
-
+        Registry.register(Registries.BLOCK
+                , new Identifier("partea_expansion", "fake_obsidian"), FAKE_OBSIDIAN);
+        Registry.register(Registries.ITEM
+                , new Identifier("partea_expansion", "fake_obsidian"), new BlockItem(FAKE_OBSIDIAN
+                        , new FabricItemSettings().rarity(Rarity.COMMON)));
         Registry.register(Registries.BLOCK
                 , new Identifier("partea_expansion", "golden_netherite_block"), GOLDEN_NETHERITE_BLOCK);
         Registry.register(Registries.ITEM, new Identifier("partea_expansion", "golden_netherite_block")

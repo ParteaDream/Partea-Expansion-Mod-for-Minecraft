@@ -21,10 +21,20 @@ public class ModLootTableModifiers {
     private static final Identifier SH_LIB_ID = new Identifier("minecraft", "chests/stronghold_library");
     private static final Identifier SH_COR_ID = new Identifier("minecraft", "chests/stronghold_corridor");
     private static final Identifier WOODLAND_ID = new Identifier("minecraft", "chests/woodland_mansion");
-
+    private static final Identifier CREEPER_ID = new Identifier("minecraft", "entities/creeper");
 
 
     public static void modifierLootTables() {
+        LootTableEvents.MODIFY.register(((resourceManager, lootManager, id, tableBuilder, source) -> {
+            if(CREEPER_ID.equals(id)){
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.011f))
+                        .with(ItemEntry.builder(ModItems.THRILLER_MASK))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f,1.0f)));
+                tableBuilder.pool(poolBuilder.build());
+            }
+        }));
 
         LootTableEvents.MODIFY.register(((resourceManager, lootManager, id, tableBuilder, source) -> {
             if(WOODLAND_ID.equals(id)){

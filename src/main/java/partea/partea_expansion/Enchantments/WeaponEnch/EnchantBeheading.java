@@ -1,4 +1,4 @@
-package partea.partea_expansion.Enchantments;
+package partea.partea_expansion.Enchantments.WeaponEnch;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;

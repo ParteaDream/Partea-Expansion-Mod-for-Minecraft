@@ -18,6 +18,7 @@ public class NocturnalMixin {
         LivingEntity entity = (LivingEntity) (Object) this;
         if (entity.getWorld().isNight() && entity.getWorld().getTime() % 100 == 0 && FEUtil.getLevelArmor(entity, EnchantNocturnal.NOCTURNAL) > 0) {
             entity.addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 105, 0, true, false));
+            entity.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 105, 0, true, false));
         }
     }
 }

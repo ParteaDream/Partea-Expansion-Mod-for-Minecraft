@@ -9,9 +9,11 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.ItemStack;
+import net.minecraft.text.Text;
 import net.minecraft.world.World;
 
 import java.util.Map;
+import java.util.Objects;
 
 public class ModNightVisionGlassesItem extends ArmorItem {
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_STATUS_EFFECT_INSTANCE_MAP =
@@ -53,7 +55,7 @@ public class ModNightVisionGlassesItem extends ArmorItem {
     private boolean hasCorrectArmorOn(ArmorMaterial armorMaterial, PlayerEntity player) {
         ItemStack a = player.getEquippedStack(EquipmentSlot.HEAD);
         for (ItemStack armorStack:player.getInventory().armor){
-            if(!(a.getItem().getMaxDamage() == 275)){
+            if(!(Objects.equals(a.getItem().getName(), Text.translatable("item.partea_expansion.night_vision_glasses")))){
                 return false;
             }
         }

@@ -54,6 +54,7 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ANCIENT_PEARL, Models.GENERATED);
 
         itemModelGenerator.registerArmor((ArmorItem) ModItems.FOOLS_MASK);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.THRILLER_MASK);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.DIAMOND_NETHERITE_HELMET);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.DIAMOND_NETHERITE_CHESTPLATE);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.DIAMOND_NETHERITE_LEGGINGS);

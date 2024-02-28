@@ -39,10 +39,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(Modblocks.GOLDEN_NETHERITE_BLOCK)
                 .add(Modblocks.AZURE_BLOCK)
                 .add(Modblocks.AZURE_ORE)
-                .add(Modblocks.QUALITATIVE_ANALYZER);
+                .add(Modblocks.QUALITATIVE_ANALYZER)
+                .add(Modblocks.FAKE_OBSIDIAN);
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_4")))
                 .add(Modblocks.GOLDEN_NETHERITE_BLOCK)
-                .add(Modblocks.DIAMOND_NETHERITE_BLOCK);
+                .add(Modblocks.DIAMOND_NETHERITE_BLOCK)
+                .add(Modblocks.FAKE_OBSIDIAN);
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_5")))
                 .add(Modblocks.AZURE_BLOCK)
                 .add(Modblocks.AZURE_ORE);

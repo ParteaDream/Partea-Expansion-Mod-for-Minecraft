@@ -1,4 +1,4 @@
-package partea.partea_expansion.Enchantments;
+package partea.partea_expansion.Enchantments.WeaponEnch;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
@@ -12,7 +12,7 @@ import net.minecraft.entity.effect.StatusEffects;
 public class EnchantIceAspect extends Enchantment {
     public static Enchantment ICE_ASPECT = new EnchantIceAspect();
     protected EnchantIceAspect() {
-        super(Rarity.RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND, EquipmentSlot.OFFHAND});
+        super(Rarity.VERY_RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND, EquipmentSlot.OFFHAND});
     }
     @Override
     public int getMinPower(int level) {
@@ -38,7 +38,6 @@ public class EnchantIceAspect extends Enchantment {
             ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 20 * level, 10, true, false));
             ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.MINING_FATIGUE, 20 * level, 10, true, false));
         }
-
         super.onTargetDamaged(user, target, level);
     }
 }

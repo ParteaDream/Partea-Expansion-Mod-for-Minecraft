@@ -38,7 +38,7 @@ public abstract class VigourMixin {
 
         int lvl = EnchantmentHelper.getLevel(EnchantVigour.VIGOUR, player.getEquippedStack(EquipmentSlot.CHEST));
         if (lvl > 0 && !player.getAttributes().hasModifierForAttribute(EntityAttributes.GENERIC_MAX_HEALTH, EnchantVigour.ATTRIBUTE_UUID)) {
-            EntityAttributeModifier modifier = new EntityAttributeModifier(EnchantVigour.ATTRIBUTE_UUID, "Tank Enchantment", 1.5D * lvl, EntityAttributeModifier.Operation.ADDITION);
+            EntityAttributeModifier modifier = new EntityAttributeModifier(EnchantVigour.ATTRIBUTE_UUID, "Tank Enchantment", 1D * lvl, EntityAttributeModifier.Operation.ADDITION);
             player.getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH).addTemporaryModifier(modifier);
         }
     }

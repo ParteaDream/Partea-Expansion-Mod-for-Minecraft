@@ -1,4 +1,4 @@
-package partea.partea_expansion.Enchantments;
+package partea.partea_expansion.Enchantments.WeaponEnch;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
@@ -11,13 +11,16 @@ import partea.partea_expansion.potion.CustomPotionDoomedDeath;
 public class EnchantDoomedDeath extends Enchantment {
     public static Enchantment Doomed_Death = new EnchantDoomedDeath();
     public EnchantDoomedDeath() {
-        super(Rarity.RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND, EquipmentSlot.OFFHAND});
+        super(Rarity.VERY_RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND, EquipmentSlot.OFFHAND});
     }
     @Override
     public int getMinPower(int level) {
         return 15 + 10 * (level - 1);
     }
 
+    public boolean isTreasure(){
+        return true;
+    }
     @Override
     public int getMaxLevel() {
         return 5;
@@ -25,7 +28,7 @@ public class EnchantDoomedDeath extends Enchantment {
     @Override
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
         if((target instanceof LivingEntity)) {
-            ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(CustomPotionDoomedDeath.PotionDoomedDeath, 30 + 5*(level - 1), level - 1));
+            ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(CustomPotionDoomedDeath.PotionDoomedDeath, 10 * level, level - 1));
         }
         super.onTargetDamaged(user, target, level);
     }
