@@ -23,6 +23,9 @@
 		],
 		"client": [
 			"partea.partea_expansion.ParteaExpansionClient"
+		],
+		"terrablender": [
+			"partea.partea_expansion.world.biome.ModTerraBlenderAPI"
 		]
 	},
 	"mixins": [

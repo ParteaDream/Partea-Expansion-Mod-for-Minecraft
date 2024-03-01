@@ -2,6 +2,8 @@ package partea.partea_expansion;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
+import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
+import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -12,7 +14,6 @@ import net.minecraft.screen.ScreenHandlerType;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import partea.partea_expansion.CustomBlocks.GenOres;
 import partea.partea_expansion.CustomBlocks.entity.ModBlockEntities;
 import partea.partea_expansion.CustomTrades.NetherExplorer;
 import partea.partea_expansion.Enchantments.EnchantRegister;
@@ -27,6 +28,8 @@ import partea.partea_expansion.sounds.ModSounds;
 import partea.partea_expansion.util.InteracticConfig;
 import partea.partea_expansion.util.ModLootTableModifiers;
 import partea.partea_expansion.util.ModTraders;
+import partea.partea_expansion.world.ModPortals;
+import partea.partea_expansion.world.gen.ModWorldGeneration;
 
 import java.util.function.Consumer;
 
@@ -43,8 +46,6 @@ public class ParteaExpansion implements ModInitializer {
 	public static final ScreenHandlerType<ItemFilterScreenHandler> ITEM_FILTER_SCREEN_HANDLER =
 			Registry.register(Registries.SCREEN_HANDLER, new Identifier("partea_expansion", "item_filter")
 					, new ScreenHandlerType<>(ItemFilterScreenHandler::new, FeatureFlags.DEFAULT_ENABLED_FEATURES));
-
-	public static boolean FORCE_SPYGLASS = false;
 	@Override
 	public void onInitialize() {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
@@ -60,9 +61,20 @@ public class ParteaExpansion implements ModInitializer {
 		ModBlockEntities.registerBlockEntities();
 		ModScreenHandlers.registerScreenHandlers();
 		ModParticles.registerParticles();
-		GenOres.registerGenOres();
 		EnchantRegister.registerEnchantment();
 		PotionRegister.registerPotion();
+		ModWorldGeneration.generateModWorldGen();
+		ModPortals.registerPortals();
+
+		FlammableBlockRegistry.getDefaultInstance().add(Modblocks.PALM_LOG,5,5);
+		FlammableBlockRegistry.getDefaultInstance().add(Modblocks.PALM_WOOD,5,5);
+		FlammableBlockRegistry.getDefaultInstance().add(Modblocks.STRIPPED_PALM_WOOD,5,5);
+		FlammableBlockRegistry.getDefaultInstance().add(Modblocks.STRIPPED_PALM_LOG,5,5);
+		FlammableBlockRegistry.getDefaultInstance().add(Modblocks.PALM_PLANKS,5,20);
+		FlammableBlockRegistry.getDefaultInstance().add(Modblocks.PALM_LEAVES,5,60);
+
+		StrippableBlockRegistry.register(Modblocks.PALM_LOG,Modblocks.STRIPPED_PALM_LOG);
+		StrippableBlockRegistry.register(Modblocks.PALM_WOOD,Modblocks.STRIPPED_PALM_WOOD);
 
 		LOGGER.info("Hello Fabric world!");
 

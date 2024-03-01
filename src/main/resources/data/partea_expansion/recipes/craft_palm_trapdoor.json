@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "partea_expansion:palm_planks"
+    }
+  },
+  "result": {
+    "item": "partea_expansion:palm_trapdoor",
+    "count": 2
+  }
+}

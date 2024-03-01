@@ -26,7 +26,10 @@ repositories {
 		name = 'TerraformersMC'
 		url = 'https://maven.terraformersmc.com/'
 	}
-
+	maven {
+		url = "https://maven.kyrptonaught.dev"
+	}
+	maven { url = 'https://maven.minecraftforge.net/' }
 	// Add repositories to retrieve artifacts from in here.
 	// You should only use this when depending on other mods because
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
@@ -48,6 +51,11 @@ dependencies {
 	annotationProcessor modImplementation("io.wispforest:owo-lib:${project.owo_version}")
 	include "io.wispforest:owo-sentinel:${project.owo_version}"
 	modLocalRuntime "com.terraformersmc:modmenu:${project.modmenu_version}"
+
+	modImplementation "net.kyrptonaught:customportalapi:${project.customportalapi_version}"
+	include "net.kyrptonaught:customportalapi:${project.customportalapi_version}"
+
+	modImplementation "com.github.glitchfiend:TerraBlender-fabric:${project.terrablender_version}"
 }
 
 processResources {

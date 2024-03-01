@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "a a",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "partea_expansion:palm_planks"
+    }
+  },
+  "result": {
+    "item": "minecraft:dark_oak_boat",
+    "count": 1
+  }
+}

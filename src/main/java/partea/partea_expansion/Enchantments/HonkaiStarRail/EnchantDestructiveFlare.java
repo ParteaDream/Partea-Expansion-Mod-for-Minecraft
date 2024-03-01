@@ -7,6 +7,9 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
+import partea.partea_expansion.ModItems;
 
 public class EnchantDestructiveFlare extends Enchantment {
     public static Enchantment DESTRUCTIVE_FLARE = new EnchantDestructiveFlare();

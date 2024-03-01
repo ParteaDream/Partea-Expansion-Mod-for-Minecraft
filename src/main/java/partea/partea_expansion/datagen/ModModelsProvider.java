@@ -8,16 +8,33 @@ import net.minecraft.data.client.Models;
 import net.minecraft.item.ArmorItem;
 import partea.partea_expansion.ModItems;
 import partea.partea_expansion.Modblocks;
+import partea.partea_expansion.util.ModTags;
 
 public class ModModelsProvider extends FabricModelProvider {
     public ModModelsProvider(FabricDataOutput output){
         super(output);
     }
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator){
+        BlockStateModelGenerator.BlockTexturePool palmPlanksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Modblocks.PALM_PLANKS);
         blockStateModelGenerator.registerSimpleCubeAll(Modblocks.DIAMOND_NETHERITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(Modblocks.GOLDEN_NETHERITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(Modblocks.AZURE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(Modblocks.AZURE_ORE);
+        blockStateModelGenerator.registerLog(Modblocks.PALM_LOG).log(Modblocks.PALM_LOG).wood(Modblocks.PALM_WOOD);
+        blockStateModelGenerator.registerLog(Modblocks.STRIPPED_PALM_LOG).log(Modblocks.STRIPPED_PALM_LOG).wood(Modblocks.STRIPPED_PALM_WOOD);
+        blockStateModelGenerator.registerSimpleCubeAll(Modblocks.PALM_LEAVES);
+        blockStateModelGenerator.registerTintableCross(Modblocks.PALM_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+
+        palmPlanksPool.stairs(Modblocks.PALM_STAIR);
+        palmPlanksPool.slab(Modblocks.PALM_SLAB);
+        palmPlanksPool.fence(Modblocks.PALM_FENCE);
+        palmPlanksPool.fenceGate(Modblocks.PALM_FENCE_GATE);
+        palmPlanksPool.button(Modblocks.PALM_BUTTON);
+        palmPlanksPool.pressurePlate(Modblocks.PALM_PRESSURE_PLATE);
+
+        blockStateModelGenerator.registerDoor(Modblocks.PALM_DOOR);
+        blockStateModelGenerator.registerTrapdoor(Modblocks.PALM_TRAPDOOR);
+
     }
     public void generateItemModels(ItemModelGenerator itemModelGenerator){
         itemModelGenerator.register(ModItems.CREATIVE_MODE_SWORD, Models.HANDHELD);
@@ -52,6 +69,8 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.QUARTZ_DUST, Models.GENERATED);
         itemModelGenerator.register(ModItems.FABRIC, Models.GENERATED);
         itemModelGenerator.register(ModItems.ANCIENT_PEARL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.HEART_OF_THE_DEEP, Models.GENERATED);
+        itemModelGenerator.register(ModItems.AFTERGLOW_CD, Models.GENERATED);
 
         itemModelGenerator.registerArmor((ArmorItem) ModItems.FOOLS_MASK);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.THRILLER_MASK);

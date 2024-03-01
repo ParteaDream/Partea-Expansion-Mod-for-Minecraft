@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "partea_expansion:block/palm_slab"
+    },
+    "type=double": {
+      "model": "partea_expansion:block/palm_planks"
+    },
+    "type=top": {
+      "model": "partea_expansion:block/palm_slab_top"
+    }
+  }
+}

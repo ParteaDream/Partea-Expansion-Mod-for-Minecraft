@@ -48,5 +48,14 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_5")))
                 .add(Modblocks.AZURE_BLOCK)
                 .add(Modblocks.AZURE_ORE);
+        getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
+                .add(Modblocks.PALM_LOG)
+                .add(Modblocks.PALM_WOOD)
+                .add(Modblocks.STRIPPED_PALM_LOG)
+                .add(Modblocks.STRIPPED_PALM_WOOD);
+        getOrCreateTagBuilder(BlockTags.FENCES)
+                .add(Modblocks.PALM_FENCE);
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(Modblocks.PALM_FENCE_GATE);
     }
 }

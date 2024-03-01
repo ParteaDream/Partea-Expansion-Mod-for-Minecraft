@@ -1,0 +1,24 @@
+{
+  "type": "partea_expansion:innerworld",
+  "generator": {
+    "type": "minecraft:noise",
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "biomes": [
+        {
+          "biome": "partea_expansion:palm_biome",
+          "parameters": {
+            "temperature": -0.5,
+            "humidity": -0.5,
+            "continentalness": 0,
+            "erosion": 0,
+            "weirdness": 0.2,
+            "depth": 0,
+            "offset": 0
+          }
+        }
+      ]
+    },
+    "settings": "minecraft:overworld"
+  }
+}

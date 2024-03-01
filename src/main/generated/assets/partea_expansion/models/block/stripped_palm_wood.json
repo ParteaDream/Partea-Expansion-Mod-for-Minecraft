@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "partea_expansion:block/stripped_palm_log",
+    "side": "partea_expansion:block/stripped_palm_log"
+  }
+}

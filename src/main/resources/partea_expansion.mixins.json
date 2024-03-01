@@ -4,6 +4,7 @@
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "EndermanMixin",
+    "FoolsMaskMixin",
     "LivingEntityMixin",
     "ModMixin",
     "enchantments.AutoSmeltMixin",
@@ -31,7 +32,7 @@
     "VanillaEnchantmentMixin.UnbreakingMixin"
   ],
   "client": [
-    "ClientPlayerEntityMixin",
+    "client.ClientPlayerEntityMixin",
     "interacic.InGameHudMixin",
     "interacic.ItemEntityRendererMixin",
     "interacic.MinecraftClientMixin"

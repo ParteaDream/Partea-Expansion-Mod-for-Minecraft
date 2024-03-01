@@ -7,6 +7,10 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import partea.partea_expansion.CustomItems.*;
+import partea.partea_expansion.CustomItems.ArmorItems.ModArmorMaterial;
+import partea.partea_expansion.CustomItems.ArmorItems.ModDiamondNetheriteArmorItem;
+import partea.partea_expansion.CustomItems.ArmorItems.ModGoldenNetheriteArmorItem;
+import partea.partea_expansion.CustomItems.ArmorItems.ModNightVisionGlassesItem;
 import partea.partea_expansion.CustomItems.CustomMaskItems.CustomFoolsMaskItem;
 import partea.partea_expansion.CustomItems.CustomMaskItems.CustomThrillerMaskItem;
 import partea.partea_expansion.CustomItems.ToolItems.AmethystSwordItem;
@@ -14,9 +18,13 @@ import partea.partea_expansion.CustomItems.ToolItems.CreativeSwordItem;
 import partea.partea_expansion.CustomItems.ToolItems.ModToolMaterials;
 import partea.partea_expansion.sounds.ModSounds;
 
-import static partea.partea_expansion.CustomItems.ModArmorMaterial.GOLDEN_NETHERITE;
+import static partea.partea_expansion.CustomItems.ArmorItems.ModArmorMaterial.GOLDEN_NETHERITE;
 
 public class ModItems {
+    public static Item AFTERGLOW_CD = registerItem("afterglow_cd"
+            , new Item(new FabricItemSettings().rarity(Rarity.EPIC).maxCount(1)));
+    public static Item HEART_OF_THE_DEEP = registerItem("heart_of_the_deep"
+            , new Item(new FabricItemSettings().rarity(Rarity.RARE).maxCount(1)));
     public static Item THRILLER_MASK = registerItem("thriller_mask"
             , new CustomThrillerMaskItem(ModArmorMaterial.THRILLER_MASK, ArmorItem.Type.HELMET
                     , new FabricItemSettings().rarity(Rarity.UNCOMMON)));

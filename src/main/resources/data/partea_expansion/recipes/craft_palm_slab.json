@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "partea_expansion:palm_planks"
+    }
+  },
+  "result": {
+    "item": "partea_expansion:palm_slab",
+    "count": 6
+  }
+}

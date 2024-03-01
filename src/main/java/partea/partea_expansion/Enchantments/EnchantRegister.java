@@ -58,5 +58,7 @@ public class EnchantRegister {
                 , new Identifier("partea_expansion", "predictive_depth_of_field"), EnchantPredictiveDepthOfField.PREDICTIVE_DEPTH_OF_FIELD);
         Registry.register(Registries.ENCHANTMENT
                 , new Identifier("partea_expansion", "antimatter_noninverse_equation"), EnchantAntimatterNoninverseEquation.Antimatter_Noninverse_Equation);
+        Registry.register(Registries.ENCHANTMENT
+                , new Identifier("partea_expansion", "afterglow_effect"), EnchantAfterglowEffect.Afterglow_Effect);
     }
 }

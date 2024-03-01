@@ -23,12 +23,12 @@ public class EnchantDoomedDeath extends Enchantment {
     }
     @Override
     public int getMaxLevel() {
-        return 5;
+        return 3;
     }
     @Override
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
         if((target instanceof LivingEntity)) {
-            ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(CustomPotionDoomedDeath.PotionDoomedDeath, 10 * level, level - 1));
+            ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(CustomPotionDoomedDeath.PotionDoomedDeath, 25 + 5 * level, level - 1));
         }
         super.onTargetDamaged(user, target, level);
     }

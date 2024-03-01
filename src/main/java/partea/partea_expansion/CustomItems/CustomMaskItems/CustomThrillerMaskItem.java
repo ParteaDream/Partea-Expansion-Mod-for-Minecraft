@@ -11,7 +11,7 @@ import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
 import net.minecraft.world.World;
-import partea.partea_expansion.CustomItems.ModArmorMaterial;
+import partea.partea_expansion.CustomItems.ArmorItems.ModArmorMaterial;
 
 import java.util.Map;
 import java.util.Objects;
@@ -19,7 +19,7 @@ import java.util.Objects;
 public class CustomThrillerMaskItem extends ArmorItem {
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_STATUS_EFFECT_INSTANCE_MAP =
             (new ImmutableMap.Builder<ArmorMaterial,StatusEffectInstance>())
-                    .put(ModArmorMaterial.THRILLER_MASK,new StatusEffectInstance(StatusEffects.HUNGER,220,0,
+                    .put(ModArmorMaterial.THRILLER_MASK,new StatusEffectInstance(StatusEffects.HUNGER,20,0,
                             false,false,false)).build();
     public CustomThrillerMaskItem(ArmorMaterial material, Type type, Settings settings) {
         super(material, type, settings);

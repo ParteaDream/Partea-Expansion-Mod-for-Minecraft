@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Block;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
+import net.minecraft.item.Items;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.entry.LootPoolEntry;
@@ -26,8 +27,24 @@ public class ModLootTablesProvider extends FabricBlockLootTableProvider {
         addDrop(Modblocks.DIAMOND_NETHERITE_BLOCK);
         addDrop(Modblocks.AZURE_BLOCK);
         addDrop(Modblocks.QUALITATIVE_ANALYZER);
+        addDrop(Modblocks.PALM_LOG);
+        addDrop(Modblocks.PALM_PLANKS);
+        addDrop(Modblocks.STRIPPED_PALM_LOG);
+        addDrop(Modblocks.STRIPPED_PALM_WOOD);
+        addDrop(Modblocks.PALM_WOOD);
+        addDrop(Modblocks.PALM_STAIR);
+        addDrop(Modblocks.PALM_SLAB,slabDrops(Modblocks.PALM_SLAB));
+        addDrop(Modblocks.PALM_BUTTON);
+        addDrop(Modblocks.PALM_FENCE);
+        addDrop(Modblocks.PALM_FENCE_GATE);
+        addDrop(Modblocks.PALM_PRESSURE_PLATE);
+        addDrop(Modblocks.PALM_DOOR,doorDrops(Modblocks.PALM_DOOR));
+        addDrop(Modblocks.PALM_TRAPDOOR);
 
         addDrop(Modblocks.AZURE_ORE,copperOreLikeDrops(Modblocks.AZURE_ORE, ModItems.RAW_AZURE));
+
+        addDrop(Modblocks.PALM_LEAVES,leavesDrops(Modblocks.PALM_LEAVES, Modblocks.PALM_SAPLING, 0.2f));
+        addDrop(Modblocks.PALM_SAPLING);
     }
 
     public LootTable.Builder copperOreLikeDrops(Block drop, Item item){

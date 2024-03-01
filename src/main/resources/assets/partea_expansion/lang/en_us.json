@@ -46,6 +46,8 @@
   "item.partea_expansion.ancient_pearl": "Ancient Pearl",
   "item.partea_expansion.clock_tricks": "Clock Tricks",
   "item.partea_expansion.thriller_mask": "Thriller Mask",
+  "item.partea_expansion.heart_of_the_deep": "Heart Of The Deep",
+
 
 
   "item.partea_expansion.diamond_prospector.tooltip": "detect if there's minecraft ore under the block",
@@ -60,10 +62,29 @@
   "block.partea_expansion.diamond_netherite_block": "Diamond Netherite Block",
   "block.partea_expansion.azure_block": "Azure Block",
   "block.partea_expansion.azure_ore": "Azure Ore",
+  "block.partea_expansion.palm_slab": "Palm Slab",
+  "block.partea_expansion.palm_stair": "Palm Stair",
+  "block.partea_expansion.palm_button": "Palm Button",
+  "block.partea_expansion.palm_pressure_plate": "Palm Pressure Plate",
+  "block.partea_expansion.palm_fence": "Palm Fence",
+  "block.partea_expansion.palm_fence_gate": "Palm Fence Gate",
+  "block.partea_expansion.palm_door": "Palm Door",
+  "block.partea_expansion.palm_trapdoor": "Palm Trapdoor",
+
+
   "block.partea_expansion.qualitative_analyzer.title": "Qualitative Analyzer",
   "block.partea_expansion.qualitative_analyzer": "Qualitative Analyzer",
   "block.partea_expansion.doomed_death_flame": "Doomed Death Flame",
   "block.partea_expansion.fake_obsidian": "Fake Obsidian",
+  "block.partea_expansion.palm_log": "Palm Log",
+  "block.partea_expansion.palm_wood": "Palm Wood",
+  "block.partea_expansion.palm_planks": "Palm Planks",
+  "block.partea_expansion.palm_leaves": "Palm Leaves",
+  "block.partea_expansion.stripped_palm_log": "Stripped Palm Log",
+  "block.partea_expansion.stripped_palm_wood": "Stripped Palm Wood",
+  "block.partea_expansion.palm_sapling": "Palm Sapling",
+
+
 
   "itemgroup.partea_expansion.2blocks": "Blocks",
   "itemgroup.partea_expansion.1partea_expansion": "Partea Expansion",
@@ -103,12 +124,16 @@
   "enchantment.partea_expansion.blood_therapy": "Blood Therapy",
   "enchantment.partea_expansion.predictive_depth_of_field": "Predictive Depth Of Field",
   "enchantment.partea_expansion.antimatter_noninverse_equation": "Antimatter Noninverse Equation",
+  "enchantment.partea_expansion.afterglow_effect": "Afterglow Effect",
+
 
 
   "entity.minecraft.villager.partea_expansion.nether_explorer": "Nether Explorer",
   "entity.minecraft.villager.nether_explorer": "Nether Explorer",
 
   "effect.partea_expansion.doomed_death": "Doomed Death",
+  "effect.partea_expansion.afterglow_cd": "Afterglow Effect CD",
+
 
 
 

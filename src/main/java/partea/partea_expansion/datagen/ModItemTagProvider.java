@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
 import partea.partea_expansion.ModItems;
+import partea.partea_expansion.Modblocks;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -23,5 +24,14 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.MUSIC_DISCS)
                 .add(ModItems.SHED_A_LIGHT_MUSIC_DISC)
                 .add(ModItems.SILENT_TIME_MUSIC_DISC);
+
+        getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN)
+                .add(Modblocks.PALM_LOG.asItem())
+                .add(Modblocks.PALM_WOOD.asItem())
+                .add(Modblocks.STRIPPED_PALM_WOOD.asItem())
+                .add(Modblocks.STRIPPED_PALM_LOG.asItem());
+
+        getOrCreateTagBuilder(ItemTags.PLANKS)
+                .add(Modblocks.PALM_PLANKS.asItem());
     }
 }

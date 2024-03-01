@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "partea_expansion:stripped_palm_log"
+    }
+  },
+  "result": {
+    "item": "partea_expansion:stripped_palm_wood",
+    "count": 3
+  }
+}

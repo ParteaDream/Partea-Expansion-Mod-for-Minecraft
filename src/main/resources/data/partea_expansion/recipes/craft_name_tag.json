@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "cac",
+    "cbc",
+    "cbc"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:lead"
+    },
+    "b": {
+      "item": "partea_expansion:fabric"
+    },
+    "c": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "item": "minecraft:name_tag",
+    "count": 1
+  }
+}

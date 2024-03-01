@@ -73,6 +73,24 @@ public class ModTab {
                 entries.add(FOOLS_MASK);
                 entries.add(THRILLER_MASK);
                 entries.add(ANCIENT_PEARL);
+                entries.add(HEART_OF_THE_DEEP);
+
+                entries.add(PALM_SAPLING);
+                entries.add(PALM_LOG);
+                entries.add(PALM_WOOD);
+                entries.add(STRIPPED_PALM_LOG);
+                entries.add(STRIPPED_PALM_WOOD);
+                entries.add(PALM_PLANKS);
+                entries.add(PALM_LEAVES);
+                entries.add(PALM_STAIR);
+                entries.add(PALM_SLAB);
+                entries.add(PALM_FENCE);
+                entries.add(PALM_FENCE_GATE);
+                entries.add(PALM_PRESSURE_PLATE);
+                entries.add(PALM_BUTTON);
+                entries.add(PALM_DOOR);
+                entries.add(PALM_TRAPDOOR);
+
             })
             .build();
 
@@ -85,6 +103,22 @@ public class ModTab {
                 entries.add(AZURE_ORE);
                 entries.add(AZURE_BLOCK);
                 entries.add(QUALITATIVE_ANALYZER);
+                entries.add(PALM_SAPLING);
+                entries.add(PALM_LOG);
+                entries.add(PALM_WOOD);
+                entries.add(STRIPPED_PALM_LOG);
+                entries.add(STRIPPED_PALM_WOOD);
+                entries.add(PALM_PLANKS);
+                entries.add(PALM_LEAVES);
+                entries.add(PALM_STAIR);
+                entries.add(PALM_SLAB);
+                entries.add(PALM_FENCE);
+                entries.add(PALM_FENCE_GATE);
+                entries.add(PALM_PRESSURE_PLATE);
+                entries.add(PALM_BUTTON);
+                entries.add(PALM_DOOR);
+                entries.add(PALM_TRAPDOOR);
+
             })
             .build();
     public static final ItemGroup TOOLS = FabricItemGroup.builder()
@@ -152,6 +186,7 @@ public class ModTab {
                 entries.add(CRYSTALLIZED_LAPIS_DUST);
                 entries.add(CRYING_OBSIDIAN_DUST);
                 entries.add(ANCIENT_PEARL);
+                entries.add(HEART_OF_THE_DEEP);
                 entries.add(SHED_A_LIGHT_MUSIC_DISC);
                 entries.add(SILENT_TIME_MUSIC_DISC);
             })

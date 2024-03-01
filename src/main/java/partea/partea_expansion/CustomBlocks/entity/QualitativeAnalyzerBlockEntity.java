@@ -22,6 +22,8 @@ import org.jetbrains.annotations.Nullable;
 import partea.partea_expansion.ModItems;
 import partea.partea_expansion.screen.QualitativeAnalyzerScreenHandler;
 
+import java.util.Random;
+
 public class QualitativeAnalyzerBlockEntity extends BlockEntity implements ExtendedScreenHandlerFactory,ImplementedInventory{
     private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(3,ItemStack.EMPTY);
 
@@ -173,6 +175,15 @@ public class QualitativeAnalyzerBlockEntity extends BlockEntity implements Exten
                 || getStack(INPUT_SLOT).getItem() == Items.ENDER_PEARL){
             result = new ItemStack(ModItems.ANCIENT_PEARL);
         }
+        Random random = new Random();
+        //赌博质变
+        if (getStack(INPUT_SLOT).getItem() == Items.TOTEM_OF_UNDYING
+                || getStack(INPUT_SLOT).getItem() == Items.TOTEM_OF_UNDYING){
+            result = new ItemStack(Items.TOTEM_OF_UNDYING, random.nextInt(0,2));
+            this.removeStack(INPUT_SLOT,random.nextInt(0,1));
+            this.removeStack(E_SLOT,1);
+            this.setStack(OUTPUT_SLOT, new ItemStack(result.getItem(), getStack(OUTPUT_SLOT).getCount() + result.getCount()));
+        }
         this.removeStack(INPUT_SLOT,1);
         this.removeStack(E_SLOT,1);
         this.setStack(OUTPUT_SLOT, new ItemStack(result.getItem(), getStack(OUTPUT_SLOT).getCount() + result.getCount()));
@@ -246,6 +257,13 @@ public class QualitativeAnalyzerBlockEntity extends BlockEntity implements Exten
                 || getStack(INPUT_SLOT).getItem() == Items.ENDER_PEARL){
             result = new ItemStack(ModItems.ANCIENT_PEARL);
             return EhasCOD() && canInsertAmountIntoOutputSlot(result) && canInsertItemIntoOutputSlot(result.getItem());
+        }
+        Random random = new Random();
+        //赌博质变
+        if (getStack(INPUT_SLOT).getItem() == Items.TOTEM_OF_UNDYING
+                || getStack(INPUT_SLOT).getItem() == Items.TOTEM_OF_UNDYING){
+            result = new ItemStack(Items.TOTEM_OF_UNDYING, random.nextInt(0,1));
+            return EhasCLD() && canInsertAmountIntoOutputSlot(result) && canInsertItemIntoOutputSlot(result.getItem());
         }
 
 

@@ -45,6 +45,8 @@
   "item.partea_expansion.fabric": "织物",
   "item.partea_expansion.ancient_pearl": "远古珍珠",
   "item.partea_expansion.thriller_mask": "惊悚假面",
+  "item.partea_expansion.heart_of_the_deep": "深邃心脏",
+
 
 
   "item.partea_expansion.diamond_prospector.tooltip": "探测选取方块纵向一格内的minecraft矿石",
@@ -63,6 +65,21 @@
   "block.partea_expansion.qualitative_analyzer.title": "参量质变仪",
   "block.partea_expansion.qualitative_analyzer": "参量质变仪",
   "block.partea_expansion.fake_obsidian": "伪黑曜石",
+  "block.partea_expansion.palm_log": "棕树原木",
+  "block.partea_expansion.palm_wood": "棕树木",
+  "block.partea_expansion.palm_planks": "棕树木板",
+  "block.partea_expansion.palm_leaves": "棕树叶",
+  "block.partea_expansion.stripped_palm_log": "去皮棕树原木",
+  "block.partea_expansion.stripped_palm_wood": "去皮棕树木",
+  "block.partea_expansion.palm_sapling": "棕树树苗",
+  "block.partea_expansion.palm_slab": "棕木台阶",
+  "block.partea_expansion.palm_stair": "棕木楼梯",
+  "block.partea_expansion.palm_button": "棕木按钮",
+  "block.partea_expansion.palm_pressure_plate": "棕木压力板",
+  "block.partea_expansion.palm_fence": "棕木栅栏",
+  "block.partea_expansion.palm_fence_gate": "棕木栅栏门",
+  "block.partea_expansion.palm_door": "棕木木门",
+  "block.partea_expansion.palm_trapdoor": "棕木活板门",
 
   "itemgroup.partea_expansion.1partea_expansion": "Partea的扩展",
   "itemgroup.partea_expansion.2blocks": "方块",
@@ -103,12 +120,15 @@
   "enchantment.partea_expansion.blood_therapy": "景星助狩月",
   "enchantment.partea_expansion.predictive_depth_of_field": "预兆性景深",
   "enchantment.partea_expansion.antimatter_noninverse_equation": "反物质非逆方程",
+  "enchantment.partea_expansion.afterglow_effect": "回光效应",
+
+
 
   "entity.minecraft.villager.partea_expansion.nether_explorer": "下界探险家",
   "entity.minecraft.villager.nether_explorer": "下界探险家",
 
   "effect.partea_expansion.doomed_death": "命a定之死",
-
+  "effect.partea_expansion.afterglow_cd": "回光效应冷却",
 
 
 
