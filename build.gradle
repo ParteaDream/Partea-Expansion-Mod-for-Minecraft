@@ -30,6 +30,7 @@ repositories {
 		url = "https://maven.kyrptonaught.dev"
 	}
 	maven { url = 'https://maven.minecraftforge.net/' }
+	maven { url 'https://maven.blamejared.com' }
 	// Add repositories to retrieve artifacts from in here.
 	// You should only use this when depending on other mods because
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
@@ -54,6 +55,8 @@ dependencies {
 
 	modImplementation "net.kyrptonaught:customportalapi:${project.customportalapi_version}"
 	include "net.kyrptonaught:customportalapi:${project.customportalapi_version}"
+
+	modImplementation "com.github.glitchfiend:TerraBlender-fabric:${project.terrablender_version}"
 
 	modImplementation "com.github.glitchfiend:TerraBlender-fabric:${project.terrablender_version}"
 }

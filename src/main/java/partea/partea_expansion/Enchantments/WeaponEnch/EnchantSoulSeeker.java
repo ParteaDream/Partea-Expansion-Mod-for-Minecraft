@@ -2,6 +2,7 @@ package partea.partea_expansion.Enchantments.WeaponEnch;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
+import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.EquipmentSlot;
 
 public class EnchantSoulSeeker extends Enchantment {
@@ -26,6 +27,6 @@ public class EnchantSoulSeeker extends Enchantment {
 
     @Override
     public boolean canAccept(Enchantment other) {
-        return super.canAccept(other);
+        return super.canAccept(other) && other != Enchantments.QUICK_CHARGE;
     }
 }

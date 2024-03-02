@@ -2,8 +2,14 @@
 ## 描述
 本模组旨在优化与拓展原版玩法，增强探索体验，同时维持游戏的平衡
 ## 前置模组
-1.owo-lib CurseForge链接：https://www.curseforge.com/minecraft/mc-mods/owo-lib
+1. owo-lib CurseForge链接：https://www.curseforge.com/minecraft/mc-mods/owo-lib
          （https://maven.wispforest.io/io/wispforest/owo-lib/）
+## 推荐模组
+1. Enchantment Descriptions(附魔描述):https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions
+2. Bookshelf(Enchantment Description前置模组):https://www.curseforge.com/minecraft/mc-mods/bookshelf
+2. Iris Shaders(加载光影):https://www.curseforge.com/minecraft/mc-mods/irisshaders
+3. Sodium:https://www.curseforge.com/minecraft/mc-mods/sodium
+4. Indium(Sodium扩展):https://www.curseforge.com/minecraft/mc-mods/indium
 
 ## 新增物品
 
@@ -69,7 +75,7 @@
    10. 深邃♂黑暗♂幻想(deep_dark_fantasy)：最高1级，击杀监守者获得，应用于弩，与其他弩附魔冲突，附魔后攻击替换为监守者远程攻击
    11. 逐火者(pyromania)：最高3级，下界堡垒宝箱获得，应用于近战武器，命中燃烧中的生物时造成附加伤害，与锋利、灾厄杀手、亡灵杀手、节肢杀手冲突
    12. 飞升(rise)：最高3级，末地外岛探索概率获得，应用于弓，与火矢冲突，击中生物将施加漂浮效果
-   13. 罗蕾塔的绝活(soul_seeker)：最高1级，猪灵堡垒宝藏箱概率获得，应用于弓弩，射出的箭矢带有自动追踪能力
+   13. 罗蕾塔的绝活(soul_seeker)：最高1级，猪灵堡垒宝藏箱概率获得，仅应用于弩，射出的箭矢带有自动追踪能力，与快速装填冲突
    14. 活力(vigour)：最高5级，附魔台获得，应用于胸甲，能增加最大生命值
    15. 吸血(life_steal)：最高2级，附魔台获得，应用于剑，命中敌人概率回复生命值
    16. 灾厄杀手(raider)：最高5级，村庄制图师小屋概率获得，应用于近战武器，提高对灾厄村民的伤害，与锋利、逐火者、亡灵杀手、节肢杀手冲突
