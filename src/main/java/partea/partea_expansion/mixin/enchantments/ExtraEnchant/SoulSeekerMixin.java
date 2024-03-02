@@ -1,11 +1,9 @@
 package partea.partea_expansion.mixin.enchantments.ExtraEnchant;
 
-import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.TargetPredicate;
 import net.minecraft.entity.projectile.PersistentProjectileEntity;
 import net.minecraft.entity.projectile.TridentEntity;
-import net.minecraft.item.Items;
 import net.minecraft.util.math.Box;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -13,7 +11,6 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import partea.partea_expansion.Enchantments.WeaponEnch.EnchantSoulSeeker;
 import partea.partea_expansion.util.FEUtil;
-import partea.partea_expansion.util.ModTags;
 
 @Mixin(PersistentProjectileEntity.class)
 public class SoulSeekerMixin {

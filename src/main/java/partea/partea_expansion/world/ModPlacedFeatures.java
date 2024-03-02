@@ -10,7 +10,8 @@ import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.PlacedFeature;
 import net.minecraft.world.gen.feature.PlacedFeatures;
 import net.minecraft.world.gen.feature.VegetationPlacedFeatures;
-import net.minecraft.world.gen.placementmodifier.*;
+import net.minecraft.world.gen.placementmodifier.HeightRangePlacementModifier;
+import net.minecraft.world.gen.placementmodifier.PlacementModifier;
 import partea.partea_expansion.Modblocks;
 
 import java.util.List;

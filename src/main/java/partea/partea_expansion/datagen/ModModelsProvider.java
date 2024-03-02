@@ -8,7 +8,6 @@ import net.minecraft.data.client.Models;
 import net.minecraft.item.ArmorItem;
 import partea.partea_expansion.ModItems;
 import partea.partea_expansion.Modblocks;
-import partea.partea_expansion.util.ModTags;
 
 public class ModModelsProvider extends FabricModelProvider {
     public ModModelsProvider(FabricDataOutput output){

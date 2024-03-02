@@ -4,8 +4,6 @@ import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.entity.EquipmentSlot;
 
-import java.util.Random;
-
 public class EnchantRainbowChiseledTeeth extends ClassHunt {
     public static Enchantment Rainbow_Chiseled_Teeth = new EnchantRainbowChiseledTeeth();
 

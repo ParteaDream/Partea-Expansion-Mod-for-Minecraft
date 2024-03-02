@@ -3,7 +3,6 @@ package partea.partea_expansion.Enchantments.HonkaiStarRail.Hunt;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.entity.EquipmentSlot;
-import partea.partea_expansion.Enchantments.HonkaiStarRail.Destruction.ClassDestruction;
 import partea.partea_expansion.Enchantments.WeaponEnch.EnchantLifeSteal;
 
 public class EnchantBloodTherapy extends ClassHunt {

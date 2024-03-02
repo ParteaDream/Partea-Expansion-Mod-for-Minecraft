@@ -10,17 +10,11 @@ import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
-import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
-import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
 import net.minecraft.world.gen.foliage.CherryFoliagePlacer;
-import net.minecraft.world.gen.foliage.DarkOakFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
-import net.minecraft.world.gen.trunk.CherryTrunkPlacer;
 import net.minecraft.world.gen.trunk.DarkOakTrunkPlacer;
-import net.minecraft.world.gen.trunk.MegaJungleTrunkPlacer;
-import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 import partea.partea_expansion.Modblocks;
 
 import java.util.List;

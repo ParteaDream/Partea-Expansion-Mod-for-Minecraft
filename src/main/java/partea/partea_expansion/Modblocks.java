@@ -10,8 +10,6 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
-import net.minecraft.world.gen.feature.TreeConfiguredFeatures;
-import partea.partea_expansion.CustomBlocks.CustomDoomedDeathFlameBlock;
 import partea.partea_expansion.CustomBlocks.CustomFakeObsidian;
 import partea.partea_expansion.CustomBlocks.QualitativeAnalyzer;
 import partea.partea_expansion.world.ModConfiguredFeatures;
