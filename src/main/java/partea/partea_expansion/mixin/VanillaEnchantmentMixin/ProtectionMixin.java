@@ -11,7 +11,7 @@ public class ProtectionMixin {
 
     @Inject(method = "getMaxLevel", at = @At("HEAD"), cancellable = true)
     public void getMaxLevel(CallbackInfoReturnable<Integer> cir){
-        cir.setReturnValue(3);
+        cir.setReturnValue(2);
     }
     @Inject(method = "getMinPower", at = @At("HEAD"), cancellable = true)
     public void getMinPower(int level, CallbackInfoReturnable<Integer> cir){

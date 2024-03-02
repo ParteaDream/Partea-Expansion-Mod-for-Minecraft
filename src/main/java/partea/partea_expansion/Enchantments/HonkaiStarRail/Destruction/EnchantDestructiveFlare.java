@@ -1,4 +1,4 @@
-package partea.partea_expansion.Enchantments.HonkaiStarRail;
+package partea.partea_expansion.Enchantments.HonkaiStarRail.Destruction;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
@@ -7,14 +7,11 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
-import partea.partea_expansion.ModItems;
 
-public class EnchantDestructiveFlare extends Enchantment {
+public class EnchantDestructiveFlare extends ClassDestruction {
     public static Enchantment DESTRUCTIVE_FLARE = new EnchantDestructiveFlare();
     protected EnchantDestructiveFlare() {
-        super(Rarity.COMMON, EnchantmentTarget.ARMOR_CHEST, new EquipmentSlot[]{EquipmentSlot.CHEST});
+        super(Rarity.RARE, EnchantmentTarget.ARMOR_LEGS, new EquipmentSlot[]{EquipmentSlot.CHEST});
     }
     public int getMaxLevel() {
         return 2;

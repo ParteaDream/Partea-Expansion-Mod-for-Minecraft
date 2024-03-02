@@ -1,4 +1,4 @@
-package partea.partea_expansion.Enchantments.HonkaiStarRail;
+package partea.partea_expansion.Enchantments.HonkaiStarRail.Destruction;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentHelper;
@@ -11,10 +11,10 @@ import net.minecraft.util.math.random.Random;
 
 import java.util.Map;
 
-public class EnchantPreceptFlickering extends Enchantment {
+public class EnchantPreceptFlickering extends ClassDestruction {
     public static Enchantment PRECEPT_FLICKERING = new EnchantPreceptFlickering();
     protected EnchantPreceptFlickering() {
-        super(Rarity.COMMON, EnchantmentTarget.ARMOR_CHEST, new EquipmentSlot[]{EquipmentSlot.CHEST});
+        super(Rarity.RARE, EnchantmentTarget.ARMOR_CHEST, new EquipmentSlot[]{EquipmentSlot.CHEST});
     }
     public int getMaxLevel() {
         return 2;

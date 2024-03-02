@@ -1,4 +1,4 @@
-package partea.partea_expansion.Enchantments.HonkaiStarRail;
+package partea.partea_expansion.Enchantments.HonkaiStarRail.Destruction;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
@@ -9,11 +9,11 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.util.math.random.Random;
 
-public class EnchantPredictiveDepthOfField extends Enchantment {
+public class EnchantPredictiveDepthOfField extends ClassDestruction {
     public static Enchantment PREDICTIVE_DEPTH_OF_FIELD = new EnchantPredictiveDepthOfField();
 
     protected EnchantPredictiveDepthOfField() {
-        super(Enchantment.Rarity.RARE, EnchantmentTarget.ARMOR_LEGS, new EquipmentSlot[]{EquipmentSlot.MAINHAND, EquipmentSlot.OFFHAND});
+        super(Enchantment.Rarity.RARE, EnchantmentTarget.ARMOR_CHEST, new EquipmentSlot[]{EquipmentSlot.MAINHAND, EquipmentSlot.OFFHAND});
     }
     public int getMaxLevel() {
         return 2;

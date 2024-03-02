@@ -1,4 +1,4 @@
-package partea.partea_expansion.Enchantments.HonkaiStarRail;
+package partea.partea_expansion.Enchantments.HonkaiStarRail.Destruction;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentHelper;
@@ -9,16 +9,14 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.util.math.random.Random;
-import partea.partea_expansion.ModItems;
 
 import java.util.Map;
 
-public class EnchantHarmfulAfterglow extends Enchantment {
+public class EnchantHarmfulAfterglow extends ClassDestruction {
     public static Enchantment HARMFUL_AFTERGLOW = new EnchantHarmfulAfterglow();
     protected EnchantHarmfulAfterglow() {
-        super(Rarity.COMMON, EnchantmentTarget.ARMOR_HEAD, new EquipmentSlot[]{EquipmentSlot.HEAD});
+        super(Rarity.RARE, EnchantmentTarget.ARMOR_HEAD, new EquipmentSlot[]{EquipmentSlot.HEAD});
     }
     public int getMaxLevel() {
         return 2;

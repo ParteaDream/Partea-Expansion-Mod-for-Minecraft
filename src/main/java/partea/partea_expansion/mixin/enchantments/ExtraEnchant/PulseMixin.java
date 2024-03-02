@@ -1,4 +1,4 @@
-package partea.partea_expansion.mixin.enchantments;
+package partea.partea_expansion.mixin.enchantments.ExtraEnchant;
 
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.Entity;
@@ -39,8 +39,8 @@ public abstract class PulseMixin {
     private static void pulseEnchantShoot(World world, LivingEntity entity, Hand hand, ItemStack stack, float speed, float divergence, CallbackInfo ci) {
         if (EnchantmentHelper.getLevel(EnchantPulse.PULSE, stack) > 0) {
             if (!world.isClient && !stack.isEmpty()) {
-                List<LivingEntity> targets = world.getNonSpectatingEntities(LivingEntity.class, entity.getBoundingBox().expand(20));
-                targets.stream().filter(e -> isValidTarget(e, entity)).filter(e -> entity.isInRange(e, 15, 20)).findFirst().ifPresent(target -> {
+                List<LivingEntity> targets = world.getNonSpectatingEntities(LivingEntity.class, entity.getBoundingBox().expand(15));
+                targets.stream().filter(e -> isValidTarget(e, entity)).filter(e -> entity.isInRange(e, 20, 25)).findFirst().ifPresent(target -> {
                     Vec3d vec3d = entity.getPos().add(0.0D, 1.600000023841858D, 0.0D);
                     Vec3d vec3d2 = target.getEyePos().subtract(vec3d);
                     Vec3d vec3d3 = vec3d2.normalize();

@@ -1,4 +1,4 @@
-package partea.partea_expansion.mixin.enchantments;
+package partea.partea_expansion.mixin.enchantments.ExtraEnchant;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;

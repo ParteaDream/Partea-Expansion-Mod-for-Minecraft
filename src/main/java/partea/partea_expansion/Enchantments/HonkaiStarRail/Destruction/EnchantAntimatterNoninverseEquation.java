@@ -1,4 +1,4 @@
-package partea.partea_expansion.Enchantments.HonkaiStarRail;
+package partea.partea_expansion.Enchantments.HonkaiStarRail.Destruction;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
@@ -9,7 +9,7 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import partea.partea_expansion.Enchantments.WeaponEnch.EnchantLifeSteal;
 
-public class EnchantAntimatterNoninverseEquation extends Enchantment {
+public class EnchantAntimatterNoninverseEquation extends ClassDestruction {
     public static Enchantment Antimatter_Noninverse_Equation = new EnchantAntimatterNoninverseEquation();
 
     protected EnchantAntimatterNoninverseEquation() {

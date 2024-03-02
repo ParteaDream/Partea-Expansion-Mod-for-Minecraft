@@ -1,15 +1,17 @@
 # [1.20.4]Partea Expansion-beta1.8模组项目文档
+
 ## 描述
-本模组旨在优化与拓展原版玩法，增强探索体验，同时维持游戏的平衡
+本模组旨在优化与拓展原版玩法，增强探索体验
+
 ## 前置模组
 1. owo-lib CurseForge链接：https://www.curseforge.com/minecraft/mc-mods/owo-lib
          （https://maven.wispforest.io/io/wispforest/owo-lib/）
 ## 推荐模组
 1. Enchantment Descriptions(附魔描述):https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions
 2. Bookshelf(Enchantment Description前置模组):https://www.curseforge.com/minecraft/mc-mods/bookshelf
-2. Iris Shaders(加载光影):https://www.curseforge.com/minecraft/mc-mods/irisshaders
-3. Sodium:https://www.curseforge.com/minecraft/mc-mods/sodium
-4. Indium(Sodium扩展):https://www.curseforge.com/minecraft/mc-mods/indium
+3. Iris Shaders(加载光影):https://www.curseforge.com/minecraft/mc-mods/irisshaders
+4. Sodium:https://www.curseforge.com/minecraft/mc-mods/sodium
+5. Indium(Sodium扩展):https://www.curseforge.com/minecraft/mc-mods/indium
 
 ## 新增物品
 
@@ -62,7 +64,7 @@
 8. 新增药水效果：
    1. 命定之死(doomed_death)：短时间内按最大生命值一定比例受到持续伤害
 
-9. 新增附魔：【注：下列附魔各种战利品箱都有小概率获得，特别提到的地点则具有更高的概率】
+9. 新增附魔：【注：下列附魔各种战利品箱都有小概率获得，特别提到的地点则具有更高的概率】【附魔中部分附魔标记了命途，不同命途的附魔无法兼容在同一装备上】
    1. 自动烧炼(auto_smelt)，最高1级，附魔台获得，用于挖掘工具，与精准采集冲突，自动熔炼挖掘矿物
    2. 斩首(beheading)，最高一级，附魔台获得，用于剑，与精准采集冲突，击杀苦力怕、僵尸、骷髅、猪灵有概率掉落其头颅，凋零骷髅掉落头颅概率提升
    3. 饱食(consumer)，最高3级，附魔台获得，用于剑，击杀敌人概率回复饱食度
@@ -81,19 +83,27 @@
    16. 灾厄杀手(raider)：最高5级，村庄制图师小屋概率获得，应用于近战武器，提高对灾厄村民的伤害，与锋利、逐火者、亡灵杀手、节肢杀手冲突
    17. 二段跳(dual_leap)：最高1级，掠夺者前哨战概率获得，应用于鞋子，获得二段跳能力
    18. 熔岩漫步(blaze_walker)：最高1级，堡垒遗迹桥宝箱概率获得，应用于鞋子，与冰霜行者、深海探索者冲突，将路过的岩浆暂时凝结为黑曜石
-   19. 景星助狩月(blood_therapy)：最高2级，可从附魔台获得，应用于剑，与吸血冲突，击杀敌人恢复生命值
-   20. 危害性余光(harmful_afterglow)：最高2级，附魔台附魔头盔或林地府邸获得，受到攻击时若此时不具有伤害吸收，则有概率提供短暂的伤害吸收
-   21. 戒律性闪变(precept_flickering)：最高2级，附魔台附魔胸甲或林地府邸获得，受到攻击后生命值不超过最大生命值30%，则有概率恢复随机点数生命值
-   22. 破坏性耀发(destructive_flare)：最高2级，附魔台附魔胸甲获得，1级时受到攻击使得生命值不超过最大生命值50%将获得力量1，2级后生命值低于30%将为获得力量2效果
-   23. 预兆性景深(predictive_depth_of_field)：最高2级，附魔台附魔裤腿获得，受击后生命值低于50%时获得短时间抗性提升，2级时受击后生命值低于30%获得抗性提升2
-   24. 反物质非逆方程(antimatter_noninverse_equation)：最高2级，附魔台附魔剑或沙漠神殿概率获得，造成伤害时以自身一定比例生命值为代价造成高额伤害
-   25. 回光效应(afterglow_effect)：最高2级，沙漠神殿探索概率获得，仅在头盔上有效，受到致死一击时自动触发一次不完全的不死图腾效果，有冷却时间
+   19. [巡猎]景星助狩月(blood_therapy)：最高2级，可从附魔台获得，应用于剑，与吸血冲突，击杀敌人恢复生命值
+   20. [巡猎]飞虹诛凿齿(rainbow_chiseled_teeth)：最高2级，剑附魔获得，应用于剑，击杀敌人恢复耐久
+   21. [毁灭]危害性余光(harmful_afterglow)：最高2级，附魔台附魔头盔或林地府邸获得，受到攻击时若此时不具有伤害吸收，则有概率提供短暂的伤害吸收
+   22. [毁灭]戒律性闪变(precept_flickering)：最高2级，附魔台附魔胸甲或林地府邸获得，受到攻击后生命值不超过最大生命值30%，则有概率恢复随机点数生命值
+   23. [毁灭]破坏性耀发(destructive_flare)：最高2级，附魔台附魔裤腿获得，1级时受到攻击使得生命值不超过最大生命值50%将获得力量1，2级后生命值低于30%将为获得力量2效果
+   24. [毁灭]预兆性景深(predictive_depth_of_field)：最高2级，附魔台附魔胸甲获得，受击后生命值低于50%时获得短时间抗性提升，2级时受击后生命值低于30%获得抗性提升2
+   25. [毁灭]反物质非逆方程(antimatter_noninverse_equation)：最高2级，附魔台附魔剑或沙漠神殿概率获得，造成伤害时以自身一定比例生命值为代价造成高额伤害
+   26. [毁灭]回光效应(afterglow_effect)：最高2级，沙漠神殿探索概率获得，仅在头盔上有效，受到致死一击时自动触发一次不完全的不死图腾效果，有冷却时间
+   27. [存护]构筑·补偿(construction_compensation)：最高2级，附魔胸甲获得，击杀敌人能获得伤害吸收
+   28. [存护]构筑·坚定(construction_staunch)：最高2级，附魔裤腿获得，提供减伤
+   29. [存护]构筑·弥合(construction_bridging)：最高2级，附魔头盔获得，受到攻击有概率回复耐久
+   30. [存护]星间构筑·亚共晶体(interstellar_construction_subeutectic)：最高2级，附魔头盔获得，处于伤害吸收状态获得抗性提升，升级后获得急迫
+   31. [存护]星间构筑·安全载荷(interstellar_construction_safety_payloads)：最高2级，附魔裤腿获得，持有伤害吸收时获得力量
+   32. [存护]神性构筑·超静定场(divine_construction_superstatic_fixation):最高2级，附魔头盔获得，受到攻击时按照自身伤害吸收一定比例对攻击者造成反震伤害
+   33. [存护]神性构筑·谐振传递(divine_construction_resonance_transmission)：最高2级，附魔胸甲获得，攻击目标时根据自身伤害吸收数量造成额外伤害
 
 10. 改变了部分附魔的等级上限（但是附魔台获得这些附魔的等级水平并没有太大的变化）：
     1. 锋利、亡灵杀手、节肢杀手等级上限提高至7级
-    2. 横扫之刃等级上限提高至6级
+    2. 横扫之刃等级上限提高至5级
     3. 耐久等级提高至5级
-    4. 保护等级上限下调为3
+    4. 保护等级上限下调为2
 11. 新增村民职业下界探险家(nether_explorer)，交易下界材料与矿物
 12. 末地外岛新增多种自然生成结构，丰富末地外岛的探索体验
 13. 新增进度赛博科技(cybertech)，还有高手！(more_power)，这就是洪荒之力？(is_it_the_ultimate_power)
@@ -106,4 +116,14 @@
 20. 下界合金碎片与下界岩可合成为远古残骸
 21. 命名牌可由织物、线与拴绳合成
 22. 新加入实验性维度：里世界(innerworld)，目前仅包含棕木群系
+
+## 特定附魔小结（不一定全，因为部分附魔任何物品有效，但下列附魔也有可能对其他有效）
+1. 头盔：夜隐无形，危害性余光，回光效应，构筑·弥合，星间构筑·亚共晶体，神性构筑·超静定场
+2. 胸甲：活力，戒律性闪变，预兆性景深，构筑·补偿，神性构筑·谐振传递
+3. 裤腿：破坏性耀发，构筑·坚定，星间构筑·安全载荷
+4. 鞋子：熔岩漫步，二段跳
+5. 剑：斩首、饱食、教育、逐火者、吸血、灾厄杀手、景星助狩月、反物质非逆方程
+6. 弓：飞升、罗蕾塔的大弓
+7. 弩：罗蕾塔的大弓，深邃♂黑暗♂幻想
+8. 工具：自动烧炼
 

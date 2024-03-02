@@ -1,7 +1,10 @@
 package partea.partea_expansion.mixin.enchantments;
 
 import net.minecraft.block.Blocks;
+import net.minecraft.enchantment.Enchantment;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.math.BlockPos;
 import org.spongepowered.asm.mixin.Mixin;
@@ -9,17 +12,20 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import partea.partea_expansion.Enchantments.EnchantGodOfTheSea;
+import partea.partea_expansion.Enchantments.HonkaiStarRail.Preservation.EnchantSubeutectic;
 import partea.partea_expansion.util.FEUtil;
 
 @Mixin(LivingEntity.class)
-public class GodOfTheSeaMixin {
+public class SubeutecticMixin {
     @Inject(at = @At("HEAD"), method = "baseTick")
-    public void godOfTheSea(CallbackInfo ci) {
+    public void subeutecticTrigger(CallbackInfo ci) {
         LivingEntity user = (LivingEntity) (Object) this;
-        if (FEUtil.hasEnchantment(user, EnchantGodOfTheSea.GOD_OF_THE_SEA)) {
-            if (!user.getEntityWorld().getBlockState(BlockPos.ofFloored(user.getX(), user.getEyeY(), user.getZ())).isOf(Blocks.BUBBLE_COLUMN)) {
-                if (!((PlayerEntity) user).getAbilities().invulnerable) {
-                    user.setAir(user.getMaxAir());
+        int level = FEUtil.getLevelArmor(user,EnchantSubeutectic.Subeutectic);
+        if (level > 0) {
+            if (user.hasStatusEffect(StatusEffects.ABSORPTION)){
+                user.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE,5,0));
+                if (level == 2){
+                    user.addStatusEffect(new StatusEffectInstance(StatusEffects.HASTE,5,0));
                 }
             }
         }

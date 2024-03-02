@@ -1,4 +1,4 @@
-package partea.partea_expansion.mixin.enchantments;
+package partea.partea_expansion.mixin.enchantments.ExtraEnchant;
 
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
@@ -21,8 +21,7 @@ public class SoulSeekerMixin {
     @Inject(method = "tick", at = @At("TAIL"))
     private void tickSoulSeeker(CallbackInfo ci) {
         PersistentProjectileEntity projectile = (PersistentProjectileEntity) (Object) this;
-    if (projectile.getOwner() instanceof LivingEntity owner && FEUtil.hasEnchantment(owner, EnchantSoulSeeker.SOUL_SEEKER)
-            && (owner.getEquippedStack(EquipmentSlot.MAINHAND).getItem() == Items.CROSSBOW || owner.getEquippedStack(EquipmentSlot.OFFHAND).getItem() == Items.CROSSBOW)) {
+    if (projectile.getOwner() instanceof LivingEntity owner && FEUtil.hasEnchantment(owner, EnchantSoulSeeker.SOUL_SEEKER)) {
             if (projectile.isAlive() && !projectile.isOnGround() && !(projectile instanceof TridentEntity)) {
                 Box box = projectile.getBoundingBox().expand(15);
                 LivingEntity target = projectile.getWorld().getClosestEntity(LivingEntity.class, TargetPredicate.DEFAULT, null, projectile.getX(), projectile.getY(), projectile.getZ(), box);

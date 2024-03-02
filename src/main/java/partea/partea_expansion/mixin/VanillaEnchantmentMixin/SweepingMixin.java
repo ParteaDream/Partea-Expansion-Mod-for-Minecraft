@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public class SweepingMixin {
     @Inject(method = "getMaxLevel", at = @At("HEAD"), cancellable = true)
     public void getMaxLevel(CallbackInfoReturnable<Integer> cir){
-        cir.setReturnValue(6);
+        cir.setReturnValue(5);
     }
     @Inject(method = "getMinPower", at = @At("HEAD"), cancellable = true)
     public void getMinPower(int level, CallbackInfoReturnable<Integer> cir){
