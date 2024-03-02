@@ -153,12 +153,14 @@ public class ModTab {
                 entries.add(GOLDEN_NETHERITE_LEGGINGS);
                 entries.add(GOLDEN_NETHERITE_BOOTS);
                 entries.add(GOLDEN_NETHERITE_SWORD);
+                entries.add(GOLDEN_NETHERITE_AXE);
 
-                entries.add(DIAMOND_NETHERITE_SWORD);
                 entries.add(DIAMOND_NETHERITE_HELMET);
                 entries.add(DIAMOND_NETHERITE_CHESTPLATE);
                 entries.add(DIAMOND_NETHERITE_LEGGINGS);
                 entries.add(DIAMOND_NETHERITE_BOOTS);
+                entries.add(DIAMOND_NETHERITE_SWORD);
+                entries.add(DIAMOND_NETHERITE_AXE);
 
                 entries.add(AMETHYST_SWORD);
                 entries.add(AMETHYST_STILLETO);
