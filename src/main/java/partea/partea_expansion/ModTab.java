@@ -74,6 +74,8 @@ public class ModTab {
                 entries.add(THRILLER_MASK);
                 entries.add(ANCIENT_PEARL);
                 entries.add(HEART_OF_THE_DEEP);
+                entries.add(HORSE_MEAT);
+                entries.add(COOKED_HORSE_MEAT);
 
                 entries.add(PALM_SAPLING);
                 entries.add(PALM_LOG);
@@ -189,6 +191,8 @@ public class ModTab {
                 entries.add(CRYING_OBSIDIAN_DUST);
                 entries.add(ANCIENT_PEARL);
                 entries.add(HEART_OF_THE_DEEP);
+                entries.add(HORSE_MEAT);
+                entries.add(COOKED_HORSE_MEAT);
                 entries.add(SHED_A_LIGHT_MUSIC_DISC);
                 entries.add(SILENT_TIME_MUSIC_DISC);
             })

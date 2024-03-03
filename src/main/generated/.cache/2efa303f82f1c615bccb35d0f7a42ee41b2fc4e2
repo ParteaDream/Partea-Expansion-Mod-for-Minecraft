@@ -1,8 +1,8 @@
-// 1.20.4	2024-03-01T21:15:10.999942	Partea Expansion/Tags for minecraft:block
+// 1.20.4	2024-03-03T20:54:46.08124	Partea Expansion/Tags for minecraft:block
 e3a8dd69908c09f60aeeec27013a0922ab64f210 data/minecraft/tags/blocks/fence_gates.json
 ee39432dc1bcce2f37fd26734edb17e61dc7ca5b data/partea_expansion/tags/blocks/diamond_prospector_list.json
-7ab72b03ee84579abc3adbc9181d7a1f6ffa90b5 data/minecraft/tags/blocks/fences.json
 3c059d178a0e211e641fee4c9728a386486037ea data/fabric/tags/blocks/needs_tool_level_4.json
 a8068d22bfe0ec4b8d4a27b5adf7994c56d11682 data/fabric/tags/blocks/needs_tool_level_5.json
 773c2bef0f2e80ef080fbef87e563b34a4718e47 data/minecraft/tags/blocks/mineable/pickaxe.json
+7ab72b03ee84579abc3adbc9181d7a1f6ffa90b5 data/minecraft/tags/blocks/fences.json
 802b80a35df3def1f14c9470c1e04f590fb286d1 data/minecraft/tags/blocks/logs_that_burn.json

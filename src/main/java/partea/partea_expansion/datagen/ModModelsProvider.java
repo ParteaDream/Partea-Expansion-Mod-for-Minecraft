@@ -70,6 +70,8 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ANCIENT_PEARL, Models.GENERATED);
         itemModelGenerator.register(ModItems.HEART_OF_THE_DEEP, Models.GENERATED);
         itemModelGenerator.register(ModItems.AFTERGLOW_CD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.HORSE_MEAT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COOKED_HORSE_MEAT, Models.GENERATED);
 
         itemModelGenerator.registerArmor((ArmorItem) ModItems.FOOLS_MASK);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.THRILLER_MASK);

@@ -14,6 +14,7 @@ import partea.partea_expansion.CustomItems.ArmorItems.ModNightVisionGlassesItem;
 import partea.partea_expansion.CustomItems.CustomMaskItems.CustomFoolsMaskItem;
 import partea.partea_expansion.CustomItems.CustomMaskItems.CustomThrillerMaskItem;
 import partea.partea_expansion.CustomItems.DiamondProspectorItem;
+import partea.partea_expansion.CustomItems.ModFoodComponents;
 import partea.partea_expansion.CustomItems.SafeminingDetectorItem;
 import partea.partea_expansion.CustomItems.ToolItems.AmethystSwordItem;
 import partea.partea_expansion.CustomItems.ToolItems.CreativeSwordItem;
@@ -23,6 +24,10 @@ import partea.partea_expansion.sounds.ModSounds;
 import static partea.partea_expansion.CustomItems.ArmorItems.ModArmorMaterial.GOLDEN_NETHERITE;
 
 public class ModItems {
+    public static Item HORSE_MEAT = registerItem("horse_meat"
+            , new Item(new FabricItemSettings().food(ModFoodComponents.HORSE_MEAT)));
+    public static Item COOKED_HORSE_MEAT = registerItem("cooked_horse_meat"
+            , new Item(new FabricItemSettings().food(ModFoodComponents.COOKED_HORSE_MEAT)));
     public static Item AFTERGLOW_CD = registerItem("afterglow_cd"
             , new Item(new FabricItemSettings().rarity(Rarity.EPIC).maxCount(1)));
     public static Item HEART_OF_THE_DEEP = registerItem("heart_of_the_deep"

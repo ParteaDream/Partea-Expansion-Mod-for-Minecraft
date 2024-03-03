@@ -27,7 +27,7 @@ public class EnchantAntimatterNoninverseEquation extends ClassDestruction {
     }
 
     protected boolean canAccept(Enchantment other) {
-        return super.canAccept(other) && other != EnchantLifeSteal.LIFE_STEAL;
+        return super.canAccept(other);
     }
     @Override
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {

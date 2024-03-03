@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smoking",
+  "category": "misc",
+  "experience": 2.0,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "partea_expansion:horse_meat"
+  },
+  "result": "partea_expansion:cooked_horse_meat"
+}

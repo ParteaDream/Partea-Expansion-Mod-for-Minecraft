@@ -177,12 +177,23 @@ public class QualitativeAnalyzerBlockEntity extends BlockEntity implements Exten
         }
         Random random = new Random();
         //赌博质变
-        if (getStack(INPUT_SLOT).getItem() == Items.TOTEM_OF_UNDYING
-                || getStack(INPUT_SLOT).getItem() == Items.TOTEM_OF_UNDYING){
+        if (getStack(INPUT_SLOT).getItem() == Items.TOTEM_OF_UNDYING){
             result = new ItemStack(Items.TOTEM_OF_UNDYING, random.nextInt(0,2));
             this.removeStack(INPUT_SLOT,random.nextInt(0,1));
             this.removeStack(E_SLOT,1);
             this.setStack(OUTPUT_SLOT, new ItemStack(result.getItem(), getStack(OUTPUT_SLOT).getCount() + result.getCount()));
+        }
+        if (getStack(INPUT_SLOT).getItem() == Items.EMERALD){
+            result = new ItemStack(Items.EMERALD);
+            float r = random.nextFloat();
+            if(r < 0.55){
+                this.removeStack(INPUT_SLOT,0);
+                this.setStack(OUTPUT_SLOT, new ItemStack(result.getItem(), getStack(OUTPUT_SLOT).getCount() + 1));
+            }else{
+                this.removeStack(INPUT_SLOT,1);
+            }
+            this.removeStack(E_SLOT,1);
+            return;
         }
         this.removeStack(INPUT_SLOT,1);
         this.removeStack(E_SLOT,1);
@@ -265,7 +276,10 @@ public class QualitativeAnalyzerBlockEntity extends BlockEntity implements Exten
             result = new ItemStack(Items.TOTEM_OF_UNDYING, random.nextInt(0,1));
             return EhasCLD() && canInsertAmountIntoOutputSlot(result) && canInsertItemIntoOutputSlot(result.getItem());
         }
-
+        if (getStack(INPUT_SLOT).getItem() == Items.EMERALD){
+            result = new ItemStack(Items.EMERALD);
+            return EhasCLD() && canInsertItemIntoOutputSlot(result.getItem()) && canInsertAmountIntoOutputSlot(result);
+        }
 
 
         return EhasCLD() && hasInput && canInsertAmountIntoOutputSlot(result) && canInsertItemIntoOutputSlot(result.getItem());

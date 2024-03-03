@@ -27,12 +27,12 @@ public abstract class FoolsMaskMixin {
         if (user != null && Objects.equals(user.getEquippedStack(EquipmentSlot.HEAD).getItem().getName(), Text.translatable("item.partea_expansion.fools_mask"))) {
             if (strengthLevel == 0){
                 strengthLevel = 1;
-                user.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH,114514,0));
+                user.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH,114514,0,false,false,false));
             }else if(strengthLevel == 1){
                 strengthLevel = 2;
-                user.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH,114514,1));
+                user.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH,114514,1,false,false,false));
             }else if(strengthLevel == 2){
-                user.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH,114514,2));
+                user.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH,114514,2,false,false,false));
             }
         }
     }

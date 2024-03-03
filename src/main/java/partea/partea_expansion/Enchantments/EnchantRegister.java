@@ -3,9 +3,15 @@ package partea.partea_expansion.Enchantments;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import partea.partea_expansion.Enchantments.HonkaiStarRail.Abundance.*;
 import partea.partea_expansion.Enchantments.HonkaiStarRail.Destruction.*;
 import partea.partea_expansion.Enchantments.HonkaiStarRail.Hunt.EnchantBloodTherapy;
+import partea.partea_expansion.Enchantments.HonkaiStarRail.Hunt.EnchantCelestialAnnihilation;
 import partea.partea_expansion.Enchantments.HonkaiStarRail.Hunt.EnchantRainbowChiseledTeeth;
+import partea.partea_expansion.Enchantments.HonkaiStarRail.Nihilism.EnchantCryOfTheWilderness;
+import partea.partea_expansion.Enchantments.HonkaiStarRail.Nihilism.EnchantFuneralRitesForSensualWorshippers;
+import partea.partea_expansion.Enchantments.HonkaiStarRail.Nihilism.EnchantTheOneWhoIsEncasedInASleeve;
+import partea.partea_expansion.Enchantments.HonkaiStarRail.Nihilism.EnchantTheTwilightOfExistence;
 import partea.partea_expansion.Enchantments.HonkaiStarRail.Preservation.*;
 import partea.partea_expansion.Enchantments.WeaponEnch.*;
 
@@ -50,9 +56,11 @@ public class EnchantRegister {
         Registry.register(Registries.ENCHANTMENT
                 , new Identifier("partea_expansion", "blaze_walker"), EnchantBlazeWalker.BLAZE_WALKER);
         Registry.register(Registries.ENCHANTMENT
-                , new Identifier("partea_expansion", "blood_therapy"), EnchantBloodTherapy.BLOOD_THERAPY);
+                , new Identifier("partea_expansion", "jingxing_moon_hunter"), EnchantBloodTherapy.BLOOD_THERAPY);
         Registry.register(Registries.ENCHANTMENT
                 , new Identifier("partea_expansion", "rainbow_chiseled_teeth"), EnchantRainbowChiseledTeeth.Rainbow_Chiseled_Teeth);
+        Registry.register(Registries.ENCHANTMENT
+                , new Identifier("partea_expansion", "celestial_annihilation"), EnchantCelestialAnnihilation.Celestial_Annihilation);
         Registry.register(Registries.ENCHANTMENT
                 , new Identifier("partea_expansion", "harmful_afterglow"), EnchantHarmfulAfterglow.HARMFUL_AFTERGLOW);
         Registry.register(Registries.ENCHANTMENT
@@ -76,8 +84,28 @@ public class EnchantRegister {
         Registry.register(Registries.ENCHANTMENT
                 , new Identifier("partea_expansion", "interstellar_construction_safety_payloads"), EnchantSafetyPayloads.SafetyPayloads);
         Registry.register(Registries.ENCHANTMENT
+                , new Identifier("partea_expansion", "interstellar_construction_feedback_shelter"), EnchantFeedbackShelter.Feedback_Shelter);
+        Registry.register(Registries.ENCHANTMENT
                 , new Identifier("partea_expansion", "divine_construction_superstatic_fixation"), EnchantSuperstaticFixation.SuperstaticFixation);
         Registry.register(Registries.ENCHANTMENT
                 , new Identifier("partea_expansion", "divine_construction_resonance_transmission"), EnchantResonanceTransmission.ResonanceTransmission);
+        Registry.register(Registries.ENCHANTMENT
+                , new Identifier("partea_expansion", "cry_of_the_wilderness"), EnchantCryOfTheWilderness.Cry_Of_The_Wilderness);
+        Registry.register(Registries.ENCHANTMENT
+                , new Identifier("partea_expansion", "funeral_rites_for_sensual_worshippers"), EnchantFuneralRitesForSensualWorshippers.Funeral_Rites_For_Sensual_Worshippers);
+        Registry.register(Registries.ENCHANTMENT
+                , new Identifier("partea_expansion", "the_twilight_of_existence"), EnchantTheTwilightOfExistence.The_Twilight_Of_Existence);
+        Registry.register(Registries.ENCHANTMENT
+                , new Identifier("partea_expansion", "the_one_who_is_encased_in_a_sleeve"), EnchantTheOneWhoIsEncasedInASleeve.The_One_Who_Is_Encased_In_A_Sleeve);
+        Registry.register(Registries.ENCHANTMENT
+                , new Identifier("partea_expansion", "yuanyin"), EnchantYuanyin.Yuanyin);
+        Registry.register(Registries.ENCHANTMENT
+                , new Identifier("partea_expansion", "fayu"), EnchantFayu.Fayu);
+        Registry.register(Registries.ENCHANTMENT
+                , new Identifier("partea_expansion", "crystally_clear"), EnchantCrystallyClear.CrystallyClear);
+        Registry.register(Registries.ENCHANTMENT
+                , new Identifier("partea_expansion", "hannya_ship"), EnchantHannyaShip.HannyaShip);
+        Registry.register(Registries.ENCHANTMENT
+                , new Identifier("partea_expansion", "be_merciful"), EnchantMerciful.Merciful);
     }
 }

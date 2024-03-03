@@ -4,11 +4,14 @@ import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import net.minecraft.item.Items;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTable;
+import net.minecraft.loot.condition.EntityPropertiesLootCondition;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
+import net.minecraft.loot.function.FurnaceSmeltLootFunction;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
+import net.minecraft.predicate.entity.EntityPredicate;
 import net.minecraft.util.Identifier;
 import partea.partea_expansion.ModItems;
 
@@ -24,8 +27,8 @@ public class ModLootTableModifiers {
     private static final Identifier CREEPER_ID = new Identifier("minecraft", "entities/creeper");
     private static final Identifier WARDEN_ID = new Identifier("minecraft", "entities/warden");
 
-
     public static void modifierLootTables() {
+
         LootTableEvents.MODIFY.register(((resourceManager, lootManager, id, tableBuilder, source) -> {
             if(WARDEN_ID.equals(id)){
                 LootPool.Builder poolBuilder = LootPool.builder()

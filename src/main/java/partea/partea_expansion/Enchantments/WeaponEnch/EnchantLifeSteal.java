@@ -7,6 +7,7 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.world.World;
+import partea.partea_expansion.Enchantments.HonkaiStarRail.Abundance.EnchantHannyaShip;
 import partea.partea_expansion.sounds.ModSounds;
 
 public class EnchantLifeSteal extends Enchantment {
@@ -26,7 +27,7 @@ public class EnchantLifeSteal extends Enchantment {
     }
     @Override
     protected boolean canAccept(Enchantment other) {
-        return super.canAccept(other);
+        return super.canAccept(other) && other != EnchantHannyaShip.HannyaShip;
     }
 
     @Override

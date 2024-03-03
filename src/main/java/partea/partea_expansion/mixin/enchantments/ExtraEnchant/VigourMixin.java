@@ -13,6 +13,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import partea.partea_expansion.Enchantments.EnchantVigour;
+import partea.partea_expansion.Enchantments.HonkaiStarRail.Abundance.EnchantYuanyin;
 
 @Mixin(PlayerEntity.class)
 public abstract class VigourMixin {

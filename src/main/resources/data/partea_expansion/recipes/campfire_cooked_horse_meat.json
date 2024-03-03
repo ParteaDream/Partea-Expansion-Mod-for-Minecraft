@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:campfire",
+  "category": "misc",
+  "experience": 2.0,
+  "cookingtime": 600,
+  "ingredient": {
+    "item": "partea_expansion:horse_meat"
+  },
+  "result": "partea_expansion:cooked_horse_meat"
+}

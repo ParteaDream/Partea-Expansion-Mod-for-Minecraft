@@ -1,4 +1,4 @@
-package partea.partea_expansion.mixin.enchantments;
+package partea.partea_expansion.mixin.enchantments.Honkai;
 
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.EquipmentSlot;

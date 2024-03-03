@@ -1,10 +1,10 @@
-// 1.20.4	2024-03-01T21:15:11.000155	Partea Expansion/Block Loot Tables
+// 1.20.4	2024-03-03T20:54:46.081417	Partea Expansion/Block Loot Tables
 e4c0f28878cb04e096ccb0c1be804ef4d2d11a80 data/partea_expansion/loot_tables/blocks/stripped_palm_wood.json
 a78cd91dd498b564d44e966363ffdbcd7a3d299b data/partea_expansion/loot_tables/blocks/diamond_netherite_block.json
 cd31f41c8b6002375bb442066a4cef3eeac1cef3 data/partea_expansion/loot_tables/blocks/golden_netherite_block.json
 98c465e4c4b4ca9e9a364f87ab46a27b0f0f274f data/partea_expansion/loot_tables/blocks/palm_stair.json
-988414eadc6b2f851faa23806082e92af0ea852e data/partea_expansion/loot_tables/blocks/palm_trapdoor.json
 fc5be2b55fda64305f8340a4a958e52c8dd73b1a data/partea_expansion/loot_tables/blocks/palm_button.json
+988414eadc6b2f851faa23806082e92af0ea852e data/partea_expansion/loot_tables/blocks/palm_trapdoor.json
 cf7a2cd95bec4236e7069586f03cba03a9bd7fee data/partea_expansion/loot_tables/blocks/palm_planks.json
 98d99b0dc2e6e97bdf8c07c7b38b594fa3f84e3d data/partea_expansion/loot_tables/blocks/palm_door.json
 36feed225fa3719762012044c26015313ce4ae95 data/partea_expansion/loot_tables/blocks/palm_pressure_plate.json
