@@ -1,4 +1,4 @@
-# [1.20.4]Partea Expansion-beta1.9模组项目文档
+# [1.20.4]Partea Expansion-beta1.10模组项目文档
 
 ## 描述
 本模组旨在优化与拓展原版玩法，增强探索体验
