@@ -171,10 +171,6 @@ public class QualitativeAnalyzerBlockEntity extends BlockEntity implements Exten
                 || getStack(INPUT_SLOT).getItem() == Items.CHARCOAL){
             result = new ItemStack(Items.GLOWSTONE_DUST);
         }
-        if (getStack(INPUT_SLOT).getItem() == Items.ENDER_EYE
-                || getStack(INPUT_SLOT).getItem() == Items.ENDER_PEARL){
-            result = new ItemStack(ModItems.ANCIENT_PEARL);
-        }
         Random random = new Random();
         //赌博质变
         if (getStack(INPUT_SLOT).getItem() == Items.TOTEM_OF_UNDYING){
@@ -263,11 +259,6 @@ public class QualitativeAnalyzerBlockEntity extends BlockEntity implements Exten
                 || getStack(INPUT_SLOT).getItem() == Items.CHARCOAL){
             result = new ItemStack(Items.GLOWSTONE_DUST);
             return EhasQD() && canInsertAmountIntoOutputSlot(result) && canInsertItemIntoOutputSlot(result.getItem());
-        }
-        if (getStack(INPUT_SLOT).getItem() == Items.ENDER_EYE
-                || getStack(INPUT_SLOT).getItem() == Items.ENDER_PEARL){
-            result = new ItemStack(ModItems.ANCIENT_PEARL);
-            return EhasCOD() && canInsertAmountIntoOutputSlot(result) && canInsertItemIntoOutputSlot(result.getItem());
         }
         Random random = new Random();
         //赌博质变

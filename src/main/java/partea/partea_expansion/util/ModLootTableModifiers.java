@@ -9,10 +9,18 @@ import net.minecraft.loot.condition.RandomChanceLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.function.FurnaceSmeltLootFunction;
 import net.minecraft.loot.function.SetCountLootFunction;
+import net.minecraft.loot.function.SetEnchantmentsLootFunction;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.predicate.entity.EntityPredicate;
 import net.minecraft.util.Identifier;
+import partea.partea_expansion.Enchantments.EnchantBlazeWalker;
+import partea.partea_expansion.Enchantments.HonkaiStarRail.Abundance.EnchantMerciful;
+import partea.partea_expansion.Enchantments.HonkaiStarRail.Destruction.*;
+import partea.partea_expansion.Enchantments.WeaponEnch.EnchantDoomedDeath;
+import partea.partea_expansion.Enchantments.WeaponEnch.EnchantExperience;
+import partea.partea_expansion.Enchantments.WeaponEnch.EnchantIceAspect;
+import partea.partea_expansion.Enchantments.WeaponEnch.EnchantPulse;
 import partea.partea_expansion.ModItems;
 
 public class ModLootTableModifiers {
@@ -26,8 +34,51 @@ public class ModLootTableModifiers {
     private static final Identifier WOODLAND_ID = new Identifier("minecraft", "chests/woodland_mansion");
     private static final Identifier CREEPER_ID = new Identifier("minecraft", "entities/creeper");
     private static final Identifier WARDEN_ID = new Identifier("minecraft", "entities/warden");
-
+    private static final Identifier ANCIENT_CITY_ID = new Identifier("minecraft", "chests/ancient_city");
+    private static final Identifier BASTION_BRIDGE = new Identifier("minecraft", "chests/bastion_bridge");
+    private static final Identifier IGLOO_CHEST = new Identifier("minecraft", "chests/igloo_chest");
     public static void modifierLootTables() {
+        LootTableEvents.MODIFY.register(((resourceManager, lootManager, id, tableBuilder, source) -> {
+            if(IGLOO_CHEST.equals(id)){
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.7f))
+                        .with(ItemEntry.builder(Items.BOOK))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f,1.0f)))
+                        .apply(new SetEnchantmentsLootFunction.Builder().enchantment(EnchantIceAspect.ICE_ASPECT,UniformLootNumberProvider.create(1f,2f)));
+                tableBuilder.pool(poolBuilder.build());
+            }
+        }));
+
+        LootTableEvents.MODIFY.register(((resourceManager, lootManager, id, tableBuilder, source) -> {
+            if(BASTION_BRIDGE.equals(id)){
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.5f))
+                        .with(ItemEntry.builder(Items.ANCIENT_DEBRIS))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f,1.0f)));
+                tableBuilder.pool(poolBuilder.build());
+                LootPool.Builder poolBuilder2 = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.7f))
+                        .with(ItemEntry.builder(Items.BOOK))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f,1.0f)))
+                        .apply(new SetEnchantmentsLootFunction.Builder().enchantment(EnchantBlazeWalker.BLAZE_WALKER,UniformLootNumberProvider.create(1f,2f)));
+                tableBuilder.pool(poolBuilder2.build());
+            }
+        }));
+
+        LootTableEvents.MODIFY.register(((resourceManager, lootManager, id, tableBuilder, source) -> {
+            if(ANCIENT_CITY_ID.equals(id)){
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.3f))
+                        .with(ItemEntry.builder(Items.BOOK))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f,1.0f)))
+                        .apply(new SetEnchantmentsLootFunction.Builder().enchantment(EnchantDoomedDeath.Doomed_Death,UniformLootNumberProvider.create(3f,5f)));
+                tableBuilder.pool(poolBuilder.build());
+            }
+        }));
 
         LootTableEvents.MODIFY.register(((resourceManager, lootManager, id, tableBuilder, source) -> {
             if(WARDEN_ID.equals(id)){
@@ -37,6 +88,13 @@ public class ModLootTableModifiers {
                         .with(ItemEntry.builder(ModItems.HEART_OF_THE_DEEP))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f,1.0f)));
                 tableBuilder.pool(poolBuilder.build());
+                LootPool.Builder poolBuilder2 = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.4f))
+                        .with(ItemEntry.builder(Items.BOOK))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f,1.0f)))
+                        .apply(new SetEnchantmentsLootFunction.Builder().enchantment(EnchantPulse.PULSE,UniformLootNumberProvider.create(1f,1f)));
+                tableBuilder.pool(poolBuilder2.build());
             }
         }));
 
@@ -81,6 +139,13 @@ public class ModLootTableModifiers {
                         .with(ItemEntry.builder(ModItems.FOOLS_MASK))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f,1.0f)));
                 tableBuilder.pool(poolBuilder.build());
+                LootPool.Builder poolBuilder2 = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.4f))
+                        .with(ItemEntry.builder(Items.BOOK))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f,1.0f)))
+                        .apply(new SetEnchantmentsLootFunction.Builder().enchantment(EnchantExperience.EXPERIENCE,UniformLootNumberProvider.create(1f,2f)));
+                tableBuilder.pool(poolBuilder2.build());
             }
         }));
 

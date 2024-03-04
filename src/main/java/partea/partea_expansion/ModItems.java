@@ -6,7 +6,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
-import partea.partea_expansion.CustomItems.AncientPearl;
+import partea.partea_expansion.CustomItems.Pearls.AncientPearl;
 import partea.partea_expansion.CustomItems.ArmorItems.ModArmorMaterial;
 import partea.partea_expansion.CustomItems.ArmorItems.ModDiamondNetheriteArmorItem;
 import partea.partea_expansion.CustomItems.ArmorItems.ModGoldenNetheriteArmorItem;
@@ -15,6 +15,8 @@ import partea.partea_expansion.CustomItems.CustomMaskItems.CustomFoolsMaskItem;
 import partea.partea_expansion.CustomItems.CustomMaskItems.CustomThrillerMaskItem;
 import partea.partea_expansion.CustomItems.DiamondProspectorItem;
 import partea.partea_expansion.CustomItems.ModFoodComponents;
+import partea.partea_expansion.CustomItems.Pearls.AvariciousPearl;
+import partea.partea_expansion.CustomItems.Pearls.CrimsonPearl;
 import partea.partea_expansion.CustomItems.SafeminingDetectorItem;
 import partea.partea_expansion.CustomItems.ToolItems.AmethystSwordItem;
 import partea.partea_expansion.CustomItems.ToolItems.CreativeSwordItem;
@@ -24,6 +26,12 @@ import partea.partea_expansion.sounds.ModSounds;
 import static partea.partea_expansion.CustomItems.ArmorItems.ModArmorMaterial.GOLDEN_NETHERITE;
 
 public class ModItems {
+    public static Item BASALT_BRICK = registerItem("basalt_brick"
+            , new Item(new FabricItemSettings()));
+    public static Item CRIMSON_PEARL = registerItem("crimson_pearl"
+            , new CrimsonPearl(new FabricItemSettings().rarity(Rarity.UNCOMMON).maxCount(16)));
+    public static Item AVARICIOUS_PEARL = registerItem("avaricious_pearl"
+            , new AvariciousPearl(new FabricItemSettings().rarity(Rarity.UNCOMMON).maxCount(16)));
     public static Item HORSE_MEAT = registerItem("horse_meat"
             , new Item(new FabricItemSettings().food(ModFoodComponents.HORSE_MEAT)));
     public static Item COOKED_HORSE_MEAT = registerItem("cooked_horse_meat"

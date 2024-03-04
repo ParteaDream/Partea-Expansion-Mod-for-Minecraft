@@ -26,6 +26,6 @@ public class EnchantDualLeap extends Enchantment {
     }
 
     public boolean isTreasure(){
-        return true;
+        return false;
     }
 }

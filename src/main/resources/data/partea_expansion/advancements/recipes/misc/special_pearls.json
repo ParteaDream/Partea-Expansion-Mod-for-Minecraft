@@ -1,0 +1,39 @@
+{
+  "parent": "partea_expansion:recipes/root",
+  "criteria": {
+    "has_ender_pearl": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:ender_pearl"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "partea_expansion:craft_ancient_pearl"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_ender_pearl",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "partea_expansion:craft_ancient_pearl",
+      "partea_expansion:craft_ancient_pearl_from_eye",
+      "partea_expansion:craft_crimson_pearl",
+      "partea_expansion:craft_crimson_pearl_from_eye",
+      "partea_expansion:craft_avaricious_pearl",
+      "partea_expansion:craft_avaricious_pearl_from_eye"
+    ]
+  }
+}

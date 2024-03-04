@@ -11,7 +11,7 @@ public class SharpnessMixin {
 
     @Inject(method = "getMaxLevel", at = @At(value = "HEAD"), cancellable = true)
     public void getMaxLevel(CallbackInfoReturnable<Integer> cir){
-        cir.setReturnValue(7);
+        cir.setReturnValue(5);
     }
 
     @Inject(method = "getMinPower", at = @At("HEAD"), cancellable = true)

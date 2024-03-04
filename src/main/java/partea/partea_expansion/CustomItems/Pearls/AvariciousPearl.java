@@ -1,4 +1,4 @@
-package partea.partea_expansion.CustomItems;
+package partea.partea_expansion.CustomItems.Pearls;
 
 import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.block.Blocks;
@@ -24,25 +24,25 @@ import net.minecraft.world.World;
 import net.minecraft.world.event.GameEvent;
 import net.minecraft.world.gen.structure.Structure;
 
-public class AncientPearl extends EnderEyeItem {
+public class AvariciousPearl extends EnderEyeItem {
     private static TagKey<Structure> of() {
-        return TagKey.of(RegistryKeys.STRUCTURE, new Identifier("ancient_city"));
+        return TagKey.of(RegistryKeys.STRUCTURE, new Identifier("bastion_remnant"));
     }
-    TagKey<Structure> ANCIENT_CITY = of();
-    public AncientPearl(Settings settings) {
+    TagKey<Structure> BASTION = of();
+    public AvariciousPearl(Settings settings) {
         super(settings);
     }
 
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         ItemStack itemStack = user.getStackInHand(hand);
         BlockHitResult blockHitResult = raycast(world, user, RaycastContext.FluidHandling.NONE);
-        if (blockHitResult.getType() == HitResult.Type.BLOCK && world.getBlockState(blockHitResult.getBlockPos()).isOf(Blocks.REINFORCED_DEEPSLATE)) {
+        if (blockHitResult.getType() == HitResult.Type.BLOCK && world.getBlockState(blockHitResult.getBlockPos()).isOf(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS)) {
             return TypedActionResult.pass(itemStack);
         } else {
             user.setCurrentHand(hand);
             if (world instanceof ServerWorld) {
                 ServerWorld serverWorld = (ServerWorld)world;
-                BlockPos blockPos = serverWorld.locateStructure(ANCIENT_CITY, user.getBlockPos(), 100, false);
+                BlockPos blockPos = serverWorld.locateStructure(BASTION, user.getBlockPos(), 100, false);
                 if (blockPos != null) {
                     EyeOfEnderEntity eyeOfEnderEntity = new EyeOfEnderEntity(world, user.getX(), user.getBodyY(0.5), user.getZ());
                     eyeOfEnderEntity.setItem(itemStack);

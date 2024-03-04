@@ -17,8 +17,6 @@
           "name": "minecraft:book",
           "weight": 1
         },
-
-
         {
           "type": "minecraft:item",
           "functions": [
@@ -32,8 +30,8 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:map",
-          "weight": 10
+          "name": "minecraft:diamond",
+          "weight": 3
         },
         {
           "type": "minecraft:item",
@@ -48,12 +46,23 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:paper",
-          "weight": 15
+          "name": "minecraft:iron_ingot",
+          "weight": 10
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:compass",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:gold_ingot",
           "weight": 5
         },
         {
@@ -63,7 +72,7 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 4.0,
+                "max": 3.0,
                 "min": 1.0
               },
               "function": "minecraft:set_count"
@@ -79,24 +88,101 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 2.0,
+                "max": 3.0,
                 "min": 1.0
               },
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:stick",
+          "name": "minecraft:apple",
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_pickaxe",
           "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_sword",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_chestplate",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_helmet",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_leggings",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_boots",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 7.0,
+                "min": 3.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:obsidian",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 7.0,
+                "min": 3.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:oak_sapling",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:saddle",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_horse_armor"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_horse_armor"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_horse_armor"
         }
       ],
       "rolls": {
         "type": "minecraft:uniform",
-        "max": 5.0,
-        "min": 1.0
+        "max": 8.0,
+        "min": 3.0
       }
     },
-
-
 
 
     {
@@ -114,12 +200,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:redstone",
-          "count": {
-            "type": "minecraft:uniform",
-            "max": 4.0,
-            "min": 1.0
-          },
+          "name": "minecraft:lava_bucket",
           "weight": 20
         },
         {
@@ -164,9 +245,6 @@
       ],
       "rolls": 1.0
     }
-
-
-
   ],
-  "random_sequence": "minecraft:chests/village/village_cartographer"
+  "random_sequence": "minecraft:chests/village/village_weaponsmith"
 }

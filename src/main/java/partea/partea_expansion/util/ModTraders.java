@@ -2,10 +2,12 @@ package partea.partea_expansion.util;
 
 import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
 import net.minecraft.block.Blocks;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.village.TradeOffer;
 import net.minecraft.village.VillagerProfession;
+import partea.partea_expansion.ModItems;
 
 import static partea.partea_expansion.CustomTrades.NetherExplorer.NETHER_EXPLORER;
 
@@ -61,11 +63,27 @@ public class ModTraders {
                             , 10, 5, 0.05f
                     )));
                 });
+        TradeOfferHelper.registerVillagerOffers(NETHER_EXPLORER,2,
+                factories -> {
+                    factories.add(((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.GOLD_INGOT,3), new ItemStack(Items.EMERALD, 5)
+                            , new ItemStack(ModItems.CRIMSON_PEARL)
+                            , 10, 5, 0.05f
+                    )));
+                });
         TradeOfferHelper.registerVillagerOffers(NETHER_EXPLORER,3,
                 factories -> {
                     factories.add(((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.MAGMA_CREAM, 2), new ItemStack(Blocks.COBBLESTONE, 16)
-                            , new ItemStack(Items.BLAZE_ROD)
+                            new ItemStack(Items.BLAZE_ROD, 1), new ItemStack(Blocks.COBBLESTONE, 16)
+                            , new ItemStack(Items.MAGMA_CREAM)
+                            , 10, 5, 0.05f
+                    )));
+                });
+        TradeOfferHelper.registerVillagerOffers(NETHER_EXPLORER,3,
+                factories -> {
+                    factories.add(((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 4), new ItemStack(Blocks.COBBLESTONE, 32)
+                            , new ItemStack(ModItems.AVARICIOUS_PEARL)
                             , 10, 5, 0.05f
                     )));
                 });

@@ -20,10 +20,10 @@ public enum ModArmorMaterial implements ArmorMaterial {
     NIGHT_VISION_GLASSES("night_vision_glasses", 25, new int[]{1,2,2,2}, 15,
             SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0f, 0.0f
             ,() -> Ingredient.ofItems(Items.COPPER_INGOT)),
-    FOOLS_MASK("fools_mask", 7, new int[]{1,3,2,1}, 15,
+    FOOLS_MASK("fools_mask", 7, new int[]{1,3,2,1}, 0,
             SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0.0f, 0.0f
             ,() -> Ingredient.ofItems(ModItems.FABRIC)),
-    THRILLER_MASK("thriller_mask", 7, new int[]{1,3,2,1}, 15,
+    THRILLER_MASK("thriller_mask", 7, new int[]{1,3,2,1}, 0,
             SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0.0f, 0.0f
             ,() -> Ingredient.ofItems(ModItems.FABRIC));
     private final String name;

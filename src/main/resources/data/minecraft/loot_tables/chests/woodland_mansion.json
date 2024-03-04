@@ -4,7 +4,6 @@
     {
       "bonus_rolls": 0.0,
       "entries": [
-
         {
           "type": "minecraft:item",
           "name": "minecraft:lead",
@@ -18,7 +17,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:enchanted_golden_apple",
-          "weight": 7
+          "weight": 5
         },
         {
           "type": "minecraft:item",
@@ -63,7 +62,7 @@
       ],
       "rolls": {
         "type": "minecraft:uniform",
-        "max": 4.0,
+        "max": 3.0,
         "min": 1.0
       }
     },
@@ -298,110 +297,12 @@
       ],
       "rolls": 1.0
     },
+
+
+
     {
-      "bonus_rolls": 0.0,
+      "bonus_rolls": 0.3,
       "entries": [
-        {
-          "type": "minecraft:empty"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:diamond"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "enchantments": [
-                "minecraft:mending"
-              ],
-              "function": "minecraft:enchant_randomly"
-            }
-          ],
-          "name": "minecraft:book"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "enchantments": [
-                "minecraft:unbreaking"
-              ],
-              "function": "minecraft:enchant_randomly"
-            }
-          ],
-          "name": "minecraft:book"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "enchantments": [
-                "minecraft:sharpness"
-              ],
-              "function": "minecraft:enchant_randomly"
-            }
-          ],
-          "name": "minecraft:book"
-        }
-      ],
-      "rolls": 1.0
-    },
-    {
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "enchantments": [
-                "partea_expansion:dual_leap"
-              ],
-              "function": "minecraft:enchant_randomly"
-            }
-          ],
-          "name": "minecraft:book",
-          "weight": 5
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "enchantments": [
-                "partea_expansion:auto_smelt"
-              ],
-              "function": "minecraft:enchant_randomly"
-            }
-          ],
-          "name": "minecraft:book",
-          "weight": 5
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "enchantments": [
-                "partea_expansion:nocturnal"
-              ],
-              "function": "minecraft:enchant_randomly"
-            }
-          ],
-          "name": "minecraft:book",
-          "weight": 5
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "enchantments": [
-                "partea_expansion:vigour"
-              ],
-              "function": "minecraft:enchant_randomly"
-            }
-          ],
-          "name": "minecraft:book",
-          "weight": 5
-        },
         {
           "type": "minecraft:item",
           "functions": [
@@ -413,7 +314,7 @@
             }
           ],
           "name": "minecraft:book",
-          "weight": 5
+          "weight": 40
         },
         {
           "type": "minecraft:item",
@@ -426,24 +327,67 @@
             }
           ],
           "name": "minecraft:book",
-          "weight": 5
+          "weight": 40
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "enchantments": [
-                "minecraft:sweeping"
+                "partea_expansion:destructive_flare"
               ],
               "function": "minecraft:enchant_randomly"
             }
           ],
           "name": "minecraft:book",
-          "weight": 5
+          "weight": 40
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "enchantments": [
+                "partea_expansion:predictive_depth_of_field"
+              ],
+              "function": "minecraft:enchant_randomly"
+            }
+          ],
+          "name": "minecraft:book",
+          "weight": 40
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "enchantments": [
+                "partea_expansion:antimatter_noninverse_equation"
+              ],
+              "function": "minecraft:enchant_randomly"
+            }
+          ],
+          "name": "minecraft:book",
+          "weight": 40
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "enchantments": [
+                "partea_expansion:afterglow_effect"
+              ],
+              "function": "minecraft:enchant_randomly"
+            }
+          ],
+          "name": "minecraft:book",
+          "weight": 40
         }
       ],
       "rolls": 1.0
     }
+
+
+
+
   ],
   "random_sequence": "minecraft:chests/woodland_mansion"
 }

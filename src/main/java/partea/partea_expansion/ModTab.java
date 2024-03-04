@@ -45,6 +45,7 @@ public class ModTab {
                 entries.add(DIAMOND_NETHERITE_BLOCK);
 
                 entries.add(FABRIC);
+                entries.add(BASALT_BRICK);
                 entries.add(CRYSTALLIZED_LAPIS);
                 entries.add(QUARTZ_DUST);
                 entries.add(CRYSTALLIZED_LAPIS_DUST);
@@ -73,6 +74,8 @@ public class ModTab {
                 entries.add(FOOLS_MASK);
                 entries.add(THRILLER_MASK);
                 entries.add(ANCIENT_PEARL);
+                entries.add(CRIMSON_PEARL);
+                entries.add(AVARICIOUS_PEARL);
                 entries.add(HEART_OF_THE_DEEP);
                 entries.add(HORSE_MEAT);
                 entries.add(COOKED_HORSE_MEAT);
@@ -185,11 +188,14 @@ public class ModTab {
                 entries.add(CRUDE_AMETHYST);
                 entries.add(AMETHYST);
                 entries.add(FABRIC);
+                entries.add(BASALT_BRICK);
                 entries.add(CRYSTALLIZED_LAPIS);
                 entries.add(QUARTZ_DUST);
                 entries.add(CRYSTALLIZED_LAPIS_DUST);
                 entries.add(CRYING_OBSIDIAN_DUST);
                 entries.add(ANCIENT_PEARL);
+                entries.add(CRIMSON_PEARL);
+                entries.add(AVARICIOUS_PEARL);
                 entries.add(HEART_OF_THE_DEEP);
                 entries.add(HORSE_MEAT);
                 entries.add(COOKED_HORSE_MEAT);
