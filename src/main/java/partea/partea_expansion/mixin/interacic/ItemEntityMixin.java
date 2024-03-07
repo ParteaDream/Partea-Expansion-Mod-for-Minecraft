@@ -13,6 +13,7 @@ import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import partea.partea_expansion.ModItems;
 import partea.partea_expansion.ParteaExpansion;
 import partea.partea_expansion.Plugins.interactic.util.Helpers;
 import partea.partea_expansion.Plugins.interactic.util.InteracticItemExtensions;
@@ -84,9 +85,13 @@ public abstract class ItemEntityMixin extends Entity implements InteracticItemEx
         final var hasDamageModifiers = this.getStack().getAttributeModifiers(EquipmentSlot.MAINHAND).containsKey(EntityAttributes.GENERIC_ATTACK_DAMAGE);
         if (!(this.wasFullPower || hasDamageModifiers)) return;
 
-        final double damage = hasDamageModifiers ? this.getStack().getAttributeModifiers(EquipmentSlot.MAINHAND).get(EntityAttributes.GENERIC_ATTACK_DAMAGE)
+        double damage = hasDamageModifiers ? this.getStack().getAttributeModifiers(EquipmentSlot.MAINHAND).get(EntityAttributes.GENERIC_ATTACK_DAMAGE)
                 .stream().filter(modifier -> modifier.getOperation() == EntityAttributeModifier.Operation.ADDITION)
-                .mapToDouble(EntityAttributeModifier::getValue).sum() : 2;
+                .mapToDouble(EntityAttributeModifier::getValue).sum() : 4;
+
+        if (this.getStack().getItem() == ModItems.FLINT_KNIFE){
+            damage = 9;
+        }
 
         final var entities = world.getNonSpectatingEntities(LivingEntity.class, this.getBoundingBox().expand(0.15));
         if (entities.isEmpty()) return;

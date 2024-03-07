@@ -38,8 +38,10 @@ public abstract class FoolsMaskMixin {
     }
     @Inject(at = @At("HEAD"), method = "onAttacking")
     public void foolsMaskOnAttacking(Entity target, CallbackInfo ci){
-        LivingEntity user = (LivingEntity) target;
-        if (user != null && Objects.equals(user.getEquippedStack(EquipmentSlot.HEAD).getItem().getName(), Text.translatable("item.partea_expansion.fools_mask"))) {
+        if(!(target instanceof LivingEntity user)){
+            return;
+        }
+        if (Objects.equals(user.getEquippedStack(EquipmentSlot.HEAD).getItem().getName(), Text.translatable("item.partea_expansion.fools_mask"))) {
             user.removeStatusEffect(StatusEffects.SPEED);
             user.removeStatusEffect(StatusEffects.STRENGTH);
             strengthLevel = 0;

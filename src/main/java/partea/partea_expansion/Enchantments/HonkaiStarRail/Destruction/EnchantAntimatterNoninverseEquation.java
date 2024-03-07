@@ -32,10 +32,10 @@ public class EnchantAntimatterNoninverseEquation extends ClassDestruction {
     @Override
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
         if(target instanceof LivingEntity && ((LivingEntity) target).isUndead()) {
-            ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH,1,level*2 - 1));
+            ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH,1,level*2 - 1,false,false,false));
             user.damage(user.getDamageSources().magic(),user.getMaxHealth() * (0.3f + 0.1f * level));
         }else if (target instanceof LivingEntity && !((LivingEntity) target).isUndead()){
-            ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE,1,level*2 - 1));
+            ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE,1,level*2 - 1,false,false,false));
             user.damage(user.getDamageSources().magic(),user.getMaxHealth() * (0.3f + 0.1f * level));
         }
         super.onTargetDamaged(user, target, level);

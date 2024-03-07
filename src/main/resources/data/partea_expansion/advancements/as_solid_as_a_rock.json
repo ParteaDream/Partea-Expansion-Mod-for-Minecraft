@@ -1,0 +1,54 @@
+{
+  "parent": "partea_expansion:is_it_the_ultimate_power",
+  "criteria": {
+    "azurite_armor": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "partea_expansion:azurite_helmet"
+            ]
+          },
+          {
+            "items": [
+              "partea_expansion:azurite_chestplate"
+            ]
+          },
+          {
+            "items": [
+              "partea_expansion:azurite_leggings"
+            ]
+          },
+          {
+            "items": [
+              "partea_expansion:azurite_boots"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.as_solid_as_a_rock.descr"
+    },
+    "frame": "challenge",
+    "icon": {
+      "item": "partea_expansion:azurite_chestplate",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "translate": "advancements.as_solid_as_a_rock.title"
+    }
+  },
+  "requirements": [
+    [
+      "azurite_armor"
+    ]
+  ],
+  "rewards": {
+    "experience": 200
+  },
+  "sends_telemetry_event": true
+}

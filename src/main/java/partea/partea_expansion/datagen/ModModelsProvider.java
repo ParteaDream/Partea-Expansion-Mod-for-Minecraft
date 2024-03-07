@@ -75,13 +75,37 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.CRIMSON_PEARL, Models.GENERATED);
         itemModelGenerator.register(ModItems.AVARICIOUS_PEARL, Models.GENERATED);
         itemModelGenerator.register(ModItems.BASALT_BRICK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.AZURE_SWORD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.AZURE_AXE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.AZURE_HOE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.AZURE_PICKAXE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.AZURE_SHOVEL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.AZURITE_SWORD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.AZURITE_AXE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.AZURITE_HOE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.AZURITE_PICKAXE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.AZURITE_SHOVEL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.AZURITE_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.AZURITE_UPGRADE_SMITHING_TEMPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BLACK_SWORD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.FLINT_KNIFE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SUSPICIOUS_STONE, Models.GENERATED);
 
+
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.AZURITE_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.AZURITE_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.AZURITE_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.AZURITE_BOOTS);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.FOOLS_MASK);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.THRILLER_MASK);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.DIAMOND_NETHERITE_HELMET);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.DIAMOND_NETHERITE_CHESTPLATE);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.DIAMOND_NETHERITE_LEGGINGS);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.DIAMOND_NETHERITE_BOOTS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.AZURE_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.AZURE_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.AZURE_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.AZURE_BOOTS);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.GOLDEN_NETHERITE_HELMET);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.GOLDEN_NETHERITE_CHESTPLATE);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.GOLDEN_NETHERITE_LEGGINGS);

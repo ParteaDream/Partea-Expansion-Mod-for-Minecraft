@@ -8,6 +8,14 @@
     "partea_expansion:golden_netherite_helmet",
     "partea_expansion:golden_netherite_chestplate",
     "partea_expansion:golden_netherite_leggings",
-    "partea_expansion:golden_netherite_boots"
+    "partea_expansion:golden_netherite_boots",
+    "partea_expansion:azure_helmet",
+    "partea_expansion:azure_chestplate",
+    "partea_expansion:azure_leggings",
+    "partea_expansion:azure_boots",
+    "partea_expansion:azurite_helmet",
+    "partea_expansion:azurite_chestplate",
+    "partea_expansion:azurite_leggings",
+    "partea_expansion:azurite_boots"
   ]
 }

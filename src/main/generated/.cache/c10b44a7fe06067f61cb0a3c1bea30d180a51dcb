@@ -1,4 +1,4 @@
-// 1.20.4	2024-03-04T21:58:23.035543	Partea Expansion/Block Loot Tables
+// 1.20.4	2024-03-07T12:29:19.43669	Partea Expansion/Block Loot Tables
 118fda4cd5d69f4138fe049adf447dee574be94c data/partea_expansion/loot_tables/blocks/palm_leaves.json
 f1200d342c43887b44960b7639c9820efbee14f7 data/partea_expansion/loot_tables/blocks/qualitative_analyzer.json
 a2fcd06e6b2e198d6d7054554b14a4845c095e25 data/partea_expansion/loot_tables/blocks/palm_fence.json
@@ -17,5 +17,5 @@ b18c309ea99c30a6a9dcc6610a27662f90c3a89c data/partea_expansion/loot_tables/block
 98c465e4c4b4ca9e9a364f87ab46a27b0f0f274f data/partea_expansion/loot_tables/blocks/palm_stair.json
 8093cb12952411f64bf96a60753100e38cfb799b data/partea_expansion/loot_tables/blocks/azure_ore.json
 badab114aa7f94c680fa1a42bc6ed8fe05ad1158 data/partea_expansion/loot_tables/blocks/palm_wood.json
-cf7a2cd95bec4236e7069586f03cba03a9bd7fee data/partea_expansion/loot_tables/blocks/palm_planks.json
 fc5be2b55fda64305f8340a4a958e52c8dd73b1a data/partea_expansion/loot_tables/blocks/palm_button.json
+cf7a2cd95bec4236e7069586f03cba03a9bd7fee data/partea_expansion/loot_tables/blocks/palm_planks.json

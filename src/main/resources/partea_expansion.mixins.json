@@ -17,7 +17,7 @@
     "enchantments.ExtraEnchant.PulseMixin",
     "enchantments.ExtraEnchant.SoulSeekerMixin",
     "enchantments.ExtraEnchant.VigourMixin",
-    "enchantments.Honkai.BloodTherapyMixin",
+    "enchantments.Honkai.JingxingMixin",
     "enchantments.Honkai.CelestialAnnihilationMixin",
     "enchantments.Honkai.CompensationMixin",
     "enchantments.Honkai.FeedbackShelterMixin",

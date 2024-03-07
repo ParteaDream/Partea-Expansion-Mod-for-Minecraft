@@ -12,11 +12,11 @@ public class EnchantExperience extends Enchantment {
 
     @Override
     public int getMinPower(int level) {
-        return 10 + 20 * (level - 1);
+        return 15 + 5 * (level - 1);
     }
 
     @Override
     public int getMaxLevel() {
-        return 2;
+        return 5;
     }
 }

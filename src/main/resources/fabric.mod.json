@@ -8,8 +8,8 @@
 		"ParteaDream"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/ParteaDream/Partea-Expansion-Mod-for-Minecraft",
+		"sources": "https://github.com/ParteaDream/Partea-Expansion-Mod-for-Minecraft"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/partea_expansion/icon.png",

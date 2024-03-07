@@ -14,7 +14,7 @@ public enum ModArmorMaterial implements ArmorMaterial {
     GOLDEN_NETHERITE("golden_netherite", 42, new int[]{4,8,6,4}, 22,
             SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3.5f, 0.15f
             ,() -> Ingredient.ofItems(ModItems.GOLDEN_NETHERITE_INGOT)),
-    DIAMOND_NETHERITE("diamond_netherite", 54, new int[]{4,10,8,4}, 25,
+    DIAMOND_NETHERITE("diamond_netherite", 54, new int[]{4,10,7,4}, 25,
             SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 4.0f, 0.2f
             ,() -> Ingredient.ofItems(ModItems.DIAMOND_NETHERITE_INGOT)),
     NIGHT_VISION_GLASSES("night_vision_glasses", 25, new int[]{1,2,2,2}, 15,
@@ -25,7 +25,13 @@ public enum ModArmorMaterial implements ArmorMaterial {
             ,() -> Ingredient.ofItems(ModItems.FABRIC)),
     THRILLER_MASK("thriller_mask", 7, new int[]{1,3,2,1}, 0,
             SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0.0f, 0.0f
-            ,() -> Ingredient.ofItems(ModItems.FABRIC));
+            ,() -> Ingredient.ofItems(ModItems.FABRIC)),
+    AZURE("azure", 49, new int[]{4,9,7,4}, 24,
+    SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3.5f, 0.14f
+            ,() -> Ingredient.ofItems(ModItems.AZURE_INGOT)),
+    AZURITE("azurite", 108, new int[]{5,12,8,5}, 28,
+            SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 5.0f, 0.25f
+            ,() -> Ingredient.ofItems(ModItems.AZURE_INGOT));
     private final String name;
     private final int durabilityMultiplier;
     private final int[] protectionAmounts;

@@ -2,6 +2,7 @@ package partea.partea_expansion.CustomBlocks.entity;
 
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
@@ -173,6 +174,30 @@ public class QualitativeAnalyzerBlockEntity extends BlockEntity implements Exten
         }
         Random random = new Random();
         //赌博质变
+        if (getStack(INPUT_SLOT).getItem() == ModItems.SUSPICIOUS_STONE){
+            float r = random.nextFloat();
+            if(r < 0.02){
+                result = new ItemStack(Items.NETHERITE_SCRAP, 1);
+            } else if (r >= 0.02 && r < 0.08) {
+                result = new ItemStack(Items.DIAMOND, 1);
+            } else if (r >= 0.08 && r < 0.15) {
+                result = new ItemStack(Items.EMERALD, 4);
+            } else if (r >= 0.15 && r < 0.3) {
+                result = new ItemStack(Items.RAW_GOLD, 2);
+            } else if (r >= 0.3 && r < 0.5 ) {
+                result = new ItemStack(Items.RAW_IRON, 3);
+            } else if (r >= 0.5 && r < 0.6) {
+                result = new ItemStack(Items.RAW_COPPER, 3);
+            } else if (r >= 0.6 && r < 0.8) {
+                result = new ItemStack(Items.COAL, 6);
+            } else if (r >= 0.8 && r < 0.85) {
+                result = new ItemStack(Items.LAPIS_LAZULI, 8);
+            } else if (r >= 0.85 && r < 0.9){
+                result = new ItemStack(Items.REDSTONE, 8);
+            } else if (r >= 0.9 && r < 1.0){
+                result = new ItemStack(Items.AMETHYST_SHARD, 5);
+            }
+        }
         if (getStack(INPUT_SLOT).getItem() == Items.TOTEM_OF_UNDYING){
             result = new ItemStack(Items.TOTEM_OF_UNDYING, random.nextInt(0,2));
             this.removeStack(INPUT_SLOT,random.nextInt(0,1));
@@ -262,6 +287,10 @@ public class QualitativeAnalyzerBlockEntity extends BlockEntity implements Exten
         }
         Random random = new Random();
         //赌博质变
+        if (getStack(INPUT_SLOT).getItem() == ModItems.SUSPICIOUS_STONE){
+            result = new ItemStack(Blocks.BEDROCK, 1);
+            return EhasQD() && canInsertAmountIntoOutputSlot(result) && canInsertItemIntoOutputSlot(result.getItem());
+        }
         if (getStack(INPUT_SLOT).getItem() == Items.TOTEM_OF_UNDYING
                 || getStack(INPUT_SLOT).getItem() == Items.TOTEM_OF_UNDYING){
             result = new ItemStack(Items.TOTEM_OF_UNDYING, random.nextInt(0,1));

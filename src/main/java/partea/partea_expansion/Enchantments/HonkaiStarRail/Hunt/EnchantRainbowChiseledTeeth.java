@@ -2,7 +2,13 @@ package partea.partea_expansion.Enchantments.HonkaiStarRail.Hunt;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
+
+import java.util.Random;
 
 public class EnchantRainbowChiseledTeeth extends ClassHunt {
     public static Enchantment Rainbow_Chiseled_Teeth = new EnchantRainbowChiseledTeeth();

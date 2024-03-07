@@ -44,7 +44,7 @@ public class EnchantTheTwilightOfExistence extends ClassNihilism{
             T.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 300, 1));
         }else if (level > 0 && random.nextFloat() < level * 0.5 + 0.5 && (level2 > 0)){
             T.removeStatusEffect(StatusEffects.POISON);
-            T.addStatusEffect(new StatusEffectInstance(CustomPotionDoomedDeath.PotionDoomedDeath, 100, 3));
+            T.addStatusEffect(new StatusEffectInstance(CustomPotionDoomedDeath.PotionDoomedDeath, 100, 2));
         }
     }
 }

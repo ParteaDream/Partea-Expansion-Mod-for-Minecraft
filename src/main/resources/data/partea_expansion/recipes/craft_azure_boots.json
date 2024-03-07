@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "a a",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "partea_expansion:azure_ingot"
+    }
+  },
+  "result": {
+    "item": "partea_expansion:azure_boots",
+    "count": 1
+  }
+}

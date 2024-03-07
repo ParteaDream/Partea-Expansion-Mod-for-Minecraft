@@ -25,9 +25,9 @@ public class EnchantHarmfulAfterglow extends ClassDestruction {
         Random random = user.getRandom();
         Map.Entry<EquipmentSlot, ItemStack> entry = EnchantmentHelper.chooseEquipmentWith(EnchantHarmfulAfterglow.HARMFUL_AFTERGLOW, user);
         if (shouldDamageAttacker1(level, random) && user.getStatusEffect(StatusEffects.ABSORPTION) == null && user.getHealth() >= 0.5f * user.getMaxHealth()) {
-            user.addStatusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 100, 0));
+            user.addStatusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 100, 0,false,false,false));
         }else if(shouldDamageAttacker2(level, random) && user.getStatusEffect(StatusEffects.ABSORPTION) == null && user.getHealth() < 0.5f * user.getMaxHealth()){
-            user.addStatusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 100, 0));
+            user.addStatusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 100, 0,false,false,false));
         }
     }
     public static boolean shouldDamageAttacker1(int level, Random random) {

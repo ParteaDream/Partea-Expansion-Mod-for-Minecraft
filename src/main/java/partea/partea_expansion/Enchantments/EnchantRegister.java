@@ -7,6 +7,7 @@ import partea.partea_expansion.Enchantments.HonkaiStarRail.Abundance.*;
 import partea.partea_expansion.Enchantments.HonkaiStarRail.Destruction.*;
 import partea.partea_expansion.Enchantments.HonkaiStarRail.Hunt.EnchantBloodTherapy;
 import partea.partea_expansion.Enchantments.HonkaiStarRail.Hunt.EnchantCelestialAnnihilation;
+import partea.partea_expansion.Enchantments.HonkaiStarRail.Hunt.EnchantCelestialSnipe;
 import partea.partea_expansion.Enchantments.HonkaiStarRail.Hunt.EnchantRainbowChiseledTeeth;
 import partea.partea_expansion.Enchantments.HonkaiStarRail.Nihilism.EnchantCryOfTheWilderness;
 import partea.partea_expansion.Enchantments.HonkaiStarRail.Nihilism.EnchantFuneralRitesForSensualWorshippers;
@@ -61,6 +62,8 @@ public class EnchantRegister {
                 , new Identifier("partea_expansion", "rainbow_chiseled_teeth"), EnchantRainbowChiseledTeeth.Rainbow_Chiseled_Teeth);
         Registry.register(Registries.ENCHANTMENT
                 , new Identifier("partea_expansion", "celestial_annihilation"), EnchantCelestialAnnihilation.Celestial_Annihilation);
+        Registry.register(Registries.ENCHANTMENT
+                , new Identifier("partea_expansion", "celestial_snipe"), EnchantCelestialSnipe.Celestial_Snipe);
         Registry.register(Registries.ENCHANTMENT
                 , new Identifier("partea_expansion", "harmful_afterglow"), EnchantHarmfulAfterglow.HARMFUL_AFTERGLOW);
         Registry.register(Registries.ENCHANTMENT

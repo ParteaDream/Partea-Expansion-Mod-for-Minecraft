@@ -18,9 +18,9 @@ public class SubeutecticMixin {
         int level = FEUtil.getLevelArmor(user,EnchantSubeutectic.Subeutectic);
         if (level > 0) {
             if (user.hasStatusEffect(StatusEffects.ABSORPTION)){
-                user.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE,5,0));
+                user.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE,5,0,false,false,false));
                 if (level == 2){
-                    user.addStatusEffect(new StatusEffectInstance(StatusEffects.HASTE,5,0));
+                    user.addStatusEffect(new StatusEffectInstance(StatusEffects.HASTE,5,0,false,false,false));
                 }
             }
         }

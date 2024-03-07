@@ -1,0 +1,44 @@
+{
+  "parent": "partea_expansion:recipes/root",
+  "criteria": {
+    "has_azure": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "partea_expansion:azure_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "partea_expansion:craft_azure_helmet"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_azure",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "partea_expansion:craft_azure_helmet",
+      "partea_expansion:craft_azure_chestplate",
+      "partea_expansion:craft_azure_leggings",
+      "partea_expansion:craft_azure_boots",
+      "partea_expansion:craft_azure_sword",
+      "partea_expansion:craft_azure_shovel",
+      "partea_expansion:craft_azure_hoe",
+      "partea_expansion:craft_azure_pickaxe",
+      "partea_expansion:craft_azure_axe",
+      "partea_expansion:craft_azurite_upgrade_smithing_template",
+      "partea_expansion:craft_copy_azurite_upgrade_smithing_template"
+    ]
+  }
+}

@@ -31,7 +31,7 @@ public class CelestialAnnihilationMixin {
         LivingEntity target = (LivingEntity)(Object)this;
         int level  = FEUtil.getLevelArmor(user, EnchantCelestialAnnihilation.Celestial_Annihilation);
         Random random = new Random();
-        float chance = level * 0.2f + 0.2f;
+        float chance = level * 0.3f + 0.2f;
         if(random.nextFloat() < chance && level > 0){
             user.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 200, level));
         }

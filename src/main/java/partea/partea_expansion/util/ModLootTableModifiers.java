@@ -38,6 +38,7 @@ public class ModLootTableModifiers {
     private static final Identifier BASTION_BRIDGE = new Identifier("minecraft", "chests/bastion_bridge");
     private static final Identifier IGLOO_CHEST = new Identifier("minecraft", "chests/igloo_chest");
     public static void modifierLootTables() {
+
         LootTableEvents.MODIFY.register(((resourceManager, lootManager, id, tableBuilder, source) -> {
             if(IGLOO_CHEST.equals(id)){
                 LootPool.Builder poolBuilder = LootPool.builder()
@@ -72,11 +73,17 @@ public class ModLootTableModifiers {
             if(ANCIENT_CITY_ID.equals(id)){
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.3f))
+                        .conditionally(RandomChanceLootCondition.builder(0.07f))
                         .with(ItemEntry.builder(Items.BOOK))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f,1.0f)))
-                        .apply(new SetEnchantmentsLootFunction.Builder().enchantment(EnchantDoomedDeath.Doomed_Death,UniformLootNumberProvider.create(3f,5f)));
+                        .apply(new SetEnchantmentsLootFunction.Builder().enchantment(EnchantDoomedDeath.Doomed_Death,UniformLootNumberProvider.create(1f,3f)));
                 tableBuilder.pool(poolBuilder.build());
+                LootPool.Builder poolBuilder2 = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.12f))
+                        .with(ItemEntry.builder(ModItems.BLACK_SWORD))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f,1.0f)));
+                tableBuilder.pool(poolBuilder2.build());
             }
         }));
 
@@ -102,7 +109,7 @@ public class ModLootTableModifiers {
             if(CREEPER_ID.equals(id)){
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.011f))
+                        .conditionally(RandomChanceLootCondition.builder(0.025f))
                         .with(ItemEntry.builder(ModItems.THRILLER_MASK))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f,1.0f)));
                 tableBuilder.pool(poolBuilder.build());
@@ -135,7 +142,7 @@ public class ModLootTableModifiers {
             if(SH_LIB_ID.equals(id)){
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.1f))
+                        .conditionally(RandomChanceLootCondition.builder(0.3f))
                         .with(ItemEntry.builder(ModItems.FOOLS_MASK))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f,1.0f)));
                 tableBuilder.pool(poolBuilder.build());

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aca",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "partea_expansion:azure_ingot"
+    },
+    "b": {
+      "item": "minecraft:netherite_scrap"
+    },
+    "c": {
+      "item": "partea_expansion:azurite_upgrade_smithing_template"
+    }
+  },
+  "result": {
+    "item": "partea_expansion:azurite_upgrade_smithing_template",
+    "count": 2
+  }
+}

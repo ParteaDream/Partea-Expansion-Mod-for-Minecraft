@@ -200,7 +200,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:lava_bucket",
+          "name": "minecraft:emerald",
           "weight": 20
         },
         {
@@ -240,7 +240,20 @@
             }
           ],
           "name": "minecraft:book",
-          "weight": 20
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "enchantments": [
+                "partea_expansion:celestial_snipe"
+              ],
+              "function": "minecraft:enchant_randomly"
+            }
+          ],
+          "name": "minecraft:book",
+          "weight": 10
         }
       ],
       "rolls": 1.0

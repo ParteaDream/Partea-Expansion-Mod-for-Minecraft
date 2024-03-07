@@ -24,9 +24,9 @@ public class EnchantDestructiveFlare extends ClassDestruction {
     public void onUserDamaged(LivingEntity user, Entity target, int level) {
         if (user.getHealth() <= user.getMaxHealth() * 0.5){
             if (user.getHealth() <= user.getMaxHealth() * 0.3 && level > 1){
-                user.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 60, 1));
+                user.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 60, 1,false,false,false));
             }else{
-                user.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 80, 0));
+                user.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 80, 0,false,false,false));
             }
         }
         super.onTargetDamaged(user, target, level);

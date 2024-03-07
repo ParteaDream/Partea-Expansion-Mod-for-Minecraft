@@ -30,14 +30,14 @@ public class EnchantPredictiveDepthOfField extends ClassDestruction {
         Random random = user.getRandom();
         if(level == 1){
             if (user.getHealth() <= 0.5*user.getMaxHealth()){
-                user.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 100, 0));
+                user.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 100, 0,false,false,false));
             }
         }else if (level == 2){
             if (user.getHealth() <= 0.5*user.getMaxHealth()){
-                user.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE,100,0));
+                user.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE,100,0,false,false,false));
                 if (user.getHealth() <= 0.3*user.getMaxHealth()){
                     if(user.hasStatusEffect(StatusEffects.RESISTANCE)){
-                        user.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE,60,1));
+                        user.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE,60,1,false,false,false));
                     }
                 }
             }

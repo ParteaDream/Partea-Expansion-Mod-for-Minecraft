@@ -20,5 +20,7 @@ public class ModPoiTagsProvider extends TagProvider<PointOfInterestType> {
     protected void configure(RegistryWrapper.WrapperLookup lookup) {
         getOrCreateTagBuilder(PointOfInterestTypeTags.ACQUIRABLE_JOB_SITE)
                 .addOptional(new Identifier("partea_expansion", "nether_work_site"));
+        getOrCreateTagBuilder(PointOfInterestTypeTags.ACQUIRABLE_JOB_SITE)
+                .addOptional(new Identifier("partea_expansion", "jewel_work_site"));
     }
 }

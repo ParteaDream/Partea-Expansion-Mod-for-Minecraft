@@ -20,7 +20,7 @@ public class SafetyPayloadsMixin {
         int level = FEUtil.getLevelArmor(user, EnchantSafetyPayloads.SafetyPayloads);
         if (level > 0) {
             if (user.hasStatusEffect(StatusEffects.ABSORPTION)){
-                user.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH,5,level - 1));
+                user.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH,5,level - 1,false,false,false));
             }
         }
 

@@ -35,7 +35,7 @@ public class EnchantFuneralRitesForSensualWorshippers extends ClassNihilism{
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
         LivingEntity T =(LivingEntity) target;
         if (level > 0){
-            T.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 200, level - 1));
+            T.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 100 * level, level - 1));
         }
     }
 }

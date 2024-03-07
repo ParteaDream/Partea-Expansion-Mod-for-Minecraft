@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aaa",
+    "a a",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "partea_expansion:azure_ingot"
+    }
+  },
+  "result": {
+    "item": "partea_expansion:azure_leggings",
+    "count": 1
+  }
+}

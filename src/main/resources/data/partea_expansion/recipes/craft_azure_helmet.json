@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aaa",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "partea_expansion:azure_ingot"
+    }
+  },
+  "result": {
+    "item": "partea_expansion:azure_helmet",
+    "count": 1
+  }
+}

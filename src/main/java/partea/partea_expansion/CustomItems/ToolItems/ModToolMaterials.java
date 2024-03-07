@@ -1,7 +1,9 @@
 package partea.partea_expansion.CustomItems.ToolItems;
 
 import net.minecraft.block.Blocks;
+import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
+import net.minecraft.item.ToolMaterials;
 import net.minecraft.recipe.Ingredient;
 import partea.partea_expansion.ModItems;
 
@@ -22,6 +24,15 @@ public enum ModToolMaterials implements ToolMaterial {
     }),
     AMETHYST2(3, 1, 12.0F, 21.0F, 0, () -> {
         return Ingredient.ofItems(ModItems.AMETHYST);
+    }),
+    AZURE(5, 3985, 14.0F, 5.5F, 24, () -> {
+        return Ingredient.ofItems(ModItems.AZURE_INGOT);
+    }),
+    AZURITE(6, 8192, 20.0F, 8.0F, 28, () -> {
+        return Ingredient.ofItems(ModItems.AZURITE_INGOT);
+    }),
+    FLINT(1,64, 3.0F, 4.0F, 8, () -> {
+        return Ingredient.ofItems(Items.FLINT);
     });
 
     private final int miningLevel;

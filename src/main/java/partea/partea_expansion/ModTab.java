@@ -44,6 +44,33 @@ public class ModTab {
                 entries.add(DIAMOND_NETHERITE_BOOTS);
                 entries.add(DIAMOND_NETHERITE_BLOCK);
 
+                entries.add(AZURE_ORE);
+                entries.add(RAW_AZURE);
+                entries.add(AZURE_INGOT);
+                entries.add(AZURE_SWORD);
+                entries.add(AZURE_AXE);
+                entries.add(AZURE_PICKAXE);
+                entries.add(AZURE_SHOVEL);
+                entries.add(AZURE_HOE);
+                entries.add(AZURE_HELMET);
+                entries.add(AZURE_CHESTPLATE);
+                entries.add(AZURE_LEGGINGS);
+                entries.add(AZURE_BOOTS);
+                entries.add(AZURE_BLOCK);
+
+                entries.add(AZURITE_INGOT);
+                entries.add(AZURITE_UPGRADE_SMITHING_TEMPLATE);
+                entries.add(AZURITE_SWORD);
+                entries.add(AZURITE_AXE);
+                entries.add(AZURITE_BOW);
+                entries.add(AZURITE_PICKAXE);
+                entries.add(AZURITE_SHOVEL);
+                entries.add(AZURITE_HOE);
+                entries.add(AZURITE_HELMET);
+                entries.add(AZURITE_CHESTPLATE);
+                entries.add(AZURITE_LEGGINGS);
+                entries.add(AZURITE_BOOTS);
+
                 entries.add(FABRIC);
                 entries.add(BASALT_BRICK);
                 entries.add(CRYSTALLIZED_LAPIS);
@@ -51,16 +78,14 @@ public class ModTab {
                 entries.add(CRYSTALLIZED_LAPIS_DUST);
                 entries.add(CRYING_OBSIDIAN_DUST);
 
+                entries.add(FLINT_KNIFE);
+                entries.add(SUSPICIOUS_STONE);
                 entries.add(CRUDE_AMETHYST);
                 entries.add(AMETHYST);
                 entries.add(AMETHYST_SWORD);
                 entries.add(AMETHYST_STILLETO);
 
-                entries.add(AZURE_ORE);
-                entries.add(RAW_AZURE);
-                entries.add(AZURE_INGOT);
-                entries.add(AZURE_BLOCK);
-
+                entries.add(BLACK_SWORD);
                 entries.add(NIGHT_VISION_GLASSES);
                 entries.add(EMPTY_TERMINAL);
                 entries.add(DIAMOND_PROSPECTOR);
@@ -140,6 +165,16 @@ public class ModTab {
                 entries.add(DIAMOND_NETHERITE_SHOVEL);
                 entries.add(DIAMOND_NETHERITE_HOE);
 
+                entries.add(AZURE_AXE);
+                entries.add(AZURE_PICKAXE);
+                entries.add(AZURE_SHOVEL);
+                entries.add(AZURE_HOE);
+
+                entries.add(AZURITE_AXE);
+                entries.add(AZURITE_PICKAXE);
+                entries.add(AZURITE_SHOVEL);
+                entries.add(AZURITE_HOE);
+
                 entries.add(EMPTY_TERMINAL);
                 entries.add(DIAMOND_PROSPECTOR);
                 entries.add(SAFEMINING_DETECTOR);
@@ -153,6 +188,7 @@ public class ModTab {
             .entries((context, entries) ->{
                 entries.add(CREATIVE_MODE_SWORD);
 
+                entries.add(GOLDEN_NETHERITE_INGOT);
                 entries.add(GOLDEN_NETHERITE_HELMET);
                 entries.add(GOLDEN_NETHERITE_CHESTPLATE);
                 entries.add(GOLDEN_NETHERITE_LEGGINGS);
@@ -160,6 +196,7 @@ public class ModTab {
                 entries.add(GOLDEN_NETHERITE_SWORD);
                 entries.add(GOLDEN_NETHERITE_AXE);
 
+                entries.add(DIAMOND_NETHERITE_INGOT);
                 entries.add(DIAMOND_NETHERITE_HELMET);
                 entries.add(DIAMOND_NETHERITE_CHESTPLATE);
                 entries.add(DIAMOND_NETHERITE_LEGGINGS);
@@ -167,6 +204,25 @@ public class ModTab {
                 entries.add(DIAMOND_NETHERITE_SWORD);
                 entries.add(DIAMOND_NETHERITE_AXE);
 
+                entries.add(AZURE_INGOT);
+                entries.add(AZURE_HELMET);
+                entries.add(AZURE_CHESTPLATE);
+                entries.add(AZURE_LEGGINGS);
+                entries.add(AZURE_BOOTS);
+                entries.add(AZURE_SWORD);
+                entries.add(AZURE_AXE);
+
+                entries.add(AZURITE_INGOT);
+                entries.add(AZURITE_HELMET);
+                entries.add(AZURITE_CHESTPLATE);
+                entries.add(AZURITE_LEGGINGS);
+                entries.add(AZURITE_BOOTS);
+                entries.add(AZURITE_SWORD);
+                entries.add(AZURITE_AXE);
+                entries.add(AZURITE_BOW);
+
+                entries.add(BLACK_SWORD);
+                entries.add(FLINT_KNIFE);
                 entries.add(AMETHYST_SWORD);
                 entries.add(AMETHYST_STILLETO);
 
@@ -185,6 +241,8 @@ public class ModTab {
                 entries.add(DIAMOND_NETHERITE_UPGRADE_SMITHING_TEMPLATE);
                 entries.add(RAW_AZURE);
                 entries.add(AZURE_INGOT);
+                entries.add(AZURITE_UPGRADE_SMITHING_TEMPLATE);
+                entries.add(SUSPICIOUS_STONE);
                 entries.add(CRUDE_AMETHYST);
                 entries.add(AMETHYST);
                 entries.add(FABRIC);

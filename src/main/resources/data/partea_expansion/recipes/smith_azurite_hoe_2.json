@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "partea_expansion:azurite_upgrade_smithing_template"
+  },
+  "base": {
+    "item": "partea_expansion:diamond_netherite_hoe"
+  },
+  "addition": {
+    "item": "partea_expansion:azure_hoe"
+  },
+  "result": {
+    "item": "partea_expansion:azurite_hoe"
+  }
+}

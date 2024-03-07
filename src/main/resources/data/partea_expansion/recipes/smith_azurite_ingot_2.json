@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "partea_expansion:azurite_upgrade_smithing_template"
+  },
+  "base": {
+    "item": "partea_expansion:diamond_netherite_ingot"
+  },
+  "addition": {
+    "item": "partea_expansion:azure_ingot"
+  },
+  "result": {
+    "item": "partea_expansion:azurite_ingot"
+  }
+}
