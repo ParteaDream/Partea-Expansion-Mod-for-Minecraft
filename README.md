@@ -17,9 +17,9 @@
 
 ![Tab](./Tab.png)
 
-![Tab2](/Users/stargomia/Documents/ModWorkPlace/[1.20.4]partea-expansion-1.x/Tab2.png)
+![Tab2](./Tab2.png)
 
-![Tab3](/Users/stargomia/Documents/ModWorkPlace/[1.20.4]partea-expansion-1.x/Tab3.png)
+![Tab3](./Tab3.png)
 
 1. 创造模式神剑(creative_mode_sword)，仅创造模式获得，攻击力足以秒杀实体
 2. 黄金下界合金系列(golden_netherite)，由下界合金锻造升级而来，挖掘等级5，全套护甲提供抗火效果
