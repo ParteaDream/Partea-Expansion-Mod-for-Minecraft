@@ -98,6 +98,8 @@ public class ModTab {
                 entries.add(QUALITATIVE_ANALYZER);
                 entries.add(FOOLS_MASK);
                 entries.add(THRILLER_MASK);
+                entries.add(Sneaker);
+                entries.add(KNEE_PADS);
                 entries.add(ANCIENT_PEARL);
                 entries.add(CRIMSON_PEARL);
                 entries.add(AVARICIOUS_PEARL);
@@ -229,6 +231,8 @@ public class ModTab {
                 entries.add(NIGHT_VISION_GLASSES);
                 entries.add(FOOLS_MASK);
                 entries.add(THRILLER_MASK);
+                entries.add(Sneaker);
+                entries.add(KNEE_PADS);
             })
             .build();
     public static final ItemGroup INGREDIENTS = FabricItemGroup.builder()

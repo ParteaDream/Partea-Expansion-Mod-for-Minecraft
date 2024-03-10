@@ -37,6 +37,9 @@ public class EnchantTheTwilightOfExistence extends ClassNihilism{
 
     @Override
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
+        if (!(target instanceof LivingEntity)){
+            return;
+        }
         LivingEntity T =(LivingEntity) target;
         Random random = new Random();
         int level2 = FEUtil.getLevelArmor(user,EnchantTheOneWhoIsEncasedInASleeve.The_One_Who_Is_Encased_In_A_Sleeve);

@@ -13,6 +13,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import partea.partea_expansion.Enchantments.EnchantDualLeap;
+import partea.partea_expansion.potion.EvilLizardEffect;
 
 @Mixin(ClientPlayerEntity.class)
 public class ClientPlayerEntityMixin {
@@ -27,6 +28,9 @@ public class ClientPlayerEntityMixin {
         // Dual Leap
         if (player.isOnGround() || player.isClimbing()) {
             jumpCount = EnchantmentHelper.getEquipmentLevel(EnchantDualLeap.DUAL_LEAP, player);
+            if(player.hasStatusEffect(EvilLizardEffect.EvilLizardEffect)){
+                jumpCount = 8;
+            }
         } else if (!jumpedLastTick && jumpCount > 0 && player.getVelocity().y < 0) {
             if (player.input.jumping && canJump(player)) {
                 jumpCount--;

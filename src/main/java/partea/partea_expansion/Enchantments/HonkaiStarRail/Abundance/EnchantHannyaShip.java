@@ -7,7 +7,6 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.world.World;
-import partea.partea_expansion.Enchantments.EnchantVigour;
 import partea.partea_expansion.Enchantments.WeaponEnch.EnchantLifeSteal;
 import partea.partea_expansion.sounds.ModSounds;
 

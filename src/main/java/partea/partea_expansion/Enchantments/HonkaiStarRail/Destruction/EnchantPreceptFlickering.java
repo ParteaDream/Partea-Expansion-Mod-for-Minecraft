@@ -24,7 +24,7 @@ public class EnchantPreceptFlickering extends ClassDestruction {
         Map.Entry<EquipmentSlot, ItemStack> entry = EnchantmentHelper.chooseEquipmentWith(EnchantHarmfulAfterglow.HARMFUL_AFTERGLOW, user);
         if (shouldDamageAttacker(level, random)&&(user.getHealth() <= user.getMaxHealth() * 0.3)) {
             if (level == 2){
-                if(random.nextFloat() < 0.03f){
+                if(random.nextFloat() < 0.05f){
                     user.heal(user.getMaxHealth() * 0.3f);
                 }else if(random.nextFloat() > 0.5f){
                     user.heal(user.getMaxHealth() * 0.15f);

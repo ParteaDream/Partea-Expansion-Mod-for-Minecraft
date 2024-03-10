@@ -8,7 +8,7 @@ import net.minecraft.entity.EquipmentSlot;
 public class EnchantmentGlimmering extends Enchantment{
     public static Enchantment GLIMMERING = new EnchantmentGlimmering();
     public EnchantmentGlimmering() {
-        super(Enchantment.Rarity.UNCOMMON, EnchantmentTarget.ARMOR_FEET, new EquipmentSlot[]{EquipmentSlot.FEET});
+        super(Enchantment.Rarity.UNCOMMON, EnchantmentTarget.ARMOR, new EquipmentSlot[]{EquipmentSlot.FEET,EquipmentSlot.HEAD,EquipmentSlot.CHEST,EquipmentSlot.LEGS});
     }
 
     @Override

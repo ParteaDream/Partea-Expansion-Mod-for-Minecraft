@@ -3,7 +3,6 @@ package partea.partea_expansion.Enchantments.HonkaiStarRail.Abundance;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.entity.EquipmentSlot;
-import partea.partea_expansion.Enchantments.EnchantVigour;
 
 public class EnchantCrystallyClear extends ClassAbundance{
     public static Enchantment CrystallyClear = new EnchantCrystallyClear();

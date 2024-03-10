@@ -5,8 +5,6 @@ import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.effect.StatusEffects;
-import partea.partea_expansion.Enchantments.WeaponEnch.EnchantLifeSteal;
 
 public class EnchantMerciful extends ClassAbundance {
     public static Enchantment Merciful = new EnchantMerciful();

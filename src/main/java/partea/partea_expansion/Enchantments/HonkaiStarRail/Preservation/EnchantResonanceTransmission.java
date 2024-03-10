@@ -33,7 +33,7 @@ public class EnchantResonanceTransmission extends ClassPreservation {
     @Override
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
         LivingEntity T = (LivingEntity) target;
-        if(user.hasStatusEffect(StatusEffects.ABSORPTION)){
+        if(user.hasStatusEffect(StatusEffects.ABSORPTION) && target instanceof LivingEntity){
             T.setHealth(T.getHealth() - user.getAbsorptionAmount() * (0.25f + 0.25f * level));
         }
     }

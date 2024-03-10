@@ -26,6 +26,12 @@ public enum ModArmorMaterial implements ArmorMaterial {
     THRILLER_MASK("thriller_mask", 7, new int[]{1,3,2,1}, 0,
             SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0.0f, 0.0f
             ,() -> Ingredient.ofItems(ModItems.FABRIC)),
+    SNEAKER("sneaker", 9, new int[]{1,3,2,1}, 5,
+            SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0.0f, 0.0f
+            ,() -> Ingredient.ofItems(ModItems.FABRIC)),
+    KNEE_PADS("knee_pads", 9, new int[]{1,3,2,1}, 5,
+            SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0.0f, 0.0f
+            ,() -> Ingredient.ofItems(ModItems.FABRIC)),
     AZURE("azure", 49, new int[]{4,9,7,4}, 24,
     SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3.5f, 0.14f
             ,() -> Ingredient.ofItems(ModItems.AZURE_INGOT)),

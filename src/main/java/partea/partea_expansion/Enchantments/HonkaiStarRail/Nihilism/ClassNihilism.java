@@ -7,8 +7,6 @@ import partea.partea_expansion.Enchantments.HonkaiStarRail.Abundance.ClassAbunda
 import partea.partea_expansion.Enchantments.HonkaiStarRail.Destruction.ClassDestruction;
 import partea.partea_expansion.Enchantments.HonkaiStarRail.Hunt.ClassHunt;
 import partea.partea_expansion.Enchantments.HonkaiStarRail.Preservation.ClassPreservation;
-import partea.partea_expansion.Enchantments.HonkaiStarRail.Preservation.EnchantFeedbackShelter;
-import partea.partea_expansion.Enchantments.WeaponEnch.EnchantLifeSteal;
 
 public class ClassNihilism extends Enchantment {
     protected ClassNihilism(Rarity rarity, EnchantmentTarget target, EquipmentSlot[] slotTypes) {

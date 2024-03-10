@@ -5,10 +5,7 @@ import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.PersistentProjectileEntity;
-import net.minecraft.item.ArrowItem;
-import net.minecraft.item.BowItem;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
+import net.minecraft.item.*;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.stat.Stats;
@@ -19,7 +16,7 @@ import net.minecraft.world.World;
 
 import java.util.function.Predicate;
 
-public class AzuriteBowItem extends BowItem {
+public class AzuriteBowItem extends BowItem implements Vanishable {
     public AzuriteBowItem(Settings settings) {
         super(settings);
     }
@@ -43,7 +40,7 @@ public class AzuriteBowItem extends BowItem {
 
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         ItemStack itemStack = user.getStackInHand(hand);
-        boolean bl = !user.getProjectileType(itemStack).isEmpty();
+        boolean bl = !user.getProjectileType(itemStack).isEmpty();//有箭
         if (!user.getAbilities().creativeMode && !bl) {
             return TypedActionResult.fail(itemStack);
         } else {
@@ -73,7 +70,7 @@ public class AzuriteBowItem extends BowItem {
             int i = this.getMaxUseTime(stack) - remainingUseTicks;
             float f = getPullProgress(i);
             if (!((double)f < 0.1)) {
-                boolean bl2 = bl && itemStack.isOf(Items.ARROW);
+                boolean bl2 = itemStack.isOf(Items.ARROW);
                 if (!world.isClient) {
                     ArrowItem arrowItem = (ArrowItem)(itemStack.getItem() instanceof ArrowItem ? itemStack.getItem() : Items.ARROW);
                     PersistentProjectileEntity persistentProjectileEntity = arrowItem.createArrow(world, itemStack, playerEntity);
@@ -89,9 +86,7 @@ public class AzuriteBowItem extends BowItem {
                     persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() + (double)8);
 
                     int k = EnchantmentHelper.getLevel(Enchantments.PUNCH, stack);
-                    if (k > 0) {
-                        persistentProjectileEntity.setPunch(k);
-                    }
+                    persistentProjectileEntity.setPunch(k + 1);
 
                     if (EnchantmentHelper.getLevel(Enchantments.FLAME, stack) > 0) {
                         persistentProjectileEntity.setOnFireFor(100);

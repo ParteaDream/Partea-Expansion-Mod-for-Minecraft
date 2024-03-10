@@ -2,11 +2,11 @@ package partea.partea_expansion.util;
 
 import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
 import net.minecraft.block.Blocks;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.village.TradeOffer;
 import net.minecraft.village.VillagerProfession;
+import partea.partea_expansion.CustomTrades.HappyHappyHappy;
 import partea.partea_expansion.CustomTrades.Jeweler;
 import partea.partea_expansion.ModItems;
 
@@ -28,6 +28,42 @@ public class ModTraders {
                     10,5,0.05f
             )));
                 });
+
+        //Happy
+        TradeOfferHelper.registerVillagerOffers(HappyHappyHappy.Happy,1,
+                factories -> {
+                    factories.add(((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 16)
+                            , new ItemStack(ModItems.KNEE_PADS, 1)
+                            , 10, 5, 0.05f
+                    )));
+                });
+        TradeOfferHelper.registerVillagerOffers(HappyHappyHappy.Happy,1,
+                factories -> {
+                    factories.add(((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 24)
+                            , new ItemStack(ModItems.Sneaker, 1)
+                            , 10, 5, 0.05f
+                    )));
+                });
+        TradeOfferHelper.registerVillagerOffers(HappyHappyHappy.Happy,2,
+                factories -> {
+                    factories.add(((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 32)
+                            , new ItemStack(ModItems.FOOLS_MASK, 1)
+                            , 10, 60, 0.05f
+                    )));
+                });
+        TradeOfferHelper.registerVillagerOffers(HappyHappyHappy.Happy,3,
+                factories -> {
+                    factories.add(((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 32)
+                            , new ItemStack(ModItems.THRILLER_MASK, 1)
+                            , 10, 80, 0.05f
+                    )));
+                });
+
+
         //Jeweler
         TradeOfferHelper.registerVillagerOffers(Jeweler.Jeweler,1,
                 factories -> {

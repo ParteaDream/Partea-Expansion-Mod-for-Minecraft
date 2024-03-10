@@ -7,7 +7,6 @@ import partea.partea_expansion.Enchantments.HonkaiStarRail.Abundance.ClassAbunda
 import partea.partea_expansion.Enchantments.HonkaiStarRail.Destruction.ClassDestruction;
 import partea.partea_expansion.Enchantments.HonkaiStarRail.Nihilism.ClassNihilism;
 import partea.partea_expansion.Enchantments.HonkaiStarRail.Preservation.ClassPreservation;
-import partea.partea_expansion.Enchantments.WeaponEnch.EnchantLifeSteal;
 
 public class ClassHunt extends Enchantment {
     protected ClassHunt(Rarity rarity, EnchantmentTarget target, EquipmentSlot[] slotTypes) {

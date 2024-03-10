@@ -22,6 +22,12 @@ import partea.partea_expansion.sounds.ModSounds;
 import static partea.partea_expansion.CustomItems.ArmorItems.ModArmorMaterial.GOLDEN_NETHERITE;
 
 public class ModItems {
+    public static Item KNEE_PADS = registerItem("knee_pads",
+            new SneakerItem(ModArmorMaterial.KNEE_PADS, ArmorItem.Type.LEGGINGS,new FabricItemSettings()));
+    public static Item Sneaker = registerItem("sneaker",
+            new SneakerItem(ModArmorMaterial.SNEAKER, ArmorItem.Type.BOOTS,new FabricItemSettings()));
+    public static Item SUSPICIOUS_SQUAMA= registerItem("suspicious_squama",
+            new Item(new FabricItemSettings()));
     public static Item SUSPICIOUS_STONE = registerItem("suspicious_stone",
             new Item(new FabricItemSettings()));
     public static Item FLINT_KNIFE = registerItem("flint_knife"
@@ -92,9 +98,9 @@ public class ModItems {
     public static Item BASALT_BRICK = registerItem("basalt_brick"
             , new Item(new FabricItemSettings()));
     public static Item CRIMSON_PEARL = registerItem("crimson_pearl"
-            , new CrimsonPearl(new FabricItemSettings().rarity(Rarity.UNCOMMON).maxCount(16)));
+            , new CrimsonPearl(new FabricItemSettings().rarity(Rarity.COMMON).maxCount(16)));
     public static Item AVARICIOUS_PEARL = registerItem("avaricious_pearl"
-            , new AvariciousPearl(new FabricItemSettings().rarity(Rarity.UNCOMMON).maxCount(16)));
+            , new AvariciousPearl(new FabricItemSettings().rarity(Rarity.COMMON).maxCount(16)));
     public static Item HORSE_MEAT = registerItem("horse_meat"
             , new Item(new FabricItemSettings().food(ModFoodComponents.HORSE_MEAT)));
     public static Item COOKED_HORSE_MEAT = registerItem("cooked_horse_meat"
@@ -107,7 +113,7 @@ public class ModItems {
             , new CustomThrillerMaskItem(ModArmorMaterial.THRILLER_MASK, ArmorItem.Type.HELMET
                     , new FabricItemSettings().rarity(Rarity.UNCOMMON)));
     public static Item ANCIENT_PEARL = registerItem("ancient_pearl"
-            , new AncientPearl(new FabricItemSettings().rarity(Rarity.UNCOMMON).maxCount(16)));
+            , new AncientPearl(new FabricItemSettings().rarity(Rarity.COMMON).maxCount(16)));
     public static Item FABRIC = registerItem("fabric"
             , new Item(new FabricItemSettings().rarity(Rarity.COMMON)));
     public static Item QUARTZ_DUST = registerItem("quartz_dust"

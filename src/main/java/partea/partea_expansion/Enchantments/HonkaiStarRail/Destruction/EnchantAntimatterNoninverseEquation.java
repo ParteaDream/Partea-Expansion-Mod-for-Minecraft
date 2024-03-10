@@ -7,7 +7,6 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
-import partea.partea_expansion.Enchantments.WeaponEnch.EnchantLifeSteal;
 
 public class EnchantAntimatterNoninverseEquation extends ClassDestruction {
     public static Enchantment Antimatter_Noninverse_Equation = new EnchantAntimatterNoninverseEquation();

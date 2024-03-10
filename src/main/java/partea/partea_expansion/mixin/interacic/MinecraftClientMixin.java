@@ -56,9 +56,12 @@ public class MinecraftClientMixin {
         if (!ParteaExpansion.getConfig().rightClickPickup()) return;
         if (KeyBindingHelper.getBoundKeyOf(ParteaExpansionClient.PICKUP_ITEM) != InputUtil.UNKNOWN_KEY) return;
 
-        if (Helpers.raycastItem(cameraEntity, interactionManager.getReachDistance()) == null) return;
+        if (interactionManager != null && cameraEntity != null && Helpers.raycastItem(cameraEntity, interactionManager.getReachDistance()) == null)
+            return;
         ClientPlayNetworking.send(new Identifier("partea_expansion", "pickup"), PacketByteBufs.empty());
-        this.player.swingHand(Hand.MAIN_HAND);
+        if (this.player != null) {
+            this.player.swingHand(Hand.MAIN_HAND);
+        }
         ci.cancel();
     }
 
@@ -97,10 +100,10 @@ public class MinecraftClientMixin {
 
                 ClientPlayNetworking.send(new Identifier("partea_expansion", "drop_with_power"), buffer);
 
-                if (!this.player.getInventory().removeStack(this.player.getInventory().selectedSlot, dropAll && !this.player.getInventory().getMainHandStack().isEmpty() ? this.player.getInventory().getMainHandStack().getCount() : 1).isEmpty()) {
+                if (this.player != null && !this.player.getInventory().removeStack(this.player.getInventory().selectedSlot, dropAll && !this.player.getInventory().getMainHandStack().isEmpty() ? this.player.getInventory().getMainHandStack().getCount() : 1).isEmpty()) {
                     if (ParteaExpansion.getConfig().swingArm()) this.player.swingHand(Hand.MAIN_HAND);
                 }
-            } else if (this.player.dropSelectedItem(dropAll)) {
+            } else if (this.player != null && this.player.dropSelectedItem(dropAll)) {
                 if (ParteaExpansion.getConfig().swingArm()) this.player.swingHand(Hand.MAIN_HAND);
             }
 

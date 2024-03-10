@@ -76,7 +76,16 @@
   "item.partea_expansion.black_sword": "Black Sword",
   "item.partea_expansion.flint_knife": "Flint Knife",
   "item.partea_expansion.suspicious_stone": "Suspicious Stone",
+  "item.partea_expansion.suspicious_squama": "Suspicious Squama",
+  "item.partea_expansion.sneaker": "Sneaker",
+  "item.partea_expansion.knee_pads": "Knee Pads",
 
+  "item.minecraft.lingering_potion.effect.doomed_death": "Lingering Potion of Doomed Death",
+  "item.minecraft.potion.effect.doomed_death": "Potion of Doomed Death",
+  "item.minecraft.splash_potion.effect.doomed_death": "Splash Potion of Doomed Death",
+  "item.minecraft.lingering_potion.effect.evil_lizard": "Lingering Potion of Evil Lizard",
+  "item.minecraft.potion.effect.evil_lizard": "Potion of Evil Lizard",
+  "item.minecraft.splash_potion.effect.evil_lizard": "Splash Potion of Evil Lizard",
 
 
   "item.partea_expansion.diamond_prospector.tooltip": "detect if there's minecraft ore under the block",
@@ -99,6 +108,10 @@
   "block.partea_expansion.palm_fence_gate": "Palm Fence Gate",
   "block.partea_expansion.palm_door": "Palm Door",
   "block.partea_expansion.palm_trapdoor": "Palm Trapdoor",
+  "block.partea_expansion.suspicious_ore": "Suspicious Ore",
+  "block.partea_expansion.deepslate_suspicious_ore": "Deepslate Suspicious Ore",
+  "block.partea_expansion.nether_suspicious_ore": "Nether Suspicious Ore",
+
 
 
   "block.partea_expansion.qualitative_analyzer.title": "Qualitative Analyzer",
@@ -228,9 +241,13 @@
   "entity.minecraft.villager.nether_explorer": "Nether Explorer",
   "entity.minecraft.villager.partea_expansion.jeweler": "Jeweler",
   "entity.minecraft.villager.jeweler": "Jeweler",
+  "entity.minecraft.villager.partea_expansion.happy_happy_happy": "Happy Happy Happy",
+  "entity.minecraft.villager.happy_happy_happy": "Happy Happy Happy",
 
   "effect.partea_expansion.doomed_death": "Doomed Death",
   "effect.partea_expansion.afterglow_cd": "Afterglow Effect CD",
+  "effect.partea_expansion.evil_lizard": "Evil Lizard",
+
 
 
 

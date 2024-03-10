@@ -32,13 +32,20 @@ public abstract class LivingEntityMixin extends Entity {
     protected LivingEntityMixin(EntityType entityType, World world) {
         super(entityType, world);
     }
+
     @Inject(method = "onAttacking", at = @At("TAIL"))
-    protected void blazeRodFire(Entity target, CallbackInfo ci){
+    protected void constitutionallyFireAspect(Entity target, CallbackInfo ci){
         if (target instanceof LivingEntity) {
             if(this.getEquippedStack(EquipmentSlot.MAINHAND).getItem() == Items.BLAZE_ROD || this.getEquippedStack(EquipmentSlot.MAINHAND).getItem() == Items.TORCH){
                 target.setOnFireFor(5);
+                ((LivingEntity) target).setHealth(((LivingEntity) target).getHealth() - 2);
+            }
+            if(this.getEquippedStack(EquipmentSlot.MAINHAND).getItem() == Items.SOUL_TORCH){
+                target.setOnFireFor(10);
+                ((LivingEntity) target).setHealth(((LivingEntity) target).getHealth() - 3);
             }
         } else {
+
         }
     }
 

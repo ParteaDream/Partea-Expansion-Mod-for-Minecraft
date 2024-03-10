@@ -23,6 +23,9 @@ public class ModModelsProvider extends FabricModelProvider {
         blockStateModelGenerator.registerLog(Modblocks.STRIPPED_PALM_LOG).log(Modblocks.STRIPPED_PALM_LOG).wood(Modblocks.STRIPPED_PALM_WOOD);
         blockStateModelGenerator.registerSimpleCubeAll(Modblocks.PALM_LEAVES);
         blockStateModelGenerator.registerTintableCross(Modblocks.PALM_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerSimpleCubeAll(Modblocks.SUSPICIOUS_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(Modblocks.DEEPSLATE_SUSPICIOUS_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(Modblocks.NETHER_SUSPICIOUS_ORE);
 
         palmPlanksPool.stairs(Modblocks.PALM_STAIR);
         palmPlanksPool.slab(Modblocks.PALM_SLAB);
@@ -90,8 +93,11 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BLACK_SWORD, Models.GENERATED);
         itemModelGenerator.register(ModItems.FLINT_KNIFE, Models.GENERATED);
         itemModelGenerator.register(ModItems.SUSPICIOUS_STONE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SUSPICIOUS_SQUAMA, Models.GENERATED);
 
 
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.KNEE_PADS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.Sneaker);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.AZURITE_HELMET);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.AZURITE_CHESTPLATE);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.AZURITE_LEGGINGS);

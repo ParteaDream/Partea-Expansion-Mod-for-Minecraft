@@ -52,7 +52,12 @@ public class Helpers {
                     }
                     return false;
                 })
-                .map(stack -> new FilterEntry(stack, ItemFilterItem.getItemsInFilter(stack), stack.getNbt().getBoolean("BlockMode")))
+                .map(stack -> {
+                    if (stack.getNbt() != null) {
+                        return new FilterEntry(stack, ItemFilterItem.getItemsInFilter(stack), stack.getNbt().getBoolean("BlockMode"));
+                    }
+                    return null;
+                })
                 .toList();
 
         if (filters.isEmpty()) return true;

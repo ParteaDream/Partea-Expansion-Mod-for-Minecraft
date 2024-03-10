@@ -3,7 +3,6 @@ package partea.partea_expansion.CustomItems.ToolItems;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
-import net.minecraft.item.ToolMaterials;
 import net.minecraft.recipe.Ingredient;
 import partea.partea_expansion.ModItems;
 

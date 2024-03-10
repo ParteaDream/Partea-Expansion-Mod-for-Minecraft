@@ -14,5 +14,21 @@
         "stream": true
       }
     ]
+  },
+  "blurp": {
+    "sounds": [
+      {
+        "name": "partea_expansion:blurp",
+        "stream": true
+      }
+    ]
+  },
+  "elation": {
+    "sounds": [
+      {
+        "name": "partea_expansion:elation",
+        "stream": true
+      }
+    ]
   }
 }

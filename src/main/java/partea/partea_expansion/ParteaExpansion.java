@@ -2,6 +2,7 @@ package partea.partea_expansion;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.fabricmc.loader.api.FabricLoader;
@@ -21,14 +22,16 @@ import partea.partea_expansion.Plugins.interactic.ItemFilterItem;
 import partea.partea_expansion.Plugins.interactic.ItemFilterScreenHandler;
 import partea.partea_expansion.Plugins.interactic.util.Helpers;
 import partea.partea_expansion.Plugins.interactic.util.InteracticPlayerExtension;
+import partea.partea_expansion.entity.ModEntities;
+import partea.partea_expansion.entity.custom.testEntity;
 import partea.partea_expansion.mixin.interacic.ItemEntityAccessor;
-import partea.partea_expansion.potion.PotionRegister;
+import partea.partea_expansion.potion.EffectRegister;
+import partea.partea_expansion.potion.Potions;
 import partea.partea_expansion.screen.ModScreenHandlers;
 import partea.partea_expansion.sounds.ModSounds;
 import partea.partea_expansion.util.InteracticConfig;
 import partea.partea_expansion.util.ModLootTableModifiers;
 import partea.partea_expansion.util.ModTraders;
-import partea.partea_expansion.world.ModPortals;
 import partea.partea_expansion.world.gen.ModWorldGeneration;
 
 import java.util.function.Consumer;
@@ -62,9 +65,12 @@ public class ParteaExpansion implements ModInitializer {
 		ModScreenHandlers.registerScreenHandlers();
 		ModParticles.registerParticles();
 		EnchantRegister.registerEnchantment();
-		PotionRegister.registerPotion();
+		EffectRegister.registerEffect();
 		ModWorldGeneration.generateModWorldGen();
-		ModPortals.registerPortals();
+		Potions.init();
+		//ModPortals.registerPortals();
+
+		FabricDefaultAttributeRegistry.register(ModEntities.TEST_Entity, testEntity.createTestAttributes());
 
 		FlammableBlockRegistry.getDefaultInstance().add(Modblocks.PALM_LOG,5,5);
 		FlammableBlockRegistry.getDefaultInstance().add(Modblocks.PALM_WOOD,5,5);
