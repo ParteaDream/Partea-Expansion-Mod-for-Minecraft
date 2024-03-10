@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "partea_expansion:nether_work_site",
+      "required": false
+    },
+    {
+      "id": "partea_expansion:jewel_work_site",
+      "required": false
+    },
+    {
+      "id": "partea_expansion:happy_work_site",
+      "required": false
+    }
+  ]
+}

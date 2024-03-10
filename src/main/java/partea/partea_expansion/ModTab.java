@@ -84,6 +84,7 @@ public class ModTab {
                 entries.add(DEEPSLATE_SUSPICIOUS_ORE);
                 entries.add(SUSPICIOUS_STONE);
                 entries.add(NETHER_SUSPICIOUS_STONE);
+                entries.add(SUSPICIOUS_SQUAMA);
                 entries.add(CRUDE_AMETHYST);
                 entries.add(AMETHYST);
                 entries.add(AMETHYST_SWORD);
@@ -255,6 +256,7 @@ public class ModTab {
                 entries.add(AZURITE_UPGRADE_SMITHING_TEMPLATE);
                 entries.add(SUSPICIOUS_STONE);
                 entries.add(NETHER_SUSPICIOUS_STONE);
+                entries.add(SUSPICIOUS_SQUAMA);
                 entries.add(CRUDE_AMETHYST);
                 entries.add(AMETHYST);
                 entries.add(FABRIC);

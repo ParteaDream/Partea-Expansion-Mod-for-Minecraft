@@ -21,7 +21,7 @@ public class SneakerItem extends ArmorItem {
     }
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_STATUS_EFFECT_INSTANCE_MAP =
             (new ImmutableMap.Builder<ArmorMaterial,StatusEffectInstance>())
-                    .put(ModArmorMaterial.SNEAKER,new StatusEffectInstance(StatusEffects.SPEED,20,3,
+                    .put(ModArmorMaterial.SNEAKER,new StatusEffectInstance(StatusEffects.SPEED,20,4,
                             false,false,false)).build();
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected){

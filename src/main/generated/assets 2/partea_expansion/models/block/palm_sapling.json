@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "partea_expansion:block/palm_sapling"
+  }
+}
