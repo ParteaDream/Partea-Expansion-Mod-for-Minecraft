@@ -249,8 +249,8 @@
   "entity.minecraft.villager.nether_explorer": "Nether Explorer",
   "entity.minecraft.villager.partea_expansion.jeweler": "Jeweler",
   "entity.minecraft.villager.jeweler": "Jeweler",
-  "entity.minecraft.villager.partea_expansion.happy_happy_happy": "Happy Happy Happy",
-  "entity.minecraft.villager.happy_happy_happy": "Happy Happy Happy",
+  "entity.minecraft.villager.partea_expansion.designer": "Happy Happy Happy",
+  "entity.minecraft.villager.designer": "Happy Happy Happy",
 
   "effect.partea_expansion.doomed_death": "Doomed Death",
   "effect.partea_expansion.afterglow_cd": "Afterglow Effect CD",
