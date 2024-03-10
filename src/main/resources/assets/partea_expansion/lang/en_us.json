@@ -84,9 +84,16 @@
   "item.minecraft.lingering_potion.effect.doomed_death": "Lingering Potion of Doomed Death",
   "item.minecraft.potion.effect.doomed_death": "Potion of Doomed Death",
   "item.minecraft.splash_potion.effect.doomed_death": "Splash Potion of Doomed Death",
+  "item.minecraft.tipped_arrow.effect.doomed_death": "Arrow of Doomed Death",
+  "item.minecraft.lingering_potion.effect.strong_doomed_death": "Lingering Potion of Doomed Death",
+  "item.minecraft.potion.effect.strong_doomed_death": "Potion of Doomed Death",
+  "item.minecraft.splash_potion.effect.strong_doomed_death": "Splash Potion of Doomed Death",
+  "item.minecraft.tipped_arrow.effect.strong_doomed_death": "Arrow of Doomed Death",
   "item.minecraft.lingering_potion.effect.evil_lizard": "Lingering Potion of Evil Lizard",
   "item.minecraft.potion.effect.evil_lizard": "Potion of Evil Lizard",
   "item.minecraft.splash_potion.effect.evil_lizard": "Splash Potion of Evil Lizard",
+  "item.minecraft.tipped_arrow.effect.evil_lizard": "Arrow of Evil Lizard",
+
 
 
   "item.partea_expansion.diamond_prospector.tooltip": "detect if there's minecraft ore under the block",

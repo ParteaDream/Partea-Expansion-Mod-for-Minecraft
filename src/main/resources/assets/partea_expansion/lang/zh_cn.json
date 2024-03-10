@@ -83,9 +83,16 @@
   "item.minecraft.lingering_potion.effect.doomed_death": "滞留型命定之死药水",
   "item.minecraft.potion.effect.doomed_death": "命定之死药水",
   "item.minecraft.splash_potion.effect.doomed_death": "喷溅型命定之死药水",
+  "item.minecraft.tipped_arrow.effect.doomed_death": "命定之矢",
+  "item.minecraft.lingering_potion.effect.strong_doomed_death": "滞留型命定之死药水",
+  "item.minecraft.potion.effect.strong_doomed_death": "命定之死药水",
+  "item.minecraft.splash_potion.effect.strong_doomed_death": "喷溅型命定之死药水",
+  "item.minecraft.tipped_arrow.effect.strong_doomed_death": "命定之矢",
   "item.minecraft.lingering_potion.effect.evil_lizard": "滞留型化身蜥蜴药水",
   "item.minecraft.potion.effect.evil_lizard": "化身蜥蜴药水",
   "item.minecraft.splash_potion.effect.evil_lizard": "喷溅型化身蜥蜴药水",
+  "item.minecraft.tipped_arrow.effect.evil_lizard": "化身蜥蜴之箭",
+
 
 
   "item.partea_expansion.diamond_prospector.tooltip": "探测选取方块纵向一格内的minecraft矿石",

@@ -254,6 +254,7 @@ public class ModTab {
                 entries.add(AZURE_INGOT);
                 entries.add(AZURITE_UPGRADE_SMITHING_TEMPLATE);
                 entries.add(SUSPICIOUS_STONE);
+                entries.add(NETHER_SUSPICIOUS_STONE);
                 entries.add(CRUDE_AMETHYST);
                 entries.add(AMETHYST);
                 entries.add(FABRIC);

@@ -44,7 +44,7 @@ public class ModLootTablesProvider extends FabricBlockLootTableProvider {
 
         addDrop(Modblocks.SUSPICIOUS_ORE,oreDrops(Modblocks.SUSPICIOUS_ORE, ModItems.SUSPICIOUS_STONE));
         addDrop(Modblocks.DEEPSLATE_SUSPICIOUS_ORE,oreDrops(Modblocks.DEEPSLATE_SUSPICIOUS_ORE, ModItems.SUSPICIOUS_STONE));
-        addDrop(Modblocks.NETHER_SUSPICIOUS_ORE,oreDrops(Modblocks.NETHER_SUSPICIOUS_ORE, ModItems.SUSPICIOUS_STONE));
+        addDrop(Modblocks.NETHER_SUSPICIOUS_ORE,oreDrops(Modblocks.NETHER_SUSPICIOUS_ORE, ModItems.NETHER_SUSPICIOUS_STONE));
 
         addDrop(Modblocks.PALM_LEAVES,leavesDrops(Modblocks.PALM_LEAVES, Modblocks.PALM_SAPLING, 0.2f));
         addDrop(Modblocks.PALM_SAPLING);

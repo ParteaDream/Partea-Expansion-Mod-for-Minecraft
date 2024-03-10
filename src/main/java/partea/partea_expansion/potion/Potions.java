@@ -13,6 +13,7 @@ import partea.partea_expansion.ParteaExpansion;
 
 public class Potions {
     public static final Potion DOOMED_DEATH = register("doomed_death", new Potion(new StatusEffectInstance(CustomPotionDoomedDeath.PotionDoomedDeath, 160)));
+    public static final Potion STRONG_DOOMED_DEATH = register("strong_doomed_death", new Potion(new StatusEffectInstance(CustomPotionDoomedDeath.PotionDoomedDeath, 240, 1)));
     public static final Potion EVIL_LIZARD = register("evil_lizard", new Potion(new StatusEffectInstance(EvilLizardEffect.EvilLizardEffect, 3600)));
 
     private static Potion register(String id, Potion potion) {
@@ -22,5 +23,7 @@ public class Potions {
         ParteaExpansion.LOGGER.debug("Registering potions");
         FabricBrewingRecipeRegistry.registerPotionRecipe(net.minecraft.potion.Potions.AWKWARD, Ingredient.ofItems(Items.ECHO_SHARD),DOOMED_DEATH);
         FabricBrewingRecipeRegistry.registerPotionRecipe(net.minecraft.potion.Potions.AWKWARD, Ingredient.ofItems(ModItems.SUSPICIOUS_SQUAMA),EVIL_LIZARD);
+        FabricBrewingRecipeRegistry.registerPotionRecipe(Potions.DOOMED_DEATH, Ingredient.ofItems(Items.GLOWSTONE_DUST),STRONG_DOOMED_DEATH);
+        FabricBrewingRecipeRegistry.registerPotionRecipe(Potions.DOOMED_DEATH, Ingredient.ofItems(Items.REDSTONE),STRONG_DOOMED_DEATH);
     }
 }

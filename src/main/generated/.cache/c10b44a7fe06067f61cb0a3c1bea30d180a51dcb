@@ -1,4 +1,4 @@
-// 1.20.4	2024-03-10T20:54:01.963051	Partea Expansion/Block Loot Tables
+// 1.20.4	2024-03-10T22:16:01.569229	Partea Expansion/Block Loot Tables
 118fda4cd5d69f4138fe049adf447dee574be94c data/partea_expansion/loot_tables/blocks/palm_leaves.json
 f1200d342c43887b44960b7639c9820efbee14f7 data/partea_expansion/loot_tables/blocks/qualitative_analyzer.json
 a2fcd06e6b2e198d6d7054554b14a4845c095e25 data/partea_expansion/loot_tables/blocks/palm_fence.json
@@ -7,7 +7,7 @@ e4c0f28878cb04e096ccb0c1be804ef4d2d11a80 data/partea_expansion/loot_tables/block
 9b0e5234cdf5061894499c41408758e6be953ffe data/partea_expansion/loot_tables/blocks/palm_fence_gate.json
 cd31f41c8b6002375bb442066a4cef3eeac1cef3 data/partea_expansion/loot_tables/blocks/golden_netherite_block.json
 36feed225fa3719762012044c26015313ce4ae95 data/partea_expansion/loot_tables/blocks/palm_pressure_plate.json
-6ddb8194bbab228032558053baa0c8e14a256c7e data/partea_expansion/loot_tables/blocks/nether_suspicious_ore.json
+42823a30810794458f748b342d54c2be33ce879f data/partea_expansion/loot_tables/blocks/nether_suspicious_ore.json
 98d99b0dc2e6e97bdf8c07c7b38b594fa3f84e3d data/partea_expansion/loot_tables/blocks/palm_door.json
 c9d086f94602ac396ceffe9312329d70716e94f9 data/partea_expansion/loot_tables/blocks/azure_block.json
 07e7554c4dc3b0ea5aad7db4a91fc803776dda0a data/partea_expansion/loot_tables/blocks/stripped_palm_log.json
