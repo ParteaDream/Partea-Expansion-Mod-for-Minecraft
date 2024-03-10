@@ -93,6 +93,7 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BLACK_SWORD, Models.GENERATED);
         itemModelGenerator.register(ModItems.FLINT_KNIFE, Models.GENERATED);
         itemModelGenerator.register(ModItems.SUSPICIOUS_STONE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NETHER_SUSPICIOUS_STONE, Models.GENERATED);
         itemModelGenerator.register(ModItems.SUSPICIOUS_SQUAMA, Models.GENERATED);
 
 

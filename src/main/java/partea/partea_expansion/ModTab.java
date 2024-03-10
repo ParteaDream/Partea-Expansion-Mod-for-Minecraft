@@ -79,7 +79,11 @@ public class ModTab {
                 entries.add(CRYING_OBSIDIAN_DUST);
 
                 entries.add(FLINT_KNIFE);
+                entries.add(SUSPICIOUS_ORE);
+                entries.add(NETHER_SUSPICIOUS_ORE);
+                entries.add(DEEPSLATE_SUSPICIOUS_ORE);
                 entries.add(SUSPICIOUS_STONE);
+                entries.add(NETHER_SUSPICIOUS_STONE);
                 entries.add(CRUDE_AMETHYST);
                 entries.add(AMETHYST);
                 entries.add(AMETHYST_SWORD);
@@ -135,6 +139,9 @@ public class ModTab {
                 entries.add(AZURE_ORE);
                 entries.add(AZURE_BLOCK);
                 entries.add(QUALITATIVE_ANALYZER);
+                entries.add(SUSPICIOUS_ORE);
+                entries.add(NETHER_SUSPICIOUS_ORE);
+                entries.add(DEEPSLATE_SUSPICIOUS_ORE);
                 entries.add(PALM_SAPLING);
                 entries.add(PALM_LOG);
                 entries.add(PALM_WOOD);

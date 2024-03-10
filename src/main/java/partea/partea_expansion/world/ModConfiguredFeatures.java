@@ -22,6 +22,9 @@ import java.util.List;
 public class ModConfiguredFeatures {
 
     public static final RegistryKey<ConfiguredFeature<?,?>> AZURE_ORE_KEY = registryKey("azure_ore");
+    public static final RegistryKey<ConfiguredFeature<?,?>> SUSPICIOUS_ORE_KEY = registryKey("suspicious_ore");
+    public static final RegistryKey<ConfiguredFeature<?,?>> DEEPSLATE_SUSPICIOUS_ORE_KEY = registryKey("deepslate_suspicious_ore");
+    public static final RegistryKey<ConfiguredFeature<?,?>> NETHER_SUSPICIOUS_ORE_KEY = registryKey("nether_suspicious_ore");
     public static final RegistryKey<ConfiguredFeature<?,?>> PALM_TREE_KEY = registryKey("palm_tree");
     public static RegistryKey<ConfiguredFeature<?,?>> registryKey(String name){
         return RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, new Identifier("partea_expansion", name));
@@ -34,8 +37,17 @@ public class ModConfiguredFeatures {
 
         List<OreFeatureConfig.Target> end =
                 List.of(OreFeatureConfig.createTarget(endPlace, Modblocks.AZURE_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> stone =
+                List.of(OreFeatureConfig.createTarget(stonePlace, Modblocks.SUSPICIOUS_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> deepslate =
+                List.of(OreFeatureConfig.createTarget(deepslatePlace, Modblocks.DEEPSLATE_SUSPICIOUS_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> nether =
+                List.of(OreFeatureConfig.createTarget(netherPlace, Modblocks.NETHER_SUSPICIOUS_ORE.getDefaultState()));
 
         register(context,AZURE_ORE_KEY,Feature.ORE, new OreFeatureConfig(end, 3, 0.5f));
+        register(context,SUSPICIOUS_ORE_KEY,Feature.ORE, new OreFeatureConfig(stone, 6, 0.2f));
+        register(context,DEEPSLATE_SUSPICIOUS_ORE_KEY,Feature.ORE, new OreFeatureConfig(deepslate, 5, 0.2f));
+        register(context,NETHER_SUSPICIOUS_ORE_KEY,Feature.ORE, new OreFeatureConfig(nether, 7, 0.2f));
         register(context,PALM_TREE_KEY,Feature.TREE,new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(Modblocks.PALM_LOG),
                 new DarkOakTrunkPlacer(4,10,3),

@@ -28,6 +28,8 @@ public class ModItems {
             new SneakerItem(ModArmorMaterial.SNEAKER, ArmorItem.Type.BOOTS,new FabricItemSettings()));
     public static Item SUSPICIOUS_SQUAMA= registerItem("suspicious_squama",
             new Item(new FabricItemSettings()));
+    public static Item NETHER_SUSPICIOUS_STONE = registerItem("nether_suspicious_stone",
+            new Item(new FabricItemSettings()));
     public static Item SUSPICIOUS_STONE = registerItem("suspicious_stone",
             new Item(new FabricItemSettings()));
     public static Item FLINT_KNIFE = registerItem("flint_knife"

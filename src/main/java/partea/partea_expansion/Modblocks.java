@@ -17,6 +17,12 @@ import partea.partea_expansion.world.ModConfiguredFeatures;
 import java.util.Optional;
 
 public class Modblocks {
+    public static final Block SUSPICIOUS_ORE = new ExperienceDroppingBlock(UniformIntProvider.create(1, 3), FabricBlockSettings
+            .create().strength(3f, 3).luminance(5).requiresTool().sounds(BlockSoundGroup.STONE));
+    public static final Block DEEPSLATE_SUSPICIOUS_ORE = new ExperienceDroppingBlock(UniformIntProvider.create(1, 3), FabricBlockSettings
+            .create().strength(4.5f, 3).luminance(5).requiresTool().sounds(BlockSoundGroup.DEEPSLATE));
+    public static final Block NETHER_SUSPICIOUS_ORE = new ExperienceDroppingBlock(UniformIntProvider.create(1, 3), FabricBlockSettings
+            .create().strength(3f, 3).luminance(5).requiresTool().sounds(BlockSoundGroup.NETHER_ORE));
     public static final Block PALM_PLANKS = new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS));
     public static final Block PALM_STAIR = new StairsBlock(Modblocks.PALM_PLANKS.getDefaultState(),FabricBlockSettings.copyOf(Blocks.OAK_STAIRS));
     public static final Block PALM_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_SLAB));
@@ -51,6 +57,21 @@ public class Modblocks {
     public static final Block QUALITATIVE_ANALYZER = new QualitativeAnalyzer(FabricBlockSettings.create()
             .strength(3.5f, 3.5f).requiresTool().sounds(BlockSoundGroup.ANVIL).luminance(15));
     public static void registerBlocks(){
+        Registry.register(Registries.BLOCK
+                , new Identifier("partea_expansion", "deepslate_suspicious_ore"), DEEPSLATE_SUSPICIOUS_ORE);
+        Registry.register(Registries.ITEM
+                , new Identifier("partea_expansion", "deepslate_suspicious_ore"), new BlockItem(DEEPSLATE_SUSPICIOUS_ORE
+                        , new FabricItemSettings().rarity(Rarity.COMMON)));
+        Registry.register(Registries.BLOCK
+                , new Identifier("partea_expansion", "nether_suspicious_ore"), NETHER_SUSPICIOUS_ORE);
+        Registry.register(Registries.ITEM
+                , new Identifier("partea_expansion", "nether_suspicious_ore"), new BlockItem(NETHER_SUSPICIOUS_ORE
+                        , new FabricItemSettings().rarity(Rarity.COMMON)));
+        Registry.register(Registries.BLOCK
+                , new Identifier("partea_expansion", "suspicious_ore"), SUSPICIOUS_ORE);
+        Registry.register(Registries.ITEM
+                , new Identifier("partea_expansion", "suspicious_ore"), new BlockItem(SUSPICIOUS_ORE
+                        , new FabricItemSettings().rarity(Rarity.COMMON)));
         Registry.register(Registries.BLOCK
                 , new Identifier("partea_expansion", "palm_stair"), PALM_STAIR);
         Registry.register(Registries.ITEM

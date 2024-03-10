@@ -174,28 +174,56 @@ public class QualitativeAnalyzerBlockEntity extends BlockEntity implements Exten
         }
         Random random = new Random();
         //赌博质变
-        if (getStack(INPUT_SLOT).getItem() == ModItems.SUSPICIOUS_STONE){
+        if (getStack(INPUT_SLOT).getItem() == ModItems.NETHER_SUSPICIOUS_STONE){
             float r = random.nextFloat();
-            if(r < 0.02){
+            if(r < 0.03){
                 result = new ItemStack(Items.NETHERITE_SCRAP, 1);
-            } else if (r >= 0.02 && r < 0.08) {
+            } else if (r >= 0.03 && r < 0.08) {
                 result = new ItemStack(Items.DIAMOND, 1);
             } else if (r >= 0.08 && r < 0.15) {
-                result = new ItemStack(Items.EMERALD, 4);
-            } else if (r >= 0.15 && r < 0.3) {
+                result = new ItemStack(Items.EMERALD, 2);
+            } else if (r >= 0.15 && r < 0.32) {
                 result = new ItemStack(Items.RAW_GOLD, 2);
-            } else if (r >= 0.3 && r < 0.5 ) {
+            } else if (r >= 0.32 && r < 0.45 ) {
                 result = new ItemStack(Items.RAW_IRON, 3);
-            } else if (r >= 0.5 && r < 0.6) {
+            } else if (r >= 0.45 && r < 0.55) {
                 result = new ItemStack(Items.RAW_COPPER, 3);
-            } else if (r >= 0.6 && r < 0.8) {
-                result = new ItemStack(Items.COAL, 6);
-            } else if (r >= 0.8 && r < 0.85) {
-                result = new ItemStack(Items.LAPIS_LAZULI, 8);
-            } else if (r >= 0.85 && r < 0.9){
-                result = new ItemStack(Items.REDSTONE, 8);
-            } else if (r >= 0.9 && r < 1.0){
+            } else if (r >= 0.55 && r < 0.8) {
+                result = new ItemStack(Items.COAL, 3);
+            } else if (r >= 0.8 && r < 0.84) {
+                result = new ItemStack(Items.LAPIS_LAZULI, 3);
+            } else if (r >= 0.84 && r < 0.88){
+                result = new ItemStack(Items.REDSTONE, 5);
+            } else if (r >= 0.88 && r < 0.95){
                 result = new ItemStack(Items.AMETHYST_SHARD, 5);
+            } else if (r >= 0.95){
+                result = new ItemStack(ModItems.SUSPICIOUS_SQUAMA, 1);
+            }
+        }
+        if (getStack(INPUT_SLOT).getItem() == ModItems.SUSPICIOUS_STONE){
+            float r = random.nextFloat();
+            if(r < 0.016){
+                result = new ItemStack(Items.NETHERITE_SCRAP, 1);
+            } else if (r >= 0.016 && r < 0.06) {
+                result = new ItemStack(Items.DIAMOND, 1);
+            } else if (r >= 0.06 && r < 0.12) {
+                result = new ItemStack(Items.EMERALD, 2);
+            } else if (r >= 0.12 && r < 0.25) {
+                result = new ItemStack(Items.RAW_GOLD, 2);
+            } else if (r >= 0.25 && r < 0.45 ) {
+                result = new ItemStack(Items.RAW_IRON, 3);
+            } else if (r >= 0.45 && r < 0.55) {
+                result = new ItemStack(Items.RAW_COPPER, 3);
+            } else if (r >= 0.55 && r < 0.8) {
+                result = new ItemStack(Items.COAL, 3);
+            } else if (r >= 0.8 && r < 0.84) {
+                result = new ItemStack(Items.LAPIS_LAZULI, 3);
+            } else if (r >= 0.84 && r < 0.88){
+                result = new ItemStack(Items.REDSTONE, 5);
+            } else if (r >= 0.88 && r < 0.95){
+                result = new ItemStack(Items.AMETHYST_SHARD, 5);
+            } else if (r >= 0.95){
+                result = new ItemStack(ModItems.SUSPICIOUS_SQUAMA, 1);
             }
         }
         if (getStack(INPUT_SLOT).getItem() == Items.TOTEM_OF_UNDYING){
@@ -287,7 +315,8 @@ public class QualitativeAnalyzerBlockEntity extends BlockEntity implements Exten
         }
         Random random = new Random();
         //赌博质变
-        if (getStack(INPUT_SLOT).getItem() == ModItems.SUSPICIOUS_STONE){
+        if (getStack(INPUT_SLOT).getItem() == ModItems.SUSPICIOUS_STONE ||
+                getStack(INPUT_SLOT).getItem() == ModItems.NETHER_SUSPICIOUS_STONE){
             result = new ItemStack(Blocks.BEDROCK, 1);
             return EhasQD() && canInsertAmountIntoOutputSlot(result) && canInsertItemIntoOutputSlot(result.getItem());
         }
