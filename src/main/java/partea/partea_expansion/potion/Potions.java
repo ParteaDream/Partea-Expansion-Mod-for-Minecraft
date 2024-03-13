@@ -15,7 +15,8 @@ public class Potions {
     public static final Potion DOOMED_DEATH = register("doomed_death", new Potion(new StatusEffectInstance(CustomPotionDoomedDeath.PotionDoomedDeath, 160)));
     public static final Potion STRONG_DOOMED_DEATH = register("strong_doomed_death", new Potion(new StatusEffectInstance(CustomPotionDoomedDeath.PotionDoomedDeath, 240, 1)));
     public static final Potion EVIL_LIZARD = register("evil_lizard", new Potion(new StatusEffectInstance(EvilLizardEffect.EvilLizardEffect, 3600)));
-
+    public static final Potion DURANCE = register("durance", new Potion(new StatusEffectInstance(EffectDurance.EffectDurance, 160, 0)));
+    public static final Potion STRONG_DURANCE = register("strong_durance", new Potion(new StatusEffectInstance(EffectDurance.EffectDurance, 320,1)));
     private static Potion register(String id, Potion potion) {
         return Registry.register(Registries.POTION, new Identifier("partea_expansion", id), potion);
     }
@@ -25,5 +26,8 @@ public class Potions {
         FabricBrewingRecipeRegistry.registerPotionRecipe(net.minecraft.potion.Potions.AWKWARD, Ingredient.ofItems(ModItems.SUSPICIOUS_SQUAMA),EVIL_LIZARD);
         FabricBrewingRecipeRegistry.registerPotionRecipe(Potions.DOOMED_DEATH, Ingredient.ofItems(Items.GLOWSTONE_DUST),STRONG_DOOMED_DEATH);
         FabricBrewingRecipeRegistry.registerPotionRecipe(Potions.DOOMED_DEATH, Ingredient.ofItems(Items.REDSTONE),STRONG_DOOMED_DEATH);
+        FabricBrewingRecipeRegistry.registerPotionRecipe(net.minecraft.potion.Potions.SLOWNESS ,Ingredient.ofItems(ModItems.CRYING_OBSIDIAN_DUST),DURANCE);
+        FabricBrewingRecipeRegistry.registerPotionRecipe(Potions.DURANCE ,Ingredient.ofItems(Items.REDSTONE),STRONG_DURANCE);
+        FabricBrewingRecipeRegistry.registerPotionRecipe(Potions.DURANCE ,Ingredient.ofItems(Items.GLOWSTONE),STRONG_DURANCE);
     }
 }

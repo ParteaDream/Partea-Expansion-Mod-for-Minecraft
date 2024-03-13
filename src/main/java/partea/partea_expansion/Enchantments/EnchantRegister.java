@@ -14,6 +14,9 @@ import partea.partea_expansion.Enchantments.HonkaiStarRail.Nihilism.EnchantFuner
 import partea.partea_expansion.Enchantments.HonkaiStarRail.Nihilism.EnchantTheOneWhoIsEncasedInASleeve;
 import partea.partea_expansion.Enchantments.HonkaiStarRail.Nihilism.EnchantTheTwilightOfExistence;
 import partea.partea_expansion.Enchantments.HonkaiStarRail.Preservation.*;
+import partea.partea_expansion.Enchantments.HonkaiStarRail.Remenberance.EnchantFuli;
+import partea.partea_expansion.Enchantments.HonkaiStarRail.Remenberance.EnchantIceAspect;
+import partea.partea_expansion.Enchantments.HonkaiStarRail.Remenberance.EnchantTheTormentOfAlienation;
 import partea.partea_expansion.Enchantments.WeaponEnch.*;
 
 import static partea.partea_expansion.Enchantments.WeaponEnch.EnchantDoomedDeath.Doomed_Death;
@@ -22,8 +25,6 @@ public class EnchantRegister {
     public static void registerEnchantment(){
         Registry.register(Registries.ENCHANTMENT
                 , new Identifier("partea_expansion", "enchant_doomed_death"), Doomed_Death);
-        Registry.register(Registries.ENCHANTMENT
-                , new Identifier("partea_expansion", "ice_aspect"), EnchantIceAspect.ICE_ASPECT);
         Registry.register(Registries.ENCHANTMENT
                 , new Identifier("partea_expansion", "auto_smelt"), EnchantAutoSmelt.Auto_Smelt);
         Registry.register(Registries.ENCHANTMENT
@@ -110,5 +111,11 @@ public class EnchantRegister {
                 , new Identifier("partea_expansion", "hannya_ship"), EnchantHannyaShip.HannyaShip);
         Registry.register(Registries.ENCHANTMENT
                 , new Identifier("partea_expansion", "be_merciful"), EnchantMerciful.Merciful);
+        Registry.register(Registries.ENCHANTMENT
+                , new Identifier("partea_expansion", "ice_aspect"), EnchantIceAspect.ICE_ASPECT);
+        Registry.register(Registries.ENCHANTMENT
+                , new Identifier("partea_expansion", "the_torment_of_alienation"), EnchantTheTormentOfAlienation.TormentOfAlienation);
+        Registry.register(Registries.ENCHANTMENT
+                , new Identifier("partea_expansion", "fuli"), EnchantFuli.Fuli);
     }
 }

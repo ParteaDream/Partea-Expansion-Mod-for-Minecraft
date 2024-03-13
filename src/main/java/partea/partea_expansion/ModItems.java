@@ -37,7 +37,7 @@ public class ModItems {
     public static Item AZURITE_BOW = registerItem("azurite_bow"
             , new AzuriteBowItem(new FabricItemSettings().rarity(Rarity.EPIC).maxCount(1).maxDamage(8192)));
     public static Item BLACK_SWORD = registerItem("black_sword"
-            , new BlackSwordItem(new FabricItemSettings().rarity(Rarity.UNCOMMON).maxCount(1)));
+            , new BlackSwordItem(ToolMaterials.NETHERITE, 7, -3.2f, new FabricItemSettings().rarity(Rarity.UNCOMMON)));
     public static Item AZURITE_UPGRADE_SMITHING_TEMPLATE = registerItem("azurite_upgrade_smithing_template"
             , new GlintItem(new FabricItemSettings().rarity(Rarity.EPIC).fireproof()));
     public static Item AZURITE_INGOT = registerItem("azurite_ingot"

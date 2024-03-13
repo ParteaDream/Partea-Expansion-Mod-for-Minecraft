@@ -7,6 +7,7 @@ import partea.partea_expansion.Enchantments.HonkaiStarRail.Abundance.ClassAbunda
 import partea.partea_expansion.Enchantments.HonkaiStarRail.Destruction.ClassDestruction;
 import partea.partea_expansion.Enchantments.HonkaiStarRail.Nihilism.ClassNihilism;
 import partea.partea_expansion.Enchantments.HonkaiStarRail.Preservation.ClassPreservation;
+import partea.partea_expansion.Enchantments.HonkaiStarRail.Remenberance.ClassRemembrance;
 
 public class ClassHunt extends Enchantment {
     protected ClassHunt(Rarity rarity, EnchantmentTarget target, EquipmentSlot[] slotTypes) {
@@ -17,6 +18,7 @@ public class ClassHunt extends Enchantment {
                 && !(other instanceof ClassDestruction)
                 && !(other instanceof ClassPreservation)
                 && !(other instanceof ClassNihilism)
-                && !(other instanceof ClassAbundance);
+                && !(other instanceof ClassAbundance)
+                && !(other instanceof ClassRemembrance);
     }
 }

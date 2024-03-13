@@ -14,7 +14,7 @@ import net.minecraft.util.Identifier;
 import partea.partea_expansion.Enchantments.EnchantBlazeWalker;
 import partea.partea_expansion.Enchantments.WeaponEnch.EnchantDoomedDeath;
 import partea.partea_expansion.Enchantments.WeaponEnch.EnchantExperience;
-import partea.partea_expansion.Enchantments.WeaponEnch.EnchantIceAspect;
+import partea.partea_expansion.Enchantments.HonkaiStarRail.Remenberance.EnchantIceAspect;
 import partea.partea_expansion.Enchantments.WeaponEnch.EnchantPulse;
 import partea.partea_expansion.ModItems;
 

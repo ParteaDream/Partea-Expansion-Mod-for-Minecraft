@@ -13,5 +13,6 @@ public class EffectRegister {
         Registry.register(Registries.STATUS_EFFECT, new Identifier("partea_expansion", "doomed_death"), PotionDoomedDeath);
         Registry.register(Registries.STATUS_EFFECT, new Identifier("partea_expansion", "afterglow_cd"), AfterglowEffectCDEffect);
         Registry.register(Registries.STATUS_EFFECT, new Identifier("partea_expansion", "evil_lizard"), EvilLizardEffect.EvilLizardEffect);
+        Registry.register(Registries.STATUS_EFFECT, new Identifier("partea_expansion", "durance"), EffectDurance.EffectDurance);
     }
 }

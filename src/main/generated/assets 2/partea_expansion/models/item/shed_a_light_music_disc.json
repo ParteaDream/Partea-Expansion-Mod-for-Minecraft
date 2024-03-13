@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "partea_expansion:item/shed_a_light_music_disc"
-  }
-}

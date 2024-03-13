@@ -93,7 +93,14 @@
   "item.minecraft.potion.effect.evil_lizard": "Potion of Evil Lizard",
   "item.minecraft.splash_potion.effect.evil_lizard": "Splash Potion of Evil Lizard",
   "item.minecraft.tipped_arrow.effect.evil_lizard": "Arrow of Evil Lizard",
-
+  "item.minecraft.lingering_potion.effect.durance": "Lingering Potion of Durance",
+  "item.minecraft.potion.effect.durance": "Potion of Durance",
+  "item.minecraft.splash_potion.effect.durance": "Splash Potion of Durance",
+  "item.minecraft.tipped_arrow.effect.durance": "Arrow of Durance",
+  "item.minecraft.lingering_potion.effect.strong_durance": "Lingering Potion of Durance",
+  "item.minecraft.potion.effect.strong_durance": "Potion of Durance",
+  "item.minecraft.splash_potion.effect.strong_durance": "Splash Potion of Durance",
+  "item.minecraft.tipped_arrow.effect.strong_durance": "Arrow of Durance",
 
 
   "item.partea_expansion.diamond_prospector.tooltip": "detect if there's minecraft ore under the block",
@@ -154,8 +161,8 @@
   "enchantment.partea_expansion.enchant_doomed_death": "Doomed Death",
   "enchantment.partea_expansion.enchant_doomed_death.desc": "Doomed death the target on each hit",
   "enchantment.partea_expansion.enchant_sharp_sickle": "Sickle Sharpness",
-  "enchantment.partea_expansion.ice_aspect": "Ice Aspect",
-  "enchantment.partea_expansion.ice_aspect.desc": "Paralyzes the target for a short time after hitting it",
+  "enchantment.partea_expansion.ice_aspect": "[Remembrance]Experience·Reduced Muscle Medulla",
+  "enchantment.partea_expansion.ice_aspect.desc": "[Weapon]has a chance to paralyze the target for a short time after hitting it",
   "enchantment.partea_expansion.auto_smelt": "Auto Smelt",
   "enchantment.partea_expansion.auto_smelt.desc": "Automatically melts mined blocks",
   "enchantment.partea_expansion.beheading": "Beheading",
@@ -242,8 +249,10 @@
   "enchantment.partea_expansion.hannya_ship.desc": "[Weapon]Hitting the target has a chance to restore health, clashing with lifesteal",
   "enchantment.partea_expansion.be_merciful": "[Abundance]Be Merciful",
   "enchantment.partea_expansion.be_merciful.desc": "[Armor]Damage dealt based on the caster's current health increase",
-
-
+  "enchantment.partea_expansion.the_torment_of_alienation": "[Remembrance]Extreme Experience·The Torment Of Alienation",
+  "enchantment.partea_expansion.the_torment_of_alienation.desc": "[Weapon]increase the hit probability of Experience·Reduced Muscle Medulla",
+  "enchantment.partea_expansion.fuli": "[Remembrance]Perfect Experience·Fuli",
+  "enchantment.partea_expansion.fuli.desc": "[Chest]if your target has durance effect, there's a chance to deal 30% of its maximum health damage upon hit",
 
   "entity.minecraft.villager.partea_expansion.nether_explorer": "Nether Explorer",
   "entity.minecraft.villager.nether_explorer": "Nether Explorer",
@@ -255,6 +264,7 @@
   "effect.partea_expansion.doomed_death": "Doomed Death",
   "effect.partea_expansion.afterglow_cd": "Afterglow Effect CD",
   "effect.partea_expansion.evil_lizard": "Evil Lizard",
+  "effect.partea_expansion.durance": "Durance",
 
 
 

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "partea_expansion:block/palm_planks",
-    "side": "partea_expansion:block/palm_planks",
-    "top": "partea_expansion:block/palm_planks"
-  }
-}

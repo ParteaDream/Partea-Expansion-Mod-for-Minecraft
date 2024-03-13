@@ -41,8 +41,7 @@ public class Helpers {
         if (!ParteaExpansion.getConfig().autoPickup() && player.isSneaking() && !item.getCommandTags().contains("partea_expansion.ignore_auto_pickup_rule")) {
             return true;
         }
-
-        if (!ParteaExpansion.getConfig().itemFilterEnabled()) return true;
+        if (ParteaExpansion.getConfig().itemFilterEnabled()) return true;
         var filters = ((PlayerInventoryAccessor) player.getInventory()).getCombinedInventory().stream()
                 .flatMap(Collection::stream)
                 .filter(stack -> stack.isOf(ParteaExpansion.getItemFilter()))

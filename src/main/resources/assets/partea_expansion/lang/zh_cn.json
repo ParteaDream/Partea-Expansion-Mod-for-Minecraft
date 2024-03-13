@@ -92,7 +92,14 @@
   "item.minecraft.potion.effect.evil_lizard": "化身蜥蜴药水",
   "item.minecraft.splash_potion.effect.evil_lizard": "喷溅型化身蜥蜴药水",
   "item.minecraft.tipped_arrow.effect.evil_lizard": "化身蜥蜴之箭",
-
+  "item.minecraft.lingering_potion.effect.durance": "滞留型命定之死药水",
+  "item.minecraft.potion.effect.durance": "禁锢药水",
+  "item.minecraft.splash_potion.effect.durance": "喷溅型禁锢药水",
+  "item.minecraft.tipped_arrow.effect.durance": "禁锢之矢",
+  "item.minecraft.lingering_potion.effect.strong_durance": "滞留型禁锢药水",
+  "item.minecraft.potion.effect.strong_durance": "禁锢药水",
+  "item.minecraft.splash_potion.effect.strong_durance": "喷溅型禁锢药水",
+  "item.minecraft.tipped_arrow.effect.strong_durance": "禁锢之矢",
 
 
   "item.partea_expansion.diamond_prospector.tooltip": "探测选取方块纵向一格内的minecraft矿石",
@@ -149,8 +156,8 @@
   "enchantment.partea_expansion.enchant_doomed_death": "命定之死",
   "enchantment.partea_expansion.enchant_doomed_death.desc": "[剑]对攻击目标施加命定之死",
   "enchantment.partea_expansion.enchant_sharp_sickle": "锋利镰刀",
-  "enchantment.partea_expansion.ice_aspect": "冰霜附加",
-  "enchantment.partea_expansion.ice_aspect.desc": "[剑]击中目标后使其短时间麻痹",
+  "enchantment.partea_expansion.ice_aspect": "[记忆]体验·疏离的煎熬",
+  "enchantment.partea_expansion.ice_aspect.desc": "[剑]击中目标后有概率使其短时间麻痹",
   "enchantment.partea_expansion.auto_smelt": "自动熔炼",
   "enchantment.partea_expansion.auto_smelt.desc": "[工具]自动熔炼挖掘的方块",
   "enchantment.partea_expansion.beheading": "斩首",
@@ -237,6 +244,10 @@
   "enchantment.partea_expansion.hannya_ship.desc": "[剑]命中目标有概率恢复生命值，与吸血冲突",
   "enchantment.partea_expansion.be_merciful": "[丰饶]若罪若福，施诸愿印",
   "enchantment.partea_expansion.be_merciful.desc": "[胸甲]基于自身当前生命值提高造成的伤害",
+  "enchantment.partea_expansion.the_torment_of_alienation": "[记忆]极端体验·沦浃肌髓",
+  "enchantment.partea_expansion.the_torment_of_alienation.desc": "[武器]提高体验·疏离的煎熬的命中概率",
+  "enchantment.partea_expansion.fuli": "[记忆]完美体验·浮黎",
+  "enchantment.partea_expansion.fuli.desc": "[胸甲]若目标处于禁锢状态，击中目标有概率按照目标最大生命值30%造成伤害",
 
   "entity.minecraft.villager.partea_expansion.nether_explorer": "下界探险家",
   "entity.minecraft.villager.nether_explorer": "下界探险家",
@@ -248,6 +259,7 @@
   "effect.partea_expansion.doomed_death": "命定之死",
   "effect.partea_expansion.afterglow_cd": "回光效应冷却",
   "effect.partea_expansion.evil_lizard": "化身蜥蜴",
+  "effect.partea_expansion.durance": "禁锢",
 
 
 
@@ -259,8 +271,7 @@
 
 
 
-
-  "item.partea_expansion.item_filter": "物品过滤器",
+  "item.partea_expansion.item_filter": "【禁用中】物品过滤器",
   "death.attack.thrown_item": "%1$s 被 %2$s 丢掉的 %3$s 击中",
   "death.attack.thrown_item.sword": "%1$s 被 %2$s 使用 %3$s 处决",
   "death.attack.thrown_item.axe": "%1$s 感觉 %2$s 使用 %3$s 进行了欺骗性操作",
