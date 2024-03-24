@@ -7,25 +7,81 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import partea.partea_expansion.CustomItems.ArmorItems.*;
-import partea.partea_expansion.CustomItems.CustomMaskItems.CustomFoolsMaskItem;
-import partea.partea_expansion.CustomItems.CustomMaskItems.CustomThrillerMaskItem;
-import partea.partea_expansion.CustomItems.DiamondProspectorItem;
-import partea.partea_expansion.CustomItems.GlintItem;
-import partea.partea_expansion.CustomItems.ModFoodComponents;
+import partea.partea_expansion.CustomItems.CurioItems.*;
+import partea.partea_expansion.CustomItems.CurioItems.Damaged.*;
+import partea.partea_expansion.CustomItems.*;
 import partea.partea_expansion.CustomItems.Pearls.AncientPearl;
 import partea.partea_expansion.CustomItems.Pearls.AvariciousPearl;
 import partea.partea_expansion.CustomItems.Pearls.CrimsonPearl;
-import partea.partea_expansion.CustomItems.SafeminingDetectorItem;
+import partea.partea_expansion.CustomItems.Resonance.GreatRunesOfAbundance;
+import partea.partea_expansion.CustomItems.Resonance.GreatRunesOfPreservation;
 import partea.partea_expansion.CustomItems.ToolItems.*;
+import partea.partea_expansion.CustomItems.ToolItems.AzuriteSeries.*;
 import partea.partea_expansion.sounds.ModSounds;
 
 import static partea.partea_expansion.CustomItems.ArmorItems.ModArmorMaterial.GOLDEN_NETHERITE;
 
 public class ModItems {
+    public static Item Void_Wick_Trimmer = registerItem("void_wick_trimmer",
+            new VoidWickTrimmerItem(new FabricItemSettings().rarity(Rarity.UNCOMMON).maxCount(1)));
+    public static Item Nether_Star_Shard = registerItem("nether_star_shard",
+            new GlintItem(new FabricItemSettings().rarity(Rarity.UNCOMMON)));
+    public static Item Golden_Trash_Bag = registerItem("golden_trash_bag",
+            new GoldenTrashBagItem(new FabricItemSettings().maxCount(1).rarity(Rarity.UNCOMMON)));
+    public static Item Trash_Bag = registerItem("trash_bag",
+            new TrashBagItem(new FabricItemSettings().maxCount(1).rarity(Rarity.COMMON)));
+    public static Item Great_Runes_Of_Abundance = registerItem("great_runes_of_abundance",
+            new GreatRunesOfAbundance(new FabricItemSettings().maxCount(1).rarity(Rarity.RARE)));
+    public static Item Great_Runes_Of_Preservation = registerItem("great_runes_of_preservation",
+            new GreatRunesOfPreservation(new FabricItemSettings().maxCount(1).rarity(Rarity.RARE)));
+    public static Item Damaged_Clock_Tricks = registerItem("damaged_clock_tricks",
+            new DamagedClockTricksItem(new FabricItemSettings().maxCount(1).rarity(Rarity.RARE)));
+    public static Item Clock_Tricks = registerItem("clock_tricks",
+            new ClockTricksItem(new FabricItemSettings().maxCount(1).rarity(Rarity.EPIC).maxDamage(6)));
+    public static Item Damaged_Laurel_Crown_Of_Planar_Shifts = registerItem("damaged_laurel_crown_of_planar_shifts",
+            new DamagedLaurelCrownOfPlanarShiftsItem(new FabricItemSettings().maxCount(1).rarity(Rarity.UNCOMMON)));
+    public static Item Damaged_Interastra_Big_Lotto = registerItem("damaged_interastra_big_lotto",
+            new DamagedInterastraBigLottoItem(new FabricItemSettings().maxCount(1).rarity(Rarity.COMMON)));
+    public static Item Interastra_Big_Lotto = registerItem("interastra_big_lotto",
+            new InterastraBigLottoItem(new FabricItemSettings().maxCount(1).rarity(Rarity.UNCOMMON)));
+    public static Item Magic_Slime_Ball = registerItem("magic_slime_ball",
+            new Item(new FabricItemSettings().maxCount(64).rarity(Rarity.UNCOMMON)));
+    public static Item SOCIETY_TICKET = registerItem("society_ticket",
+            new SocietyTicketItem(new FabricItemSettings().maxCount(1).rarity(Rarity.UNCOMMON)));
+    public static Item AZURITE_SNIPER_CROSSBOW = registerItem("azurite_sniper_crossbow"
+            , new AzuriteSniperCrossbowItem(new FabricItemSettings().rarity(Rarity.EPIC).maxCount(1).maxDamage(8192)));
+    public static Item SNIPER_CROSSBOW = registerItem("sniper_crossbow"
+            , new SniperCrossbowItem(new FabricItemSettings().rarity(Rarity.COMMON).maxCount(1).maxDamage(465)));
+    public static Item AZURITE_CROSSBOW = registerItem("azurite_crossbow"
+            , new AzuriteCrossbowItem(new FabricItemSettings().rarity(Rarity.EPIC).maxCount(1).maxDamage(8192)));
+    public static Item TEA = registerItem("tea"
+            , new TeaItem(new FabricItemSettings().food(ModFoodComponents.TEA).maxCount(1)));
+    public static Item Damaged_Totem_Of_Equilibrium = registerItem("damaged_totem_of_equilibrium",
+            new DamagedTotemOfEquilibriumItem(new FabricItemSettings().maxCount(1).rarity(Rarity.COMMON)));
+    public static Item Typical_Genius_Society_Gossip = registerItem("typical_genius_society_gossip",
+            new TypicalGeniusSocietyGossipItem(new FabricItemSettings().rarity(Rarity.UNCOMMON).maxCount(1)));
+    public static Item SILVER_COIN_OF_DISCORD= registerItem("silver_coin_of_discord",
+            new SilverCoinOfDiscordItem(new FabricItemSettings().rarity(Rarity.UNCOMMON).maxCount(1)));
+    public static Item ROBE_OF_THE_BEAUTY= registerItem("robe_of_the_beauty",
+            new RobeOfTheBeautyItem(ModArmorMaterial.ROBE_OF_THE_BEAUTY, ArmorItem.Type.CHESTPLATE, new FabricItemSettings().rarity(Rarity.UNCOMMON)));
+    public static Item COIN= registerItem("coin",
+            new Item(new FabricItemSettings().maxCount(64)));
+    public static Item Curio_Treasure_Bag = registerItem("curio_treasure_bag",
+            new CurioTreasureBagItem(new FabricItemSettings().rarity(Rarity.RARE)));
+    public static Item TOTEM_OF_VOID = registerItem("totem_of_void",
+            new TotemOfVoidItem(new FabricItemSettings().rarity(Rarity.RARE).maxCount(1)));
+    public static Item Laurel_Crown_Of_Planar_Shifts = registerItem("laurel_crown_of_planar_shifts",
+            new LaurelCrownOfPlanarShiftsItem(ModArmorMaterial.Laurel_Crown_Of_Planar_Shifts, ArmorItem.Type.HELMET, new FabricItemSettings().rarity(Rarity.RARE)));
+    public static Item Totem_Of_Equilibrium = registerItem("totem_of_equilibrium",
+            new DamagedTotemOfEquilibriumItem(new FabricItemSettings().maxCount(1).rarity(Rarity.UNCOMMON)));
+    public static Item Damaged_Galaxy_Lotto = registerItem("damaged_galaxy_lotto",
+            new DamagedGalaxyLottoItem(new FabricItemSettings().rarity(Rarity.COMMON).maxCount(1)));
+    public static Item Galaxy_Lotto = registerItem("galaxy_lotto",
+            new GalaxyLottoItem(new FabricItemSettings().maxCount(1).maxDamage(1).rarity(Rarity.UNCOMMON)));
     public static Item KNEE_PADS = registerItem("knee_pads",
-            new SneakerItem(ModArmorMaterial.KNEE_PADS, ArmorItem.Type.LEGGINGS,new FabricItemSettings()));
+            new KneePadsItem(ModArmorMaterial.KNEE_PADS, ArmorItem.Type.LEGGINGS,new FabricItemSettings().rarity(Rarity.UNCOMMON)));
     public static Item Sneaker = registerItem("sneaker",
-            new SneakerItem(ModArmorMaterial.SNEAKER, ArmorItem.Type.BOOTS,new FabricItemSettings()));
+            new SneakerItem(ModArmorMaterial.SNEAKER, ArmorItem.Type.BOOTS,new FabricItemSettings().rarity(Rarity.UNCOMMON)));
     public static Item SUSPICIOUS_SQUAMA= registerItem("suspicious_squama",
             new Item(new FabricItemSettings()));
     public static Item NETHER_SUSPICIOUS_STONE = registerItem("nether_suspicious_stone",
@@ -37,7 +93,7 @@ public class ModItems {
     public static Item AZURITE_BOW = registerItem("azurite_bow"
             , new AzuriteBowItem(new FabricItemSettings().rarity(Rarity.EPIC).maxCount(1).maxDamage(8192)));
     public static Item BLACK_SWORD = registerItem("black_sword"
-            , new BlackSwordItem(ToolMaterials.NETHERITE, 7, -3.2f, new FabricItemSettings().rarity(Rarity.UNCOMMON)));
+            , new BlackSwordItem(ToolMaterials.NETHERITE, 5, -3.2f, new FabricItemSettings().rarity(Rarity.UNCOMMON)));
     public static Item AZURITE_UPGRADE_SMITHING_TEMPLATE = registerItem("azurite_upgrade_smithing_template"
             , new GlintItem(new FabricItemSettings().rarity(Rarity.EPIC).fireproof()));
     public static Item AZURITE_INGOT = registerItem("azurite_ingot"
@@ -67,7 +123,7 @@ public class ModItems {
             , new AzuriteShovelItem(ModToolMaterials.AZURITE, -1, -3.0f
                     , new FabricItemSettings().rarity(Rarity.EPIC).fireproof()));
     public static Item AZURITE_HOE = registerItem("azurite_hoe"
-            , new AzuriteHoeItem(ModToolMaterials.AZURITE, 0, 4.0f
+            , new AzuriteHoeItem(ModToolMaterials.AZURITE, -3, 4.0f
                     , new FabricItemSettings().rarity(Rarity.EPIC).fireproof()));
     
     public static Item AZURE_HELMET = registerItem("azure_helmet"
@@ -95,7 +151,7 @@ public class ModItems {
             , new ShovelItem(ModToolMaterials.AZURE, -1.75f, -3.0f
                     , new FabricItemSettings().rarity(Rarity.RARE)));
     public static Item AZURE_HOE = registerItem("azure_hoe"
-            , new HoeItem(ModToolMaterials.AZURE, -2, 2.0f
+            , new HoeItem(ModToolMaterials.AZURE, -3, 0.0f
                     , new FabricItemSettings().rarity(Rarity.RARE)));
     public static Item BASALT_BRICK = registerItem("basalt_brick"
             , new Item(new FabricItemSettings()));
@@ -211,7 +267,7 @@ public class ModItems {
             , new ShovelItem(ModToolMaterials.DIAMOND_NETHERITE, -1.75f, -3.0f
                     , new FabricItemSettings().rarity(Rarity.RARE).fireproof()));
     public static Item DIAMOND_NETHERITE_HOE = registerItem("diamond_netherite_hoe"
-            , new HoeItem(ModToolMaterials.DIAMOND_NETHERITE, -2, 2.0f
+            , new HoeItem(ModToolMaterials.DIAMOND_NETHERITE, -3, 0.0f
                     , new FabricItemSettings().rarity(Rarity.RARE).fireproof()));
     public static Item DIAMOND_NETHERITE_UPGRADE_SMITHING_TEMPLATE = registerItem("diamond_netherite_upgrade_smithing_template"
             , new Item(new FabricItemSettings().rarity(Rarity.RARE).fireproof()));

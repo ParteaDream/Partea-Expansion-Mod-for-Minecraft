@@ -5,8 +5,6 @@ import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.EquipmentSlot;
 
-import java.util.Random;
-
 public class EnchantTheTormentOfAlienation extends ClassRemembrance{
     public static Enchantment TormentOfAlienation = new EnchantTheTormentOfAlienation();
     protected EnchantTheTormentOfAlienation() {

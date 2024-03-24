@@ -24,5 +24,7 @@ public class ModPoiTagsProvider extends TagProvider<PointOfInterestType> {
                 .addOptional(new Identifier("partea_expansion", "jewel_work_site"));
         getOrCreateTagBuilder(PointOfInterestTypeTags.ACQUIRABLE_JOB_SITE)
                 .addOptional(new Identifier("partea_expansion", "happy_work_site"));
+        getOrCreateTagBuilder(PointOfInterestTypeTags.ACQUIRABLE_JOB_SITE)
+                .addOptional(new Identifier("partea_expansion", "trash_work_site"));
     }
 }

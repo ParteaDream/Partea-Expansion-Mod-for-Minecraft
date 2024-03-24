@@ -15,7 +15,7 @@ import partea.partea_expansion.sounds.ModSounds;
 
 public class HappyHappyHappy {
     public static final RegistryKey<PointOfInterestType> HAPPY_WORK_SITE_KEY = point("happy_work_site");
-    public static final PointOfInterestType HAPPY_WORK_SITE = registerPointOfInterestType("happy_work_site", Blocks.CRAFTING_TABLE);
+    public static final PointOfInterestType HAPPY_WORK_SITE = registerPointOfInterestType("happy_work_site", Blocks.COMMAND_BLOCK);
     public static final VillagerProfession Happy = registerVillagerProfession("designer",HAPPY_WORK_SITE_KEY);
     private static VillagerProfession registerVillagerProfession(String name,RegistryKey<PointOfInterestType> type){
         return Registry.register(Registries.VILLAGER_PROFESSION,new Identifier("partea_expansion", name),

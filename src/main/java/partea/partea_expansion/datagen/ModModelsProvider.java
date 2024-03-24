@@ -95,8 +95,32 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SUSPICIOUS_STONE, Models.GENERATED);
         itemModelGenerator.register(ModItems.NETHER_SUSPICIOUS_STONE, Models.GENERATED);
         itemModelGenerator.register(ModItems.SUSPICIOUS_SQUAMA, Models.GENERATED);
+        itemModelGenerator.register(ModItems.Galaxy_Lotto,Models.GENERATED);
+        itemModelGenerator.register(ModItems.Totem_Of_Equilibrium,Models.GENERATED);
+        itemModelGenerator.register(ModItems.TOTEM_OF_VOID,Models.GENERATED);
+        itemModelGenerator.register(ModItems.Curio_Treasure_Bag,Models.GENERATED);
+        itemModelGenerator.register(ModItems.COIN,Models.GENERATED);
+        itemModelGenerator.register(ModItems.SILVER_COIN_OF_DISCORD,Models.GENERATED);
+        itemModelGenerator.register(ModItems.Typical_Genius_Society_Gossip,Models.GENERATED);
+        itemModelGenerator.register(ModItems.Damaged_Galaxy_Lotto,Models.GENERATED);
+        itemModelGenerator.register(ModItems.Damaged_Totem_Of_Equilibrium,Models.GENERATED);
+        itemModelGenerator.register(ModItems.TEA,Models.GENERATED);
+        itemModelGenerator.register(ModItems.SOCIETY_TICKET,Models.GENERATED);
+        itemModelGenerator.register(ModItems.Magic_Slime_Ball,Models.GENERATED);
+        itemModelGenerator.register(ModItems.Interastra_Big_Lotto,Models.GENERATED);
+        itemModelGenerator.register(ModItems.Damaged_Interastra_Big_Lotto,Models.GENERATED);
+        itemModelGenerator.register(ModItems.Damaged_Laurel_Crown_Of_Planar_Shifts,Models.GENERATED);
+        itemModelGenerator.register(ModItems.Clock_Tricks,Models.GENERATED);
+        itemModelGenerator.register(ModItems.Damaged_Clock_Tricks,Models.GENERATED);
+        itemModelGenerator.register(ModItems.Great_Runes_Of_Preservation,Models.GENERATED);
+        itemModelGenerator.register(ModItems.Great_Runes_Of_Abundance,Models.GENERATED);
+        itemModelGenerator.register(ModItems.Trash_Bag,Models.GENERATED);
+        itemModelGenerator.register(ModItems.Golden_Trash_Bag,Models.GENERATED);
+        itemModelGenerator.register(ModItems.Nether_Star_Shard,Models.GENERATED);
+        itemModelGenerator.register(ModItems.Void_Wick_Trimmer,Models.GENERATED);
 
-
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.ROBE_OF_THE_BEAUTY);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.Laurel_Crown_Of_Planar_Shifts);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.KNEE_PADS);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.Sneaker);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.AZURITE_HELMET);

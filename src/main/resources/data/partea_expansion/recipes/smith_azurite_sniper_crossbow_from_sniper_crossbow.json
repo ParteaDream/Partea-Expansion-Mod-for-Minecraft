@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "partea_expansion:azurite_upgrade_smithing_template"
+  },
+  "base": {
+    "item": "partea_expansion:sniper_crossbow"
+  },
+  "addition": {
+    "item": "partea_expansion:azurite_ingot"
+  },
+  "result": {
+    "item": "partea_expansion:azurite_sniper_crossbow"
+  }
+}

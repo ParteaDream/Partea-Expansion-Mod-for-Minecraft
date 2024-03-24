@@ -33,7 +33,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(Modblocks.AZURE_ORE)
                 .add(Blocks.NETHER_QUARTZ_ORE)
                 .add(Blocks.NETHER_GOLD_ORE)
-                .add(Blocks.ANCIENT_DEBRIS);
+                .add(Blocks.ANCIENT_DEBRIS)
+                .add(Blocks.SMOOTH_BASALT);
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(Modblocks.DIAMOND_NETHERITE_BLOCK)
                 .add(Modblocks.GOLDEN_NETHERITE_BLOCK)
@@ -43,11 +44,13 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(Modblocks.FAKE_OBSIDIAN)
                 .add(Modblocks.SUSPICIOUS_ORE)
                 .add(Modblocks.DEEPSLATE_SUSPICIOUS_ORE)
-                .add(Modblocks.NETHER_SUSPICIOUS_ORE);
+                .add(Modblocks.NETHER_SUSPICIOUS_ORE)
+                .add(Modblocks.TRASH_CAN);
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_2")))
                 .add(Modblocks.SUSPICIOUS_ORE)
                 .add(Modblocks.DEEPSLATE_SUSPICIOUS_ORE)
-                .add(Modblocks.NETHER_SUSPICIOUS_ORE);;
+                .add(Modblocks.NETHER_SUSPICIOUS_ORE)
+                .add(Modblocks.TRASH_CAN);
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_4")))
                 .add(Modblocks.GOLDEN_NETHERITE_BLOCK)
                 .add(Modblocks.DIAMOND_NETHERITE_BLOCK)

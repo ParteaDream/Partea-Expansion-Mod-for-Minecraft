@@ -6,6 +6,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffects;
+import partea.partea_expansion.potion.EffectPre;
 
 public class EnchantSuperstaticFixation extends ClassPreservation {
     public static Enchantment SuperstaticFixation = new EnchantSuperstaticFixation();
@@ -32,8 +33,11 @@ public class EnchantSuperstaticFixation extends ClassPreservation {
 
     @Override
     public void onUserDamaged(LivingEntity user, Entity attacker, int level) {
+        if (user.hasStatusEffect(EffectPre.EffectPre)) {
+            level++;
+        }
         if(user.hasStatusEffect(StatusEffects.ABSORPTION)){
-            attacker.damage(user.getDamageSources().magic(),user.getAbsorptionAmount() * (level * 0.5f + 0.5f));
+            attacker.damage(user.getDamageSources().magic(),user.getAbsorptionAmount() * (level * 0.3f + 0.5f));
         }
     }
 }

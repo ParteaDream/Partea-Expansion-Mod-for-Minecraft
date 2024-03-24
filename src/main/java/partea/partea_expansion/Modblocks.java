@@ -12,11 +12,14 @@ import net.minecraft.util.Rarity;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import partea.partea_expansion.CustomBlocks.CustomFakeObsidian;
 import partea.partea_expansion.CustomBlocks.QualitativeAnalyzer;
+import partea.partea_expansion.CustomBlocks.TrashCanBlock;
 import partea.partea_expansion.world.ModConfiguredFeatures;
 
 import java.util.Optional;
 
 public class Modblocks {
+    public static final Block TRASH_CAN = new TrashCanBlock(FabricBlockSettings
+            .create().strength(1.5f, 3).requiresTool().sounds(BlockSoundGroup.DEEPSLATE).nonOpaque());
     public static final Block SUSPICIOUS_ORE = new ExperienceDroppingBlock(UniformIntProvider.create(1, 3), FabricBlockSettings
             .create().strength(3f, 3).luminance(5).requiresTool().sounds(BlockSoundGroup.STONE));
     public static final Block DEEPSLATE_SUSPICIOUS_ORE = new ExperienceDroppingBlock(UniformIntProvider.create(1, 3), FabricBlockSettings
@@ -57,6 +60,11 @@ public class Modblocks {
     public static final Block QUALITATIVE_ANALYZER = new QualitativeAnalyzer(FabricBlockSettings.create()
             .strength(3.5f, 3.5f).requiresTool().sounds(BlockSoundGroup.ANVIL).luminance(15));
     public static void registerBlocks(){
+        Registry.register(Registries.BLOCK
+                , new Identifier("partea_expansion", "trash_can"), TRASH_CAN);
+        Registry.register(Registries.ITEM
+                , new Identifier("partea_expansion", "trash_can"), new BlockItem(TRASH_CAN
+                        , new FabricItemSettings().rarity(Rarity.UNCOMMON)));
         Registry.register(Registries.BLOCK
                 , new Identifier("partea_expansion", "deepslate_suspicious_ore"), DEEPSLATE_SUSPICIOUS_ORE);
         Registry.register(Registries.ITEM

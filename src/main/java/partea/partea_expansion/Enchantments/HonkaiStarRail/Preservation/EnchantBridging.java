@@ -7,6 +7,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ItemStack;
+import partea.partea_expansion.potion.EffectPre;
 
 import java.util.Map;
 import java.util.Random;
@@ -39,6 +40,9 @@ public class EnchantBridging extends ClassPreservation {
         Map.Entry<EquipmentSlot, ItemStack> entry = EnchantmentHelper.chooseEquipmentWith(EnchantBridging.CONSTRUSTION_BRIDGING, user);
         if(random.nextFloat() < 0.5){
             if (entry != null) {
+                if (user.hasStatusEffect(EffectPre.EffectPre)){
+                    level ++;
+                }
                 entry.getValue().setDamage(entry.getValue().getDamage() - level * 2);
             }
         }

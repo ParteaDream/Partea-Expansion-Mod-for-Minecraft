@@ -1,0 +1,6 @@
+{
+    "parent": "partea_expansion:item/azurite_crossbow",
+    "textures": {
+        "layer0": "partea_expansion:item/azurite_crossbow_pulling_0"
+    }
+}

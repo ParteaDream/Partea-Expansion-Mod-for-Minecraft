@@ -22,6 +22,6 @@ public class CustomPotionDoomedDeath extends StatusEffect {
     @Override
     public void applyUpdateEffect(LivingEntity entity, int amplifier) {
         super.applyUpdateEffect(entity, amplifier);
-        entity.damage(entity.getDamageSources().magic(), entity.getMaxHealth() * ( 0.01f + 0.005f*(1 << amplifier)));
+        entity.damage(entity.getDamageSources().magic(), entity.getMaxHealth() * ( 0.005f + 0.005f*(1 << amplifier)));
     }
 }

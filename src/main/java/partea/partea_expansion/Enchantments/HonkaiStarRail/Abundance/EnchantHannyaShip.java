@@ -8,6 +8,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.world.World;
 import partea.partea_expansion.Enchantments.WeaponEnch.EnchantLifeSteal;
+import partea.partea_expansion.potion.EffectAbu;
 import partea.partea_expansion.sounds.ModSounds;
 
 public class EnchantHannyaShip extends ClassAbundance{
@@ -33,10 +34,13 @@ public class EnchantHannyaShip extends ClassAbundance{
     @Override
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
         World world = user.getWorld();
+        if (user.hasStatusEffect(EffectAbu.EffectAbu)){
+            level ++;
+        }
         if (!world.isClient()) {
-            if (user.getHealth() < user.getMaxHealth() && (Math.random() < 0.20) && target instanceof LivingEntity) {
+            if (user.getHealth() < user.getMaxHealth() && (Math.random() < 0.15) && target instanceof LivingEntity) {
                 world.playSound(null, user.getBlockPos(), ModSounds.BLURP, SoundCategory.PLAYERS, 1.0f, 1f);
-                user.heal(user.getMaxHealth() * (0.05f + level * 0.05f));
+                user.heal(user.getMaxHealth() * (0.04f + level * 0.02f));
             }
         }
         super.onTargetDamaged(user, target, level);

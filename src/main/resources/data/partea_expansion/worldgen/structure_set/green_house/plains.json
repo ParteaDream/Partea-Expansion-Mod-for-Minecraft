@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "partea_expansion:green_house/plains",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 367087001,
+    "spacing": 44,
+    "separation": 12,
+    "type": "minecraft:random_spread"
+  }
+}

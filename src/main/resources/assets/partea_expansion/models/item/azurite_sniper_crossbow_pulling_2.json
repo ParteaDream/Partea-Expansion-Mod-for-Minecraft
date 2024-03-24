@@ -1,0 +1,16 @@
+{
+  "parent": "partea_expansion:item/azurite_sniper_crossbow",
+  "textures": {
+    "2": "partea_expansion:item/azurite_sniper_crossbow_pulling_2"
+  },
+  "display": {
+    "firstperson_righthand": {
+      "translation": [-1, 2, -1],
+      "rotation": [0, -45, 0]
+    },
+    "firstperson_lefthand": {
+      "translation": [-1, 2, -1],
+      "rotation": [0, 45, 0]
+    }
+  }
+}

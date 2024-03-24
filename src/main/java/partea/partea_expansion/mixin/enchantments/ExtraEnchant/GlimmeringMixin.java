@@ -9,6 +9,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import partea.partea_expansion.Enchantments.EnchantmentGlimmering;
+import partea.partea_expansion.ModItems;
 
 @Mixin(PiglinBrain.class)
 public class GlimmeringMixin {
@@ -16,6 +17,9 @@ public class GlimmeringMixin {
     @Inject(method = "wearsGoldArmor", at = @At("HEAD"), cancellable = true)
     private static void hasGlimmering(LivingEntity entity, CallbackInfoReturnable<Boolean> cir) {
         if (EnchantmentHelper.getLevel(EnchantmentGlimmering.GLIMMERING, entity.getEquippedStack(EquipmentSlot.FEET)) >= 1) {
+            cir.setReturnValue(true);
+        }
+        if (entity.getEquippedStack(EquipmentSlot.HEAD).getItem() == ModItems.FOOLS_MASK) {
             cir.setReturnValue(true);
         }
     }

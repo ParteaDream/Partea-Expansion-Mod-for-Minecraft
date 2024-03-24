@@ -5,6 +5,7 @@ import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.entity.EquipmentSlot;
 import partea.partea_expansion.Enchantments.HonkaiStarRail.Abundance.ClassAbundance;
 import partea.partea_expansion.Enchantments.HonkaiStarRail.Destruction.ClassDestruction;
+import partea.partea_expansion.Enchantments.HonkaiStarRail.Elation.ClassElation;
 import partea.partea_expansion.Enchantments.HonkaiStarRail.Nihilism.ClassNihilism;
 import partea.partea_expansion.Enchantments.HonkaiStarRail.Preservation.ClassPreservation;
 import partea.partea_expansion.Enchantments.HonkaiStarRail.Remenberance.ClassRemembrance;
@@ -19,6 +20,7 @@ public class ClassHunt extends Enchantment {
                 && !(other instanceof ClassPreservation)
                 && !(other instanceof ClassNihilism)
                 && !(other instanceof ClassAbundance)
-                && !(other instanceof ClassRemembrance);
+                && !(other instanceof ClassRemembrance)
+                && !(other instanceof ClassElation);
     }
 }

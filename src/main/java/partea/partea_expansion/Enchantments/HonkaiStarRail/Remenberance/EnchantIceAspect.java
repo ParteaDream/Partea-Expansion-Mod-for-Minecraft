@@ -7,9 +7,6 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
-import net.minecraft.nbt.NbtCompound;
-import net.minecraft.nbt.NbtTypes;
 import partea.partea_expansion.potion.EffectDurance;
 import partea.partea_expansion.util.FEUtil;
 
@@ -46,7 +43,7 @@ public class EnchantIceAspect extends ClassRemembrance {
             extraChance = FEUtil.getLevel(user, EnchantTheTormentOfAlienation.TormentOfAlienation);
         }
         if(target instanceof LivingEntity && random.nextFloat() < 0.04 + 0.03 * level + extraChance * 0.05) {
-            ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(EffectDurance.EffectDurance, 20 * level + 20, 1, true, false));
+            ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(EffectDurance.EffectDurance, 15 * level + 20, level, true, false));
         }
         super.onTargetDamaged(user, target, level);
     }

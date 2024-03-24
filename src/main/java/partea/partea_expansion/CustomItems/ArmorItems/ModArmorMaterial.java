@@ -32,12 +32,18 @@ public enum ModArmorMaterial implements ArmorMaterial {
     KNEE_PADS("knee_pads", 9, new int[]{1,3,2,1}, 5,
             SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0.0f, 0.0f
             ,() -> Ingredient.ofItems(ModItems.FABRIC)),
+    Laurel_Crown_Of_Planar_Shifts("laurel_crown_of_planar_shifts", 9, new int[]{1,3,2,1}, 5,
+            SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0.0f, 0.0f
+            ,() -> Ingredient.ofItems(ModItems.FABRIC)),
     AZURE("azure", 49, new int[]{4,9,7,4}, 24,
     SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3.5f, 0.14f
             ,() -> Ingredient.ofItems(ModItems.AZURE_INGOT)),
     AZURITE("azurite", 108, new int[]{5,12,8,5}, 28,
             SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 5.0f, 0.25f
-            ,() -> Ingredient.ofItems(ModItems.AZURE_INGOT));
+            ,() -> Ingredient.ofItems(ModItems.AZURE_INGOT)),
+    ROBE_OF_THE_BEAUTY("robe_of_the_beauty", 9, new int[]{1,3,2,1}, 5,
+            SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0.0f, 0.0f
+            ,() -> Ingredient.ofItems(ModItems.FABRIC));
     private final String name;
     private final int durabilityMultiplier;
     private final int[] protectionAmounts;

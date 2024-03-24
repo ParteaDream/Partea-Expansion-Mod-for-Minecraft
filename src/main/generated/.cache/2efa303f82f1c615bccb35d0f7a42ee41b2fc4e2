@@ -1,9 +1,9 @@
-// 1.20.4	2024-03-14T00:17:12.806427	Partea Expansion/Tags for minecraft:block
-8628b2daab88bad77bb31335284843a8a6b4342d data/fabric/tags/blocks/needs_tool_level_2.json
+// 1.20.4	2024-03-24T15:40:56.517013	Partea Expansion/Tags for minecraft:block
+84ece06c51da74372c56666265fee7cfbaee8a7c data/fabric/tags/blocks/needs_tool_level_2.json
 802b80a35df3def1f14c9470c1e04f590fb286d1 data/minecraft/tags/blocks/logs_that_burn.json
 3c059d178a0e211e641fee4c9728a386486037ea data/fabric/tags/blocks/needs_tool_level_4.json
-7ab72b03ee84579abc3adbc9181d7a1f6ffa90b5 data/minecraft/tags/blocks/fences.json
 a8068d22bfe0ec4b8d4a27b5adf7994c56d11682 data/fabric/tags/blocks/needs_tool_level_5.json
-e8129cd734da65e36a7e13393820470247871b7a data/minecraft/tags/blocks/mineable/pickaxe.json
+7ab72b03ee84579abc3adbc9181d7a1f6ffa90b5 data/minecraft/tags/blocks/fences.json
+f5503fca54dee5972ef181b7c7b26cbe6bf315ce data/minecraft/tags/blocks/mineable/pickaxe.json
 e3a8dd69908c09f60aeeec27013a0922ab64f210 data/minecraft/tags/blocks/fence_gates.json
-ee39432dc1bcce2f37fd26734edb17e61dc7ca5b data/partea_expansion/tags/blocks/diamond_prospector_list.json
+1c9391c8b92570bd4a5bb2141b91897d9de87a26 data/partea_expansion/tags/blocks/diamond_prospector_list.json

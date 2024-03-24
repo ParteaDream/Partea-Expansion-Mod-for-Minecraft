@@ -34,11 +34,11 @@ public class EnchantLifeSteal extends Enchantment {
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
         World world = user.getWorld();
         if (!world.isClient()) {
-            if (user.getHealth() < user.getMaxHealth() && (Math.random() < 0.10) && target instanceof LivingEntity) {
+            if (user.getHealth() < user.getMaxHealth() && (Math.random() < 0.05 + 0.05 * level) && target instanceof LivingEntity) {
                 float targetHealth = ((LivingEntity) target).getHealth();
                 if (targetHealth > 0) {
                     world.playSound(null, user.getBlockPos(), ModSounds.BLURP, SoundCategory.PLAYERS, 1.0f, 1f);
-                    user.heal(user.getMaxHealth() * (0.05f + level * 0.05f));
+                    user.heal(2);
                 }
             }
         }

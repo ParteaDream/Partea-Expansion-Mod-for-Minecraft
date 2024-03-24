@@ -16,9 +16,13 @@ import net.minecraft.client.item.ModelPredicateProviderRegistry;
 import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.util.InputUtil;
+import net.minecraft.item.CrossbowItem;
 import net.minecraft.item.Items;
 import net.minecraft.util.Hand;
 import net.minecraft.util.Identifier;
+import partea.partea_expansion.CustomItems.ToolItems.AzuriteSeries.AzuriteCrossbowItem;
+import partea.partea_expansion.CustomItems.ToolItems.AzuriteSniperCrossbowItem;
+import partea.partea_expansion.CustomItems.ToolItems.SniperCrossbowItem;
 import partea.partea_expansion.Plugins.interactic.InteracticConfigScreen;
 import partea.partea_expansion.Plugins.interactic.ItemFilterScreen;
 import partea.partea_expansion.entity.ModEntities;
@@ -81,6 +85,84 @@ public class ParteaExpansionClient implements ClientModInitializer {
             }
             return livingEntity.isUsingItem() && livingEntity.getActiveItem() == itemStack ? 1.0F : 0.0F;
         });
+
+
+        //Azurite Crossbow
+        ModelPredicateProviderRegistry.register(ModItems.AZURITE_CROSSBOW, new Identifier("pull"), (itemStack, world, livingEntity, seed) -> {
+            if (livingEntity == null) {
+                return 0.0F;
+            }
+            return livingEntity.getActiveItem() != itemStack ? 0.0F : (itemStack.getMaxUseTime() - livingEntity.getItemUseTimeLeft()) / (float) AzuriteCrossbowItem.getPullTime(itemStack);
+        });
+        ModelPredicateProviderRegistry.register(ModItems.AZURITE_CROSSBOW, new Identifier("pulling"), (itemStack, world, livingEntity, seed) -> {
+            if (livingEntity == null) {
+                return 0.0F;
+            }
+            return livingEntity.isUsingItem() && livingEntity.getActiveItem() == itemStack ? 1.0F : 0.0F;
+        });
+        ModelPredicateProviderRegistry.register(ModItems.AZURITE_CROSSBOW, new Identifier("charged"), (itemStack, world, livingEntity, seed) -> {
+            if (livingEntity == null) {
+                return 0.0F;
+            }
+            return CrossbowItem.isCharged(itemStack) ? 1.0F : 0.0F;
+        });
+        ModelPredicateProviderRegistry.register(ModItems.AZURITE_CROSSBOW, new Identifier("firework"), (itemStack, world, livingEntity, seed) -> {
+            if (livingEntity == null) {
+                return 0.0F;
+            }
+                    return CrossbowItem.isCharged(itemStack) && CrossbowItem.hasProjectile(itemStack, Items.FIREWORK_ROCKET) ? 1.0F : 0.0F;
+        });
+        //Azurite Sniper Crossbow
+        ModelPredicateProviderRegistry.register(ModItems.AZURITE_SNIPER_CROSSBOW, new Identifier("pull"), (itemStack, world, livingEntity, seed) -> {
+            if (livingEntity == null) {
+                return 0.0F;
+            }
+            return livingEntity.getActiveItem() != itemStack ? 0.0F : (itemStack.getMaxUseTime() - livingEntity.getItemUseTimeLeft()) / (float) AzuriteSniperCrossbowItem.getPullTime(itemStack);
+        });
+        ModelPredicateProviderRegistry.register(ModItems.AZURITE_SNIPER_CROSSBOW, new Identifier("pulling"), (itemStack, world, livingEntity, seed) -> {
+            if (livingEntity == null) {
+                return 0.0F;
+            }
+            return livingEntity.isUsingItem() && livingEntity.getActiveItem() == itemStack ? 1.0F : 0.0F;
+        });
+        ModelPredicateProviderRegistry.register(ModItems.AZURITE_SNIPER_CROSSBOW, new Identifier("charged"), (itemStack, world, livingEntity, seed) -> {
+            if (livingEntity == null) {
+                return 0.0F;
+            }
+            return CrossbowItem.isCharged(itemStack) ? 1.0F : 0.0F;
+        });
+        ModelPredicateProviderRegistry.register(ModItems.AZURITE_SNIPER_CROSSBOW, new Identifier("firework"), (itemStack, world, livingEntity, seed) -> {
+            if (livingEntity == null) {
+                return 0.0F;
+            }
+            return CrossbowItem.isCharged(itemStack) && CrossbowItem.hasProjectile(itemStack, Items.FIREWORK_ROCKET) ? 1.0F : 0.0F;
+        });
+        //Sniper Crossbow
+        ModelPredicateProviderRegistry.register(ModItems.SNIPER_CROSSBOW, new Identifier("pull"), (itemStack, world, livingEntity, seed) -> {
+            if (livingEntity == null) {
+                return 0.0F;
+            }
+            return livingEntity.getActiveItem() != itemStack ? 0.0F : (itemStack.getMaxUseTime() - livingEntity.getItemUseTimeLeft()) / (float) SniperCrossbowItem.getPullTime(itemStack);
+        });
+        ModelPredicateProviderRegistry.register(ModItems.SNIPER_CROSSBOW, new Identifier("pulling"), (itemStack, world, livingEntity, seed) -> {
+            if (livingEntity == null) {
+                return 0.0F;
+            }
+            return livingEntity.isUsingItem() && livingEntity.getActiveItem() == itemStack ? 1.0F : 0.0F;
+        });
+        ModelPredicateProviderRegistry.register(ModItems.SNIPER_CROSSBOW, new Identifier("charged"), (itemStack, world, livingEntity, seed) -> {
+            if (livingEntity == null) {
+                return 0.0F;
+            }
+            return CrossbowItem.isCharged(itemStack) ? 1.0F : 0.0F;
+        });
+        ModelPredicateProviderRegistry.register(ModItems.SNIPER_CROSSBOW, new Identifier("firework"), (itemStack, world, livingEntity, seed) -> {
+            if (livingEntity == null) {
+                return 0.0F;
+            }
+            return CrossbowItem.isCharged(itemStack) && CrossbowItem.hasProjectile(itemStack, Items.FIREWORK_ROCKET) ? 1.0F : 0.0F;
+        });
+
 
         //axolotl bucket fix
         ModelPredicateProviderRegistry.register(Items.AXOLOTL_BUCKET, new Identifier("variant"), (itemStack, clientWorld, livingEntity, i) -> {

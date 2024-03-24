@@ -30,5 +30,29 @@
         "stream": true
       }
     ]
+  },
+  "rune": {
+    "sounds": [
+      {
+        "name": "partea_expansion:rune",
+        "stream": true
+      }
+    ]
+  },
+  "runepre": {
+    "sounds": [
+      {
+        "name": "partea_expansion:runepre",
+        "stream": true
+      }
+    ]
+  },
+  "trashcan": {
+    "sounds": [
+      {
+        "name": "partea_expansion:trashcan",
+        "stream": true
+      }
+    ]
   }
 }

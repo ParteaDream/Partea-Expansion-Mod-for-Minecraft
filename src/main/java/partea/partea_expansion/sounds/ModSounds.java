@@ -10,6 +10,9 @@ public class ModSounds {
     public static final SoundEvent SILENT_TIME = registerSoundEvents("silent_time");
     public static final SoundEvent BLURP = registerSoundEvents("blurp");
     public static final SoundEvent ELATION = registerSoundEvents("elation");
+    public static final SoundEvent RUNE = registerSoundEvents("rune");
+    public static final SoundEvent RUNEPRE = registerSoundEvents("runepre");
+    public static final SoundEvent TRASH = registerSoundEvents("trashcan");
 
     public static SoundEvent registerSoundEvents(String name){
         Identifier identifier = new Identifier("partea_expansion", name);

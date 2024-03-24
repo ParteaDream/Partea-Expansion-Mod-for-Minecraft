@@ -1,0 +1,15 @@
+{
+    "values": [
+        "minecraft:arrow",
+        "minecraft:fall",
+        "minecraft:falling_anvil",
+        "minecraft:falling_block",
+        "minecraft:falling_stalactite",
+        "minecraft:fireworks",
+        "minecraft:generic",
+        "minecraft:indirect_magic",
+        "minecraft:magic",
+        "minecraft:trident",
+        "minecraft:player_attack"
+    ]
+}

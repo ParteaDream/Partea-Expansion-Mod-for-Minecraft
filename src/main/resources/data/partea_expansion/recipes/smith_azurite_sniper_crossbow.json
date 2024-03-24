@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "partea_expansion:magic_slime_ball"
+  },
+  "base": {
+    "item": "partea_expansion:azurite_crossbow"
+  },
+  "addition": {
+    "item": "minecraft:spyglass"
+  },
+  "result": {
+    "item": "partea_expansion:azurite_sniper_crossbow"
+  }
+}

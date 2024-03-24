@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "result": {
+    "item": "partea_expansion:nether_star_shard",
+    "count": 3
+  }
+}

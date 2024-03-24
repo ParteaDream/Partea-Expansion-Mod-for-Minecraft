@@ -7,7 +7,6 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
-import partea.partea_expansion.potion.CustomPotionDoomedDeath;
 import partea.partea_expansion.util.FEUtil;
 
 import java.util.Random;
@@ -37,17 +36,14 @@ public class EnchantTheTwilightOfExistence extends ClassNihilism{
 
     @Override
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
-        if (!(target instanceof LivingEntity)){
+        if (!(target instanceof LivingEntity T)){
             return;
         }
-        LivingEntity T =(LivingEntity) target;
         Random random = new Random();
         int level2 = FEUtil.getLevelArmor(user,EnchantTheOneWhoIsEncasedInASleeve.The_One_Who_Is_Encased_In_A_Sleeve);
         if (level > 0 && random.nextFloat() < level * 0.5 + 0.5 && !(level2 > 0)){
             T.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 300, 1));
         }else if (level > 0 && random.nextFloat() < level * 0.5 + 0.5 && (level2 > 0)){
-            T.removeStatusEffect(StatusEffects.POISON);
-            T.addStatusEffect(new StatusEffectInstance(CustomPotionDoomedDeath.PotionDoomedDeath, 100, 2));
         }
     }
 }

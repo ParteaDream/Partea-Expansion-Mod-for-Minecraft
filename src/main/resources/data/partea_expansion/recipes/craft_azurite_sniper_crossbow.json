@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "partea_expansion:azurite_crossbow"
+    },
+    {
+      "item": "minecraft:spyglass"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "item": "partea_expansion:azurite_sniper_crossbow"
+  }
+}

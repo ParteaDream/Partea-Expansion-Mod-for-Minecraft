@@ -10,6 +10,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import partea.partea_expansion.Enchantments.HonkaiStarRail.Preservation.EnchantCompensation;
+import partea.partea_expansion.potion.EffectPre;
 import partea.partea_expansion.util.FEUtil;
 
 import java.util.Random;
@@ -23,10 +24,15 @@ public class CompensationMixin {
         LivingEntity user = (LivingEntity) source.getAttacker();
         Random random = new Random();
         int i = FEUtil.getLevelArmor(user, EnchantCompensation.CONSTRUSTION_COMPENSATION);
+        if (user.hasStatusEffect(EffectPre.EffectPre)){
+            i ++;
+        }
         if (i == 1 && random.nextFloat() < 0.8) {
             user.addStatusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 200, 0));
         } else if (i == 2) {
             user.addStatusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 200, 1));
+        } else if (i == 3) {
+            user.addStatusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 200, 2));
         }
     }
 }

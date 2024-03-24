@@ -11,6 +11,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import partea.partea_expansion.Enchantments.HonkaiStarRail.Preservation.EnchantFeedbackShelter;
+import partea.partea_expansion.potion.EffectPre;
 import partea.partea_expansion.util.FEUtil;
 
 import java.util.Random;
@@ -25,8 +26,12 @@ public class FeedbackShelterMixin {
         int level  = FEUtil.getLevel(user, EnchantFeedbackShelter.Feedback_Shelter);
         Random random = new Random();
         float chance = level * 0.03f;
+        int extra = 0;
+        if (user.hasStatusEffect(EffectPre.EffectPre)){
+            extra = 1;
+        }
         if (random.nextFloat() < chance && level > 0){
-            ItemEntity goldingotdrop = new ItemEntity(target.getWorld(), target.getX(), target.getY(), target.getZ(), new ItemStack(Items.GOLD_INGOT, random.nextInt(1,level)));
+            ItemEntity goldingotdrop = new ItemEntity(target.getWorld(), target.getX(), target.getY(), target.getZ(), new ItemStack(Items.GOLD_INGOT, random.nextInt(1,level) + extra));
             user.getWorld().spawnEntity(goldingotdrop);
         }
     }

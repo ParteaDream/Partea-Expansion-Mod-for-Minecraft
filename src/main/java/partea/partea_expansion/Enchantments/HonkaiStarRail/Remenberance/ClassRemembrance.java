@@ -5,6 +5,7 @@ import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.entity.EquipmentSlot;
 import partea.partea_expansion.Enchantments.HonkaiStarRail.Abundance.ClassAbundance;
 import partea.partea_expansion.Enchantments.HonkaiStarRail.Destruction.ClassDestruction;
+import partea.partea_expansion.Enchantments.HonkaiStarRail.Elation.ClassElation;
 import partea.partea_expansion.Enchantments.HonkaiStarRail.Hunt.ClassHunt;
 import partea.partea_expansion.Enchantments.HonkaiStarRail.Nihilism.ClassNihilism;
 import partea.partea_expansion.Enchantments.HonkaiStarRail.Preservation.ClassPreservation;
@@ -21,6 +22,7 @@ public class ClassRemembrance extends Enchantment{
                 && !(other instanceof ClassHunt)
                 && !(other instanceof ClassNihilism)
                 && !(other instanceof ClassAbundance)
-                && !(other instanceof ClassDestruction);
+                && !(other instanceof ClassDestruction)
+                && !(other instanceof ClassElation);
     }
 }

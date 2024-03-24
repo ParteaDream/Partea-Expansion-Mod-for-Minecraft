@@ -17,6 +17,8 @@ public class EffectDurance extends StatusEffect {
         super.applyUpdateEffect(entity, amplifier);
         entity.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS,  5, 5 * amplifier + 5, true, false));
         entity.addStatusEffect(new StatusEffectInstance(StatusEffects.MINING_FATIGUE, 5, 5 * amplifier + 5, true, false));
+        entity.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 5, 10, true,false));
+        entity.addStatusEffect(new StatusEffectInstance(StatusEffects.BLINDNESS, 5, 0, true,false));
     }
     @Override
     public boolean canApplyUpdateEffect(int duration, int amplifier) {

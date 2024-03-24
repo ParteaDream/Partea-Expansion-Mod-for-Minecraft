@@ -5,6 +5,7 @@ import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
+import partea.partea_expansion.potion.EffectAbu;
 
 public class EnchantMerciful extends ClassAbundance {
     public static Enchantment Merciful = new EnchantMerciful();
@@ -31,9 +32,13 @@ public class EnchantMerciful extends ClassAbundance {
 
     @Override
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
-        LivingEntity T = (LivingEntity) target;
-        if(level > 0){
-            T.setHealth(T.getHealth() - user.getHealth() * (0.1f + 0.2f * level));
+        if (user.hasStatusEffect(EffectAbu.EffectAbu)){
+            level ++;
+        }
+        if (target instanceof LivingEntity T){
+            if(level > 0){
+                T.setHealth(T.getHealth() - user.getHealth() * (0.1f + 0.075f * level));
+            }
         }
     }
 }

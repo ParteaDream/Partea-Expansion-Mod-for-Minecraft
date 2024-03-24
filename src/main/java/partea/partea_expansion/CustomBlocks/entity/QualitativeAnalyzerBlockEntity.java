@@ -172,6 +172,15 @@ public class QualitativeAnalyzerBlockEntity extends BlockEntity implements Exten
                 || getStack(INPUT_SLOT).getItem() == Items.CHARCOAL){
             result = new ItemStack(Items.GLOWSTONE_DUST);
         }
+        if (getStack(INPUT_SLOT).getItem() == Items.TOTEM_OF_UNDYING && getStack(E_SLOT).getItem() == ModItems.CRYING_OBSIDIAN_DUST){
+            result = new ItemStack(ModItems.TOTEM_OF_VOID);
+        }
+        if (getStack(INPUT_SLOT).getItem() == Items.SLIME_BALL){
+            result = new ItemStack(ModItems.Magic_Slime_Ball);
+        }
+
+
+
         Random random = new Random();
         //赌博质变
         if (getStack(INPUT_SLOT).getItem() == ModItems.NETHER_SUSPICIOUS_STONE){
@@ -226,7 +235,7 @@ public class QualitativeAnalyzerBlockEntity extends BlockEntity implements Exten
                 result = new ItemStack(ModItems.SUSPICIOUS_SQUAMA, 1);
             }
         }
-        if (getStack(INPUT_SLOT).getItem() == Items.TOTEM_OF_UNDYING){
+        if (getStack(INPUT_SLOT).getItem() == Items.TOTEM_OF_UNDYING && getStack(E_SLOT).getItem() == ModItems.CRYSTALLIZED_LAPIS_DUST){
             result = new ItemStack(Items.TOTEM_OF_UNDYING, random.nextInt(0,2));
             this.removeStack(INPUT_SLOT,random.nextInt(0,1));
             this.removeStack(E_SLOT,1);
@@ -313,6 +322,10 @@ public class QualitativeAnalyzerBlockEntity extends BlockEntity implements Exten
             result = new ItemStack(Items.GLOWSTONE_DUST);
             return EhasQD() && canInsertAmountIntoOutputSlot(result) && canInsertItemIntoOutputSlot(result.getItem());
         }
+        if (getStack(INPUT_SLOT).getItem() == Items.SLIME_BALL){
+            result = new ItemStack(ModItems.Magic_Slime_Ball);
+            return EhasCOD() && canInsertAmountIntoOutputSlot(result) && canInsertItemIntoOutputSlot(result.getItem());
+        }
         Random random = new Random();
         //赌博质变
         if (getStack(INPUT_SLOT).getItem() == ModItems.SUSPICIOUS_STONE ||
@@ -320,8 +333,11 @@ public class QualitativeAnalyzerBlockEntity extends BlockEntity implements Exten
             result = new ItemStack(Blocks.BEDROCK, 1);
             return EhasQD() && canInsertAmountIntoOutputSlot(result) && canInsertItemIntoOutputSlot(result.getItem());
         }
-        if (getStack(INPUT_SLOT).getItem() == Items.TOTEM_OF_UNDYING
-                || getStack(INPUT_SLOT).getItem() == Items.TOTEM_OF_UNDYING){
+        if (getStack(INPUT_SLOT).getItem() == Items.TOTEM_OF_UNDYING){
+            if(EhasCOD()){
+                result = new ItemStack(ModItems.TOTEM_OF_VOID);
+                return canInsertAmountIntoOutputSlot(result) && canInsertItemIntoOutputSlot(result.getItem());
+            }
             result = new ItemStack(Items.TOTEM_OF_UNDYING, random.nextInt(0,1));
             return EhasCLD() && canInsertAmountIntoOutputSlot(result) && canInsertItemIntoOutputSlot(result.getItem());
         }
@@ -355,6 +371,6 @@ public class QualitativeAnalyzerBlockEntity extends BlockEntity implements Exten
         return this.getStack(E_SLOT).getItem() == ModItems.QUARTZ_DUST;
     }
     private boolean EhasNS(){
-        return this.getStack(E_SLOT).getItem() == Items.NETHER_STAR;
+        return this.getStack(E_SLOT).getItem() == ModItems.Nether_Star_Shard;
     }
 }
